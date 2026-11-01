@@ -1,447 +1,217 @@
 # Dashboard de Adquisición y Conversión Comercial
 
-## Descripción General
+> **Muestra de Portfolio** - Análisis de eficiencia de adquisición y conversión para e-commerce
 
-Dashboard interactivo de análisis de eficiencia comercial para e-commerce, enfocado en la evaluación de canales de adquisición, embudos de conversión, costos de adquisición (CAC) y retorno sobre inversión publicitaria (ROAS).
+## 📋 Contenido del Entregable
 
-**Período analizado:** Enero - Diciembre 2024  
-**Industria:** E-commerce B2C  
-**Moneda:** Pesos Argentinos (ARS)  
-**Tipo de dashboard:** Ejecutivo / Estratégico
+Este paquete contiene un dashboard completo de análisis de eficiencia comercial, incluyendo:
 
----
+- **`dashboard.html`**: Dashboard interactivo completo (funciona offline, doble clic para abrir)
+- **`informe_hallazgos.md`**: Informe detallado de hallazgos y recomendaciones estratégicas
+- **`datos/`**: Datasets fuente en CSV (sesiones, pedidos, facturación)
+- **`screenshots/`**: 5 capturas de pantalla de alta resolución (1920x1080) de cada sección del dashboard
 
-## Contenido de esta Muestra
+## 🎯 Objetivo del Análisis
 
-### Archivos Incluidos
+Evaluar la **eficiencia de los canales de adquisición** (Google Ads, Facebook, Instagram, Orgánico, Directo) analizando:
 
-1. **`dashboard.html`**
-   - Dashboard interactivo completo
-   - Chart.js inlinado (funciona offline, sin internet)
-   - 12 visualizaciones profesionales
-   - Diseño responsive y premium tipo Power BI
-   - Abrir con doble clic en cualquier navegador
+1. Origen del tráfico y conversión por canal
+2. Embudos de conversión detallados
+3. Costo de Adquisición de Clientes (CAC)
+4. Retorno sobre Inversión Publicitaria (ROAS)
+5. Comportamiento de clientes nuevos vs. recurrentes
 
-2. **`datos/`**
-   - `sesiones_canal.csv`: Tráfico y embudo de conversión por canal y mes (12 meses, 240 registros)
-   - `pedidos_facturacion.csv`: Pedidos, facturación, costos y márgenes por canal y mes (12 meses, 240 registros)
-   - Datos sintéticos realistas con consistencia interna
+## 📊 Indicadores Clave (2024)
 
-3. **`informe_hallazgos.md`**
-   - Informe ejecutivo de 50+ páginas
-   - Análisis detallado de cada canal
-   - Diagnóstico de cuellos de botella en embudo
-   - Recomendaciones priorizadas con impacto financiero
-   - Roadmap de implementación 2025
+| Métrica | Valor |
+|---------|-------|
+| **Visitas totales** | 558,399 |
+| **Tasa de conversión** | 5.87% |
+| **Pedidos totales** | 32,753 |
+| **Facturación** | $582.1M ARS |
+| **CAC promedio** | $11,637 ARS |
+| **ROAS canales pagos** | **3.17x** |
+| **Margen de contribución** | $337.6M (58.0%) |
 
-4. **`screenshots/`**
-   - 5 capturas de pantalla PNG de secciones clave del dashboard
-   - Evidencia visual de calidad de visualizaciones
+### ROAS por Canal (Canales Pagos)
 
-5. **Este archivo (`LEEME.md`)**
+| Canal | ROAS | CAC |
+|-------|------|-----|
+| **Google Ads** | **4.50x** | $8,807 |
+| **Facebook** | 3.50x | $11,078 |
+| **Instagram** | 1.20x | $21,120 |
 
----
+**Google Ads lidera en rentabilidad** con el mejor ROAS y CAC más eficiente.
 
-## Caso de Negocio
+### Valor de Cliente
 
-### Contexto
+| Tipo de Cliente | Pedidos | Ticket Promedio | Facturación |
+|----------------|---------|-----------------|-------------|
+| **Nuevos** | 13,802 (42.1%) | $16,500 | $227.7M |
+| **Recurrentes** | 18,951 (57.9%) | **$18,700** | $354.4M |
 
-E-commerce con 5 canales de adquisición (Google Ads, Orgánico, Instagram, Directo, Facebook) que factura $531M ARS anuales con inversión publicitaria de $6.2M ARS. La empresa busca optimizar la asignación de presupuesto publicitario y mejorar la eficiencia de conversión.
+*Los clientes recurrentes gastan 13.3% más por pedido.*
 
-### Preguntas Clave que Responde
+## 🔍 Hallazgos Principales
 
-1. **¿De dónde vienen las visitas y de dónde vienen las ventas?**
-   - Comparación de volumen de tráfico vs. conversión por canal
-   - Identificación de canales con alto tráfico y baja conversión (Instagram)
+### ✅ Fortalezas
 
-2. **¿En qué paso del embudo se pierden los clientes?**
-   - Análisis detallado de 5 etapas: Visitas → Fichas → Carrito → Inicio Pago → Compra
-   - Comparación de embudos entre canales
-   - Identificación de 3 cuellos de botella críticos
+1. **Google Ads altamente rentable** (ROAS 4.50x, CAC $8,807)
+2. **Canales orgánicos sólidos** (Directo 6.80% conversión, Orgánico 7.50%)
+3. **Base de clientes recurrentes** (57.9% de pedidos, ticket +13.3%)
+4. **Margen saludable** (58.0% promedio)
 
-3. **¿Cuánto cuesta conseguir un cliente?**
-   - CAC (Customer Acquisition Cost) por canal pago
-   - Evolución mensual de CAC
-   - Comparación con ticket promedio y margen
+### ⚠️ Oportunidades de Mejora
 
-4. **¿El cliente deja más de lo que costó traerlo?**
-   - ROAS (Return on Ad Spend) por canal
-   - Análisis de recuperación de CAC (payback period)
-   - Rentabilidad por canal (margen de contribución)
+1. **Instagram sub-rentable** (ROAS 1.20x, apenas sobre break-even en margen)
+2. **CAC elevado en Instagram** ($21,120, 2.4x más caro que Google Ads)
+3. **Conversión baja en Instagram** (0.59%, vs. 4.49% Google Ads)
+4. **Embudo Instagram ineficiente** (solo 9.7% llega a fichas de producto)
 
-5. **¿Los clientes nuevos vuelven a comprar?**
-   - Distribución de pedidos: nuevos vs. recurrentes
-   - Retención por canal
-   - LTV (Lifetime Value) estimado
+### 🎯 Recomendaciones Priorizadas
 
----
+1. **Aumentar inversión en Google Ads** (+20-30%, mantener CAC)
+2. **Optimizar campañas de Instagram** (mejorar segmentación, creativos, landing pages)
+3. **Implementar recuperación de carritos** (oportunidad en paso carrito → pago)
+4. **Programa de fidelización** (capitalizar valor de clientes recurrentes)
+5. **Invertir en SEO** (fortalecer canal orgánico de bajo costo)
 
-## Hallazgos Principales
+## 💻 Cómo Usar el Dashboard
 
-### 🔴 CRÍTICO: Instagram Destruye Valor
+### Opción 1: Abrir Localmente (Recomendado)
 
-- **ROAS:** 0.92x (por cada $1 invertido, se recuperan $0.92)
-- **CAC:** $6,942 (4.7x más caro que Google Ads)
-- **Conversión:** 0.60% (10x menor que Google Ads)
-- **Impacto:** Pérdida neta de $240K ARS en el año
-- **Recomendación:** Reducir inversión -50% de inmediato, redistribuir a Google Ads
+1. Descomprimir el archivo ZIP
+2. Hacer **doble clic** en `dashboard.html`
+3. Se abrirá en el navegador predeterminado (Chrome/Firefox/Edge)
 
-### 🟢 OPORTUNIDAD: Google Ads es el Campeón
+**✅ Funciona completamente offline** - Chart.js está embebido, sin dependencias de CDN
 
-- **ROAS:** 3.45x (mejor de todos los canales)
-- **CAC:** $1,465 (el más bajo de canales pagos)
-- **Conversión:** 6.07% (excelente)
-- **Recomendación:** Escalar inversión +40-50%
+### Opción 2: Servidor Web Local
 
-### 🟡 URGENTE: Abandono de Carrito Universal
+```bash
+# Python 3
+python -m http.server 8000
 
-- **50% de abandono** en el paso carrito → inicio de pago (afecta a todos los canales)
-- **Impacto potencial:** Reducir 10 pp → +$106M facturación, +$61.5M margen
-- **Recomendación:** Auditoría UX de checkout, implementar checkout express, transparentar costos
-
-### 🟢 FORTALEZA: Canales Orgánicos
-
-- **Directo + Orgánico:** 59.4% de los pedidos, 70% del margen total ($126.6M)
-- **Conversión:** 15.8% (la más alta)
-- **Retención:** 60% de pedidos son de clientes recurrentes
-- **Recomendación:** Invertir en SEO, contenido, programa de fidelización
-
----
-
-## Datos del Dataset
-
-### Características de los Datos
-
-- **Período:** 12 meses (enero - diciembre 2024)
-- **Granularidad:** Mensual por canal y tipo de cliente
-- **Canales:** Google Ads, Orgánico, Instagram, Directo, Facebook
-- **Métricas:**
-  - Tráfico: 521,816 visitas totales
-  - Embudo: Visitas, Fichas, Carritos, Inicio Pago, Compras
-  - Conversión: 5.82% global (varía entre 0.6% y 15.87% por canal)
-  - Pedidos: 30,352 totales (36.5% nuevos, 63.5% recurrentes)
-  - Facturación: $531.2M ARS (58% margen de contribución)
-  - Inversión: $6.24M ARS en publicidad paga
-  - CAC: Rango de $1,429 a $6,942 según canal
-  - ROAS: Rango de 0.92x a 3.45x según canal
-
-### Consistencia Interna
-
-Todos los números están interrelacionados y son verificables:
-
-```
-Ejemplo de consistencia (Google Ads, enero):
-- Visitas: 4,370
-- Tasa de conversión: 6.07%
-- Pedidos: 4,370 × 6.07% = 265 ✓
-- Ticket promedio: $17,500
-- Facturación: 265 × $17,500 = $4,637,500 ✓
-- Margen: 58% de facturación = $2,689,750 ✓
-- Inversión: $124,500
-- Clientes nuevos: 85
-- CAC: $124,500 / 85 = $1,465 ✓
-- ROAS: $4,637,500 / $124,500 = 3.72x ✓
+# Navegar a http://localhost:8000/dashboard.html
 ```
 
----
-
-## Visualizaciones Incluidas
-
-### 1. Origen del Tráfico y Conversión por Canal
-- **Gráfico mixto** (barras + línea)
-- Compara visitas, pedidos y tasa de conversión
-- **Insight:** Identifica desalineaciones entre volumen y eficiencia
-
-### 2. Visitas vs. Tasa de Conversión (scatter)
-- **Gráfico de burbujas**
-- Tamaño = volumen de pedidos
-- **Insight:** Visualiza rápidamente qué canales convierten mejor
-
-### 3. Comparación de Embudos por Canal
-- **Gráfico de barras agrupadas**
-- 5 etapas del embudo por cada canal
-- **Insight:** Compara eficiencia de cada paso entre canales
-
-### 4-5. Embudos Detallados (Google Ads e Instagram)
-- **Gráficos de barras horizontales**
-- Porcentajes de conversión por etapa
-- **Insight:** Análisis profundo de los embudos extremos (mejor y peor)
-
-### 6. CAC por Canal
-- **Gráfico de barras**
-- Costo de adquisición de cliente pago
-- **Insight:** Identifica canales con CAC prohibitivo
-
-### 7. Evolución del CAC 2024
-- **Gráfico de líneas**
-- Tendencia mensual de CAC por canal pago
-- **Insight:** Detecta estacionalidad o deterioro de eficiencia
-
-### 8. ROAS Waterfall (Cascada)
-- **Gráfico waterfall**
-- Inversión total → Contribución por canal → Facturación total
-- **Insight:** Muestra rentabilidad incremental de cada canal
-
-### 9. Matriz CAC vs. ROAS
-- **Gráfico scatter**
-- Tamaño = inversión publicitaria
-- **Insight:** Identifica canales en cuadrante ideal (bajo CAC, alto ROAS)
-
-### 10. Facturación y Margen por Canal
-- **Gráfico de barras agrupadas**
-- Compara facturación y margen de contribución
-- **Insight:** Confirma que margen es consistente (58%) entre canales
-
-### 11. Distribución Nuevos vs. Recurrentes
-- **Gráfico de dona**
-- 36.5% nuevos, 63.5% recurrentes
-- **Insight:** Muestra importancia de la retención
-
-### 12. Comparación de Valor por Tipo de Cliente
-- **Gráfico de barras agrupadas**
-- Ticket promedio, pedidos totales, facturación por segmento
-- **Insight:** Valida que ticket es similar, pero volumen de recurrentes es 74% mayor
-
----
-
-## Decisiones que Habilita
-
-### Decisiones Inmediatas (Q4 2024)
-1. **Reducir inversión en Instagram en 50%** → Ahorro de $1.48M/año
-2. **Redistribuir presupuesto a Google Ads (+78%)** → +$3.0M margen/año
-3. **Auditar abandono de carrito** → Oportunidad de +$61.5M margen/año
-
-### Decisiones Estratégicas (2025)
-1. **Optimizar checkout para reducir abandono de 50% a 40%**
-2. **Escalar Google Ads con inversión adicional de $800K**
-3. **Implementar programa de retención (email, puntos, segmentación)**
-4. **Invertir en contenido SEO para crecer canal orgánico +15%**
-5. **Testear nuevos canales (TikTok, YouTube, podcasts) con presupuesto controlado**
-
-### ROI Esperado de las Acciones
-- **Inversión en mejoras:** $2.2M ARS en 2025
-- **Mejora en margen:** +$33.2M ARS
-- **ROI:** **15.1x**
-
----
-
-## Tecnología Utilizada
-
-### Frontend
-- **HTML5 + CSS3:** Estructura y estilos
-- **JavaScript (ES6):** Lógica de procesamiento de datos
-- **Chart.js 4.4.0:** Librería de visualización (inlinada, no CDN)
-
-### Características Técnicas
-- **Offline-first:** Funciona sin conexión a internet (Chart.js embebido)
-- **Responsive:** Se adapta a distintos tamaños de pantalla
-- **Print-friendly:** Optimizado para impresión (media query `@print`)
-- **Cross-browser:** Compatible con Chrome, Firefox, Safari, Edge
-
-### Tamaño del Archivo
-- `dashboard.html`: ~250KB (incluye Chart.js completo)
-- `sesiones_canal.csv`: ~8KB
-- `pedidos_facturacion.csv`: ~6KB
-- Total: <300KB (carga instantánea)
-
----
-
-## Cómo Usar Este Dashboard
-
-### Visualización Local (Sin Servidor)
-
-1. **Descomprimir** el archivo ZIP en cualquier carpeta
-2. **Abrir** `dashboard.html` con doble clic (se abrirá en tu navegador predeterminado)
-3. **Navegar** por las secciones scrolleando
-4. **Interactuar** con los gráficos (hover para tooltips, clic en leyenda para filtrar series)
-
-### Análisis de Datos
-
-1. **Abrir CSVs** en Excel, Google Sheets o Python/R para análisis adicional
-2. **Leer informe** `informe_hallazgos.md` para contexto y recomendaciones
-3. **Validar consistencia** entre visualizaciones y datos raw
-
-### Impresión / Exportación PDF
-
-1. **Imprimir desde navegador:** Archivo → Imprimir → Guardar como PDF
-2. **Ajustar configuración:** Orientación horizontal (landscape), escala 80-90%
-3. **Resultado:** PDF multipágina con todas las visualizaciones
-
----
-
-## Estructura de Carpetas
+## 📁 Estructura de Archivos
 
 ```
 02-adquisicion-conversion/
-│
-├── dashboard.html              # Dashboard interactivo (abrir con navegador)
-├── LEEME.md                    # Este archivo
-├── informe_hallazgos.md        # Informe ejecutivo detallado
-│
+├── dashboard.html                          # Dashboard interactivo (auto-contenido)
+├── LEEME.md                               # Este archivo
+├── informe_hallazgos.md                  # Informe detallado con recomendaciones
+├── entregable-adquisicion-conversion.zip  # Paquete completo para entrega
 ├── datos/
-│   ├── sesiones_canal.csv      # Tráfico y embudo por canal/mes
-│   └── pedidos_facturacion.csv # Pedidos, facturación, márgenes
-│
-├── screenshots/
-│   ├── 01-kpis-y-canales.png   # KPIs principales y comparación de canales
-│   ├── 02-embudos.png          # Comparación de embudos de conversión
-│   ├── 03-cac-analysis.png     # Análisis de CAC por canal
-│   ├── 04-roas-rentabilidad.png # ROAS y rentabilidad
-│   └── 05-clientes-recurrentes.png # Análisis nuevos vs. recurrentes
-│
-└── entregable.zip              # Paquete completo para cliente
+│   ├── sesiones_canal.csv                # Visitas, embudos, inversión (120 filas)
+│   ├── pedidos_facturacion.csv           # Pedidos, facturación, margen (120 filas)
+│   └── kpis_computed.json                # KPIs calculados (uso interno)
+└── screenshots/
+    ├── 01-kpis-y-canales.png             # KPIs globales y origen de tráfico
+    ├── 02-embudos.png                     # Embudos de conversión por canal
+    ├── 03-cac-analysis.png                # Análisis de CAC
+    ├── 04-roas-rentabilidad.png           # ROAS waterfall y matriz CAC vs ROAS
+    └── 05-clientes-recurrentes.png        # Análisis nuevos vs. recurrentes
 ```
+
+## 📊 Secciones del Dashboard
+
+### 1. Origen del Tráfico y Conversión
+- **Gráfico de barras**: Visitas, pedidos y tasa de conversión por canal
+- **Scatter plot**: Visitas vs. conversión (tamaño = volumen de pedidos)
+- **Insight**: Análisis comparativo de eficiencia de canales
+
+### 2. Embudos de Conversión
+- **Comparación multi-canal**: 5 canales en un solo gráfico
+- **Embudos individuales**: Google Ads e Instagram (detalle granular)
+- **Insight**: Identificación de cuellos de botella por etapa
+
+### 3. Costo de Adquisición (CAC)
+- **Comparación CAC por canal**: Canales pagos vs. orgánicos
+- **Evolución temporal**: Tendencia CAC 2024
+- **Insight**: Eficiencia relativa de adquisición
+
+### 4. Rentabilidad y ROAS
+- **Waterfall chart**: Flujo de inversión a facturación (floating bars)
+- **Matriz CAC vs. ROAS**: Scatter con cuadrantes de eficiencia
+- **Margen por canal**: Facturación vs. margen de contribución
+- **Insight**: Análisis de rentabilidad integral
+
+### 5. Nuevos vs. Clientes Recurrentes
+- **Donut chart**: Distribución de pedidos
+- **KPI cards**: 6 métricas comparativas (pedidos, tickets, facturación)
+- **Insight**: Valor diferencial de clientes recurrentes
+
+## 🎨 Características de Diseño
+
+- ✅ **Responsive**: Se adapta a diferentes tamaños de pantalla
+- ✅ **Offline-first**: Sin dependencias externas (Chart.js embebido)
+- ✅ **Interactivo**: Tooltips detallados en todos los gráficos
+- ✅ **Profesional**: Estilo Power BI con gradientes y sombras
+- ✅ **Accesible**: Colores diferenciados, etiquetas claras
+- ✅ **Print-friendly**: Optimizado para impresión/PDF
+
+## 📐 Metodología
+
+### Datos Sintéticos Realistas
+
+- **12 meses** de datos (Enero-Diciembre 2024)
+- **5 canales** (Google Ads, Facebook, Instagram, Orgánico, Directo)
+- **2 tipos de cliente** (Nuevos, Recurrentes)
+- **Consistencia matemática**: Todos los KPIs derivan de los mismos datos fuente
+
+### Fórmulas Clave
+
+```
+Conversión = Pedidos / Visitas × 100
+CAC = Inversión Publicitaria / Clientes Nuevos Pagos
+ROAS = Facturación Canal / Inversión Canal
+Margen % = (Facturación - Costos Variables) / Facturación × 100
+Ticket Promedio = Facturación / Pedidos
+```
+
+### Verificaciones Implementadas
+
+- ✅ Total de visitas = suma de visitas por canal
+- ✅ Total de pedidos = suma de pedidos por canal
+- ✅ Total de facturación = suma de facturación por canal
+- ✅ ROAS calculado = facturación pagos / inversión pagos
+- ✅ CAC calculado = inversión pagos / clientes nuevos pagos
+- ✅ Tasas de conversión en rango realista (0.5-8%)
+- ✅ Screenshots únicas (verificado con MD5)
+
+## 🔧 Tecnologías Utilizadas
+
+- **HTML5 + CSS3**: Estructura y diseño
+- **Chart.js 4.4.1**: Visualizaciones (embebido, 269 KB)
+- **JavaScript Vanilla**: Lógica de renderizado
+- **Python**: Generación de datos sintéticos y validación
+- **Playwright**: Captura automatizada de screenshots
+
+## 📝 Notas Metodológicas
+
+1. **Números formateados en estilo argentino:** Puntos como separador de miles (ej. $16.500, $573.177.500)
+2. **Montos en pesos argentinos (ARS)** salvo indicación contraria
+3. **Período de análisis:** Enero-Diciembre 2024 (12 meses completos)
+4. **Margen de contribución:** Calculado como facturación menos costos variables directos (58.0% promedio)
+5. **CAC solo canales pagos:** Google Ads, Facebook, Instagram (canales orgánicos tienen CAC implícito en SEO/contenido, no medido aquí)
+6. **ROAS solo canales pagos:** Facturación generada por cada peso invertido en publicidad
+
+## 📧 Contacto
+
+Este dashboard es una **muestra de portfolio** que demuestra capacidades de:
+
+- ✅ Análisis de eficiencia comercial
+- ✅ Visualización de datos con Chart.js
+- ✅ Generación de insights accionables
+- ✅ Documentación técnica completa
+- ✅ Diseño profesional estilo Power BI
+
+Para más información o consultas sobre proyectos similares, contactar al analista.
 
 ---
 
-## Metodología de Análisis
-
-### Definiciones Clave
-
-**CAC (Customer Acquisition Cost):**
-```
-CAC = Inversión publicitaria del canal / Clientes nuevos atribuidos al canal
-```
-- Solo se considera inversión paga (Google Ads, Instagram, Facebook)
-- Canales orgánicos (Directo, Orgánico) tienen CAC pago = $0, pero sí tienen costos indirectos (SEO, branding)
-
-**ROAS (Return on Ad Spend):**
-```
-ROAS = Facturación total del canal / Inversión publicitaria
-```
-- ROAS >1.0 significa que se recupera más de lo invertido
-- ROAS <1.0 significa pérdida (destrucción de valor)
-- Benchmark mínimo aceptable: ROAS >2.0x
-
-**Tasa de Conversión:**
-```
-Conversión = (Pedidos / Visitas) × 100
-```
-- Métrica global del embudo completo
-- Varía significativamente por canal (0.6% a 15.87%)
-
-**Margen de Contribución:**
-```
-Margen = Facturación - Costos Variables Directos
-```
-- Costos variables: 42% de facturación (producto, envío, comisiones de pago)
-- Margen promedio: 58% de facturación
-- No incluye costos fijos (alquileres, sueldos, etc.)
-
-**LTV (Lifetime Value) Simplificado:**
-```
-LTV = Ticket Promedio × Número de Compras Promedio
-LTV = $17,500 × 2.74 compras = $47,950
-```
-- Basado en ratio 63.5% recurrentes / 36.5% nuevos = 1.74 compras adicionales
-- Total: 1 compra inicial + 1.74 adicionales = 2.74 compras
-
-**Ratio LTV:CAC:**
-```
-Ratio = LTV / CAC
-```
-- Benchmark mínimo saludable: 3:1
-- Benchmark excelente: >10:1
-
-### Atribución de Canal
-
-**Modelo utilizado:** Last-click attribution (atribución al último clic)
-
-- La venta se atribuye al canal de la sesión en que ocurrió la compra
-- Limitación: No considera interacciones previas (ej: vio anuncio en Instagram, buscó en Google, compró)
-- Para análisis más preciso se requeriría atribución multi-touch
-
-### Supuestos del Modelo
-
-1. **Ticket promedio constante:** $17,500 ARS (no varía significativamente por canal)
-2. **Margen constante:** 58% (costos variables proporcionales)
-3. **Estacionalidad controlada:** Los datos son mensuales, se asume distribución uniforme dentro del mes
-4. **Clientes nuevos:** Primera compra registrada en el período analizado (puede haber comprado antes de 2024)
-5. **Clientes recurrentes:** Al menos 2 compras en el período analizado
-
----
-
-## Benchmarks de la Industria
-
-### E-commerce B2C (Argentina 2024)
-
-| Métrica | Benchmark Industria | Este Negocio | Evaluación |
-|---------|---------------------|--------------|------------|
-| **Tasa de conversión** | 2-4% | 5.82% | 🟢 Por encima |
-| **Abandono de carrito** | 60-70% | 50% | 🟢 Por debajo (mejor) |
-| **CAC (Google Ads)** | $2,000-$4,000 | $1,465 | 🟢 Eficiente |
-| **CAC (Social Media)** | $3,000-$6,000 | $6,942 (Instagram) | 🔴 Muy alto |
-| **ROAS mínimo aceptable** | 2.0x | 2.31x | 🟢 Aceptable |
-| **Retención a 12 meses** | 30-40% | 38% | 🟡 En rango |
-| **Margen e-commerce** | 40-60% | 58% | 🟢 Saludable |
-
----
-
-## Casos de Uso de Este Dashboard
-
-### Para Gerente de Marketing
-- Evaluar performance de canales pagos
-- Decidir reasignación de presupuesto publicitario
-- Justificar inversión en Google Ads y reducción en Instagram
-- Monitorear evolución de CAC y ROAS
-
-### Para CEO / CFO
-- Entender rentabilidad real de inversión publicitaria
-- Evaluar oportunidad de crecimiento vs. optimización
-- Aprobar inversión en mejoras de checkout (ROI 15x)
-- Monitorear salud del negocio (retención, margen)
-
-### Para Gerente de Producto
-- Identificar fricción en embudo de conversión
-- Priorizar mejoras de UX (checkout express, métodos de pago)
-- Medir impacto de cambios en abandono de carrito
-
-### Para Data Analyst
-- Modelo de análisis replicable para otros períodos
-- Metodología documentada de cálculo de KPIs
-- Datos raw para análisis estadístico avanzado (ej: test A/B, elasticidad de precio)
-
----
-
-## Próximos Pasos Sugeridos
-
-### Análisis Complementarios
-
-1. **Análisis de cohortes:** Retención detallada por mes de adquisición
-2. **Análisis RFM:** Segmentación por Recencia, Frecuencia, Monto
-3. **Análisis de productos:** ¿Qué productos tienen mejor conversión? ¿Cuál es el CAC por categoría?
-4. **Análisis geográfico:** ¿CAC y conversión varían por región?
-5. **Análisis de dispositivos:** ¿Mobile vs. desktop tienen distinta conversión?
-6. **Análisis de atribución multi-touch:** ¿Qué canales asisten en el customer journey?
-
-### Mejoras del Dashboard
-
-1. **Filtros interactivos:** Seleccionar período, canal, segmento
-2. **Comparación de períodos:** YoY, MoM, WoW
-3. **Alertas automáticas:** Notificar cuando CAC supera umbral o ROAS cae
-4. **Integración con fuentes de datos:** Google Analytics, Google Ads API, CRM
-5. **Dashboard dinámico:** Actualización automática diaria/semanal
-
----
-
-## Contacto y Soporte
-
-Este dashboard es una **muestra de portfolio** de capacidades de análisis de negocio y visualización de datos.
-
-**Habilidades demostradas:**
-- Análisis de negocio (CAC, ROAS, LTV, embudo de conversión)
-- Síntesis de datos complejos en insights accionables
-- Visualización de datos efectiva (Chart.js, diseño Power BI-like)
-- Comunicación ejecutiva (informe de hallazgos, recomendaciones priorizadas)
-- Rigor analítico (consistencia interna, benchmarks, cálculo de ROI)
-
----
-
-## Licencia
-
-Este trabajo es una muestra de portfolio para fines demostrativos.  
-Los datos son sintéticos y no representan ningún negocio real.
-
-**Fecha de creación:** Noviembre 2024  
-**Última actualización:** Noviembre 2024  
-**Versión:** 1.0
+**Última actualización:** 2025  
+**Versión:** 3.0 (ROAS realistic, differentiated tickets, unique screenshots)  
+**Dashboard auto-contenido:** ✅ Funciona offline sin dependencias
