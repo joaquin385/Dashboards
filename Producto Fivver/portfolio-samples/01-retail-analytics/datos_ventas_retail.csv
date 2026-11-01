@@ -1,0 +1,2530 @@
+tid,date,year,month,channel,product,category,units,revenue,cost,stockDays
+T00001,2023-01-25,2023,01,Tienda 2,Producto D,Electrónica,3,73.94,48.06,180
+T00002,2023-01-21,2023,01,Tienda 1,Producto G,Electrónica,4,485.73,340.01,200
+T00003,2023-01-04,2023,01,Online,Producto E,Indumentaria,4,145.06,75.43,90
+T00004,2023-01-16,2023,01,Tienda 1,Producto B,Indumentaria,3,140.3,77.17,120
+T00005,2023-01-14,2023,01,Tienda 1,Producto A,Electrónica,4,353.52,240.39,45
+T00006,2023-01-14,2023,01,Tienda 2,Producto A,Electrónica,2,176.56,120.06,45
+T00007,2023-01-13,2023,01,Tienda 2,Producto D,Electrónica,1,25.22,16.39,180
+T00008,2023-01-16,2023,01,Tienda 2,Producto F,Hogar,2,192.01,115.2,300
+T00009,2023-01-20,2023,01,Tienda 2,Producto A,Electrónica,1,85.49,58.14,45
+T00010,2023-01-14,2023,01,Tienda 2,Producto A,Electrónica,1,87.53,59.52,45
+T00011,2023-01-10,2023,01,Tienda 2,Producto C,Hogar,3,187.39,116.18,30
+T00012,2023-01-24,2023,01,Online,Producto H,Indumentaria,3,58.59,33.98,60
+T00013,2023-01-21,2023,01,Tienda 1,Producto G,Electrónica,4,495.75,347.02,200
+T00014,2023-01-15,2023,01,Tienda 2,Producto D,Electrónica,1,25.12,16.33,180
+T00015,2023-01-09,2023,01,Tienda 1,Producto B,Indumentaria,3,137.29,75.51,120
+T00016,2023-01-02,2023,01,Online,Producto D,Electrónica,2,48.25,31.37,180
+T00017,2023-01-04,2023,01,Tienda 1,Producto D,Electrónica,3,74.28,48.28,180
+T00018,2023-01-18,2023,01,Tienda 1,Producto E,Indumentaria,1,39.59,20.58,90
+T00019,2023-01-03,2023,01,Tienda 2,Producto H,Indumentaria,2,39.72,23.04,60
+T00020,2023-01-19,2023,01,Tienda 1,Producto B,Indumentaria,4,174.06,95.73,120
+T00021,2023-01-16,2023,01,Tienda 2,Producto E,Indumentaria,1,37.44,19.47,90
+T00022,2023-01-10,2023,01,Online,Producto A,Electrónica,4,328.47,223.36,45
+T00023,2023-01-05,2023,01,Tienda 1,Producto F,Hogar,1,93.36,56.02,300
+T00024,2023-01-26,2023,01,Online,Producto C,Hogar,1,66.57,41.27,30
+T00025,2023-01-12,2023,01,Tienda 2,Producto G,Electrónica,2,245.9,172.13,200
+T00026,2023-01-10,2023,01,Tienda 2,Producto D,Electrónica,3,72.86,47.36,180
+T00027,2023-01-01,2023,01,Tienda 1,Producto D,Electrónica,4,101.01,65.65,180
+T00028,2023-01-07,2023,01,Online,Producto A,Electrónica,3,254.7,173.19,45
+T00029,2023-01-04,2023,01,Tienda 1,Producto D,Electrónica,2,49.21,31.99,180
+T00030,2023-01-28,2023,01,Tienda 1,Producto F,Hogar,1,95.76,57.46,300
+T00031,2023-01-04,2023,01,Tienda 1,Producto C,Hogar,1,63.73,39.51,30
+T00032,2023-01-07,2023,01,Online,Producto A,Electrónica,1,83.06,56.48,45
+T00033,2023-01-16,2023,01,Tienda 2,Producto A,Electrónica,5,424.7,288.8,45
+T00034,2023-01-28,2023,01,Tienda 1,Producto D,Electrónica,5,119.98,77.99,180
+T00035,2023-01-17,2023,01,Tienda 1,Producto H,Indumentaria,5,104.72,60.74,60
+T00036,2023-01-20,2023,01,Online,Producto G,Electrónica,1,117.18,82.03,200
+T00037,2023-01-10,2023,01,Online,Producto H,Indumentaria,2,39.77,23.06,60
+T00038,2023-01-16,2023,01,Online,Producto D,Electrónica,2,52.22,33.94,180
+T00039,2023-01-19,2023,01,Online,Producto E,Indumentaria,4,152.8,79.46,90
+T00040,2023-01-24,2023,01,Tienda 2,Producto B,Indumentaria,1,44.77,24.62,120
+T00041,2023-01-09,2023,01,Online,Producto A,Electrónica,1,89.09,60.58,45
+T00042,2023-01-27,2023,01,Tienda 2,Producto G,Electrónica,3,352.21,246.55,200
+T00043,2023-01-02,2023,01,Online,Producto D,Electrónica,4,102.52,66.64,180
+T00044,2023-01-13,2023,01,Tienda 1,Producto C,Hogar,1,62.17,38.54,30
+T00045,2023-01-07,2023,01,Tienda 1,Producto B,Indumentaria,1,46.47,25.56,120
+T00046,2023-01-17,2023,01,Online,Producto B,Indumentaria,2,88.82,48.85,120
+T00047,2023-01-19,2023,01,Tienda 2,Producto A,Electrónica,1,87.23,59.31,45
+T00048,2023-01-26,2023,01,Online,Producto C,Hogar,1,63.03,39.08,30
+T00049,2023-01-27,2023,01,Tienda 2,Producto E,Indumentaria,2,72.67,37.79,90
+T00050,2023-01-05,2023,01,Online,Producto A,Electrónica,4,352.65,239.8,45
+T00051,2023-01-07,2023,01,Tienda 1,Producto F,Hogar,2,198.53,119.12,300
+T00052,2023-01-06,2023,01,Online,Producto F,Hogar,2,195.37,117.22,300
+T00053,2023-01-03,2023,01,Online,Producto B,Indumentaria,2,88.37,48.6,120
+T00054,2023-01-18,2023,01,Tienda 2,Producto E,Indumentaria,1,36.9,19.19,90
+T00055,2023-01-02,2023,01,Online,Producto D,Electrónica,2,50.76,32.99,180
+T00056,2023-01-10,2023,01,Tienda 1,Producto F,Hogar,3,277.88,166.73,300
+T00057,2023-01-28,2023,01,Tienda 2,Producto G,Electrónica,2,228.94,160.26,200
+T00058,2023-01-25,2023,01,Online,Producto B,Indumentaria,3,139.36,76.65,120
+T00059,2023-01-19,2023,01,Tienda 2,Producto A,Electrónica,2,161.67,109.94,45
+T00060,2023-01-27,2023,01,Tienda 1,Producto B,Indumentaria,2,93.26,51.29,120
+T00061,2023-01-16,2023,01,Tienda 1,Producto C,Hogar,1,67.77,42.01,30
+T00062,2023-01-28,2023,01,Tienda 1,Producto G,Electrónica,3,354.94,248.46,200
+T00063,2023-01-11,2023,01,Tienda 2,Producto A,Electrónica,1,85.26,57.98,45
+T00064,2023-01-26,2023,01,Tienda 1,Producto F,Hogar,3,287.38,172.43,300
+T00065,2023-01-17,2023,01,Online,Producto C,Hogar,3,198.31,122.95,30
+T00066,2023-01-20,2023,01,Tienda 1,Producto F,Hogar,3,298.81,179.29,300
+T00067,2023-01-12,2023,01,Tienda 1,Producto D,Electrónica,1,25.01,16.26,180
+T00068,2023-01-23,2023,01,Online,Producto H,Indumentaria,2,40.12,23.27,60
+T00069,2023-01-25,2023,01,Online,Producto B,Indumentaria,1,45.52,25.04,120
+T00070,2023-01-08,2023,01,Online,Producto B,Indumentaria,2,88.29,48.56,120
+T00071,2023-01-12,2023,01,Online,Producto G,Electrónica,5,599.55,419.69,200
+T00072,2023-01-04,2023,01,Tienda 1,Producto D,Electrónica,2,48.63,31.61,180
+T00073,2023-01-03,2023,01,Tienda 1,Producto H,Indumentaria,1,20.47,11.87,60
+T00074,2023-01-18,2023,01,Tienda 1,Producto F,Hogar,2,182.66,109.6,300
+T00075,2023-01-09,2023,01,Tienda 1,Producto E,Indumentaria,4,154.81,80.5,90
+T00076,2023-01-01,2023,01,Tienda 1,Producto A,Electrónica,1,85.03,57.82,45
+T00077,2023-01-10,2023,01,Online,Producto H,Indumentaria,1,19.02,11.03,60
+T00078,2023-01-11,2023,01,Tienda 1,Producto A,Electrónica,1,82.66,56.21,45
+T00079,2023-01-19,2023,01,Tienda 1,Producto H,Indumentaria,1,20.51,11.89,60
+T00080,2023-01-03,2023,01,Tienda 1,Producto A,Electrónica,6,494.17,336.04,45
+T00081,2023-01-08,2023,01,Online,Producto C,Hogar,1,64.11,39.75,30
+T00082,2023-02-22,2023,02,Online,Producto A,Electrónica,2,161.58,109.87,45
+T00083,2023-02-18,2023,02,Tienda 2,Producto F,Hogar,1,96.17,57.7,300
+T00084,2023-02-02,2023,02,Online,Producto E,Indumentaria,2,78.09,40.61,90
+T00085,2023-02-10,2023,02,Tienda 1,Producto B,Indumentaria,7,320.1,176.05,120
+T00086,2023-02-19,2023,02,Tienda 1,Producto E,Indumentaria,2,76.84,39.96,90
+T00087,2023-02-07,2023,02,Online,Producto D,Electrónica,4,104.27,67.78,180
+T00088,2023-02-05,2023,02,Tienda 2,Producto G,Electrónica,1,125.49,87.84,200
+T00089,2023-02-05,2023,02,Tienda 2,Producto D,Electrónica,3,75.38,48.99,180
+T00090,2023-02-15,2023,02,Tienda 1,Producto H,Indumentaria,3,61.51,35.67,60
+T00091,2023-02-10,2023,02,Online,Producto E,Indumentaria,2,76.63,39.85,90
+T00092,2023-02-22,2023,02,Online,Producto H,Indumentaria,1,19.41,11.26,60
+T00093,2023-02-02,2023,02,Tienda 2,Producto C,Hogar,5,332.25,205.99,30
+T00094,2023-02-27,2023,02,Tienda 1,Producto E,Indumentaria,2,78.18,40.65,90
+T00095,2023-02-11,2023,02,Tienda 1,Producto H,Indumentaria,1,20.65,11.98,60
+T00096,2023-02-13,2023,02,Online,Producto C,Hogar,8,529.28,328.15,30
+T00097,2023-02-02,2023,02,Tienda 1,Producto H,Indumentaria,1,19.81,11.49,60
+T00098,2023-02-16,2023,02,Tienda 1,Producto C,Hogar,3,193.75,120.13,30
+T00099,2023-02-25,2023,02,Online,Producto C,Hogar,1,64.74,40.14,30
+T00100,2023-02-24,2023,02,Online,Producto F,Hogar,2,185.85,111.51,300
+T00101,2023-02-15,2023,02,Tienda 2,Producto G,Electrónica,8,979.72,685.8,200
+T00102,2023-02-13,2023,02,Tienda 1,Producto H,Indumentaria,1,20.61,11.95,60
+T00103,2023-02-20,2023,02,Tienda 2,Producto G,Electrónica,1,124.39,87.07,200
+T00104,2023-02-21,2023,02,Online,Producto A,Electrónica,3,267.26,181.74,45
+T00105,2023-02-11,2023,02,Tienda 2,Producto A,Electrónica,5,430.41,292.68,45
+T00106,2023-02-06,2023,02,Online,Producto E,Indumentaria,2,72.89,37.9,90
+T00107,2023-02-11,2023,02,Tienda 1,Producto A,Electrónica,5,430.77,292.92,45
+T00108,2023-02-19,2023,02,Tienda 2,Producto D,Electrónica,3,74.35,48.33,180
+T00109,2023-02-24,2023,02,Tienda 2,Producto E,Indumentaria,1,39.39,20.49,90
+T00110,2023-02-18,2023,02,Online,Producto A,Electrónica,2,173.85,118.22,45
+T00111,2023-02-14,2023,02,Tienda 1,Producto F,Hogar,1,95.34,57.2,300
+T00112,2023-02-17,2023,02,Tienda 2,Producto A,Electrónica,4,340.42,231.49,45
+T00113,2023-02-26,2023,02,Online,Producto D,Electrónica,1,24.03,15.62,180
+T00114,2023-02-26,2023,02,Tienda 1,Producto D,Electrónica,3,74.67,48.54,180
+T00115,2023-02-11,2023,02,Online,Producto B,Indumentaria,1,44.99,24.74,120
+T00116,2023-02-11,2023,02,Online,Producto C,Hogar,2,133.86,83.0,30
+T00117,2023-02-23,2023,02,Tienda 1,Producto G,Electrónica,1,117.38,82.17,200
+T00118,2023-02-20,2023,02,Tienda 1,Producto E,Indumentaria,1,39.77,20.68,90
+T00119,2023-02-15,2023,02,Tienda 1,Producto C,Hogar,3,187.41,116.19,30
+T00120,2023-02-09,2023,02,Tienda 1,Producto H,Indumentaria,4,82.75,47.99,60
+T00121,2023-02-12,2023,02,Tienda 1,Producto D,Electrónica,2,48.06,31.24,180
+T00122,2023-02-09,2023,02,Tienda 1,Producto C,Hogar,3,195.78,121.38,30
+T00123,2023-02-10,2023,02,Online,Producto E,Indumentaria,1,36.49,18.98,90
+T00124,2023-02-22,2023,02,Online,Producto H,Indumentaria,4,76.14,44.16,60
+T00125,2023-02-22,2023,02,Tienda 1,Producto D,Electrónica,3,72.49,47.12,180
+T00126,2023-02-21,2023,02,Tienda 1,Producto E,Indumentaria,1,36.26,18.86,90
+T00127,2023-02-23,2023,02,Tienda 2,Producto A,Electrónica,3,243.53,165.6,45
+T00128,2023-02-15,2023,02,Tienda 2,Producto H,Indumentaria,1,20.39,11.83,60
+T00129,2023-02-08,2023,02,Tienda 1,Producto C,Hogar,1,65.9,40.86,30
+T00130,2023-02-25,2023,02,Online,Producto F,Hogar,1,94.13,56.48,300
+T00131,2023-02-08,2023,02,Online,Producto G,Electrónica,1,124.09,86.86,200
+T00132,2023-02-26,2023,02,Tienda 2,Producto D,Electrónica,5,128.26,83.37,180
+T00133,2023-02-23,2023,02,Tienda 1,Producto F,Hogar,1,91.46,54.87,300
+T00134,2023-02-28,2023,02,Tienda 1,Producto F,Hogar,2,193.41,116.04,300
+T00135,2023-02-26,2023,02,Tienda 2,Producto F,Hogar,2,198.78,119.27,300
+T00136,2023-02-07,2023,02,Online,Producto H,Indumentaria,7,136.07,78.92,60
+T00137,2023-02-26,2023,02,Tienda 2,Producto D,Electrónica,4,97.12,63.13,180
+T00138,2023-02-26,2023,02,Online,Producto F,Hogar,3,285.64,171.39,300
+T00139,2023-02-04,2023,02,Online,Producto B,Indumentaria,1,46.21,25.42,120
+T00140,2023-02-13,2023,02,Tienda 1,Producto F,Hogar,2,196.05,117.63,300
+T00141,2023-02-28,2023,02,Tienda 1,Producto A,Electrónica,6,516.32,351.1,45
+T00142,2023-02-25,2023,02,Tienda 1,Producto D,Electrónica,2,52.21,33.94,180
+T00143,2023-02-27,2023,02,Online,Producto E,Indumentaria,3,110.96,57.7,90
+T00144,2023-02-03,2023,02,Tienda 2,Producto F,Hogar,1,99.6,59.76,300
+T00145,2023-02-08,2023,02,Online,Producto A,Electrónica,3,265.09,180.26,45
+T00146,2023-02-25,2023,02,Tienda 2,Producto D,Electrónica,3,75.25,48.91,180
+T00147,2023-02-21,2023,02,Tienda 2,Producto C,Hogar,2,136.24,84.47,30
+T00148,2023-02-24,2023,02,Tienda 1,Producto H,Indumentaria,2,39.35,22.82,60
+T00149,2023-02-15,2023,02,Online,Producto E,Indumentaria,5,197.9,102.91,90
+T00150,2023-02-20,2023,02,Tienda 1,Producto C,Hogar,4,265.61,164.68,30
+T00151,2023-02-01,2023,02,Tienda 1,Producto A,Electrónica,3,253.34,172.27,45
+T00152,2023-02-09,2023,02,Online,Producto A,Electrónica,8,650.75,442.51,45
+T00153,2023-02-28,2023,02,Tienda 2,Producto D,Electrónica,8,193.66,125.88,180
+T00154,2023-02-13,2023,02,Tienda 1,Producto D,Electrónica,5,125.04,81.28,180
+T00155,2023-02-27,2023,02,Tienda 2,Producto D,Electrónica,5,123.23,80.1,180
+T00156,2023-02-19,2023,02,Tienda 2,Producto A,Electrónica,1,81.95,55.73,45
+T00157,2023-02-18,2023,02,Tienda 1,Producto C,Hogar,2,126.75,78.59,30
+T00158,2023-02-07,2023,02,Tienda 1,Producto H,Indumentaria,1,20.9,12.12,60
+T00159,2023-02-11,2023,02,Tienda 1,Producto C,Hogar,4,252.28,156.41,30
+T00160,2023-02-23,2023,02,Tienda 1,Producto H,Indumentaria,2,38.7,22.44,60
+T00161,2023-02-20,2023,02,Tienda 1,Producto F,Hogar,5,470.04,282.02,300
+T00162,2023-02-28,2023,02,Online,Producto G,Electrónica,3,355.43,248.8,200
+T00163,2023-02-26,2023,02,Tienda 1,Producto F,Hogar,2,186.91,112.14,300
+T00164,2023-02-21,2023,02,Tienda 1,Producto A,Electrónica,5,444.26,302.1,45
+T00165,2023-02-08,2023,02,Online,Producto C,Hogar,2,132.76,82.31,30
+T00166,2023-02-01,2023,02,Tienda 1,Producto F,Hogar,4,396.84,238.11,300
+T00167,2023-02-27,2023,02,Online,Producto C,Hogar,2,130.9,81.16,30
+T00168,2023-02-08,2023,02,Tienda 1,Producto F,Hogar,5,492.96,295.78,300
+T00169,2023-02-19,2023,02,Tienda 1,Producto F,Hogar,1,99.36,59.62,300
+T00170,2023-02-21,2023,02,Tienda 1,Producto D,Electrónica,2,48.1,31.26,180
+T00171,2023-02-09,2023,02,Online,Producto B,Indumentaria,1,44.78,24.63,120
+T00172,2023-02-21,2023,02,Online,Producto B,Indumentaria,1,45.53,25.04,120
+T00173,2023-02-04,2023,02,Online,Producto D,Electrónica,1,24.02,15.61,180
+T00174,2023-02-14,2023,02,Tienda 1,Producto B,Indumentaria,2,86.35,47.49,120
+T00175,2023-02-06,2023,02,Online,Producto G,Electrónica,2,229.79,160.86,200
+T00176,2023-02-10,2023,02,Tienda 2,Producto H,Indumentaria,1,20.16,11.69,60
+T00177,2023-02-17,2023,02,Tienda 1,Producto D,Electrónica,2,52.39,34.05,180
+T00178,2023-02-06,2023,02,Tienda 2,Producto B,Indumentaria,1,44.02,24.21,120
+T00179,2023-02-27,2023,02,Tienda 2,Producto B,Indumentaria,3,133.71,73.54,120
+T00180,2023-02-20,2023,02,Online,Producto C,Hogar,4,272.48,168.94,30
+T00181,2023-02-22,2023,02,Tienda 2,Producto E,Indumentaria,1,39.87,20.73,90
+T00182,2023-02-21,2023,02,Tienda 1,Producto F,Hogar,2,186.5,111.9,300
+T00183,2023-03-11,2023,03,Online,Producto H,Indumentaria,1,19.68,11.41,60
+T00184,2023-03-03,2023,03,Online,Producto E,Indumentaria,1,39.3,20.43,90
+T00185,2023-03-17,2023,03,Tienda 1,Producto H,Indumentaria,1,19.32,11.21,60
+T00186,2023-03-09,2023,03,Online,Producto H,Indumentaria,1,20.62,11.96,60
+T00187,2023-03-03,2023,03,Tienda 2,Producto H,Indumentaria,1,20.61,11.95,60
+T00188,2023-03-19,2023,03,Tienda 1,Producto B,Indumentaria,1,45.48,25.02,120
+T00189,2023-03-22,2023,03,Tienda 2,Producto C,Hogar,2,133.65,82.86,30
+T00190,2023-03-16,2023,03,Online,Producto H,Indumentaria,1,20.84,12.09,60
+T00191,2023-03-01,2023,03,Online,Producto G,Electrónica,1,125.28,87.69,200
+T00192,2023-03-09,2023,03,Tienda 1,Producto H,Indumentaria,2,38.38,22.26,60
+T00193,2023-03-16,2023,03,Online,Producto A,Electrónica,4,332.58,226.15,45
+T00194,2023-03-10,2023,03,Online,Producto B,Indumentaria,3,134.84,74.16,120
+T00195,2023-03-06,2023,03,Tienda 1,Producto A,Electrónica,1,87.33,59.38,45
+T00196,2023-03-15,2023,03,Tienda 1,Producto G,Electrónica,2,242.53,169.77,200
+T00197,2023-03-23,2023,03,Tienda 1,Producto E,Indumentaria,4,158.8,82.58,90
+T00198,2023-03-27,2023,03,Tienda 1,Producto D,Electrónica,2,50.26,32.67,180
+T00199,2023-03-04,2023,03,Online,Producto C,Hogar,1,68.25,42.31,30
+T00200,2023-03-19,2023,03,Online,Producto C,Hogar,5,310.26,192.36,30
+T00201,2023-03-19,2023,03,Tienda 1,Producto C,Hogar,3,202.68,125.66,30
+T00202,2023-03-24,2023,03,Tienda 1,Producto E,Indumentaria,4,149.69,77.84,90
+T00203,2023-03-07,2023,03,Online,Producto C,Hogar,2,124.81,77.38,30
+T00204,2023-03-02,2023,03,Tienda 2,Producto H,Indumentaria,6,115.23,66.84,60
+T00205,2023-03-09,2023,03,Tienda 2,Producto D,Electrónica,4,103.49,67.27,180
+T00206,2023-03-21,2023,03,Tienda 1,Producto D,Electrónica,1,25.58,16.63,180
+T00207,2023-03-20,2023,03,Online,Producto F,Hogar,7,681.36,408.82,300
+T00208,2023-03-01,2023,03,Online,Producto B,Indumentaria,3,128.98,70.94,120
+T00209,2023-03-09,2023,03,Tienda 1,Producto H,Indumentaria,1,19.86,11.52,60
+T00210,2023-03-02,2023,03,Tienda 2,Producto E,Indumentaria,2,77.36,40.23,90
+T00211,2023-03-09,2023,03,Tienda 2,Producto C,Hogar,1,62.25,38.59,30
+T00212,2023-03-12,2023,03,Tienda 1,Producto G,Electrónica,2,229.15,160.41,200
+T00213,2023-03-07,2023,03,Online,Producto B,Indumentaria,2,87.33,48.03,120
+T00214,2023-03-17,2023,03,Tienda 2,Producto B,Indumentaria,1,45.91,25.25,120
+T00215,2023-03-04,2023,03,Tienda 1,Producto H,Indumentaria,3,59.41,34.46,60
+T00216,2023-03-03,2023,03,Tienda 2,Producto C,Hogar,1,63.46,39.34,30
+T00217,2023-03-06,2023,03,Tienda 1,Producto A,Electrónica,3,257.98,175.43,45
+T00218,2023-03-21,2023,03,Tienda 2,Producto F,Hogar,3,285.44,171.26,300
+T00219,2023-03-03,2023,03,Tienda 2,Producto H,Indumentaria,8,153.83,89.22,60
+T00220,2023-03-15,2023,03,Online,Producto A,Electrónica,5,439.23,298.68,45
+T00221,2023-03-13,2023,03,Tienda 1,Producto D,Electrónica,1,24.77,16.1,180
+T00222,2023-03-13,2023,03,Tienda 2,Producto A,Electrónica,1,87.96,59.81,45
+T00223,2023-03-10,2023,03,Tienda 2,Producto G,Electrónica,2,238.09,166.66,200
+T00224,2023-03-28,2023,03,Tienda 2,Producto D,Electrónica,1,24.23,15.75,180
+T00225,2023-03-09,2023,03,Online,Producto F,Hogar,3,287.16,172.29,300
+T00226,2023-03-21,2023,03,Online,Producto A,Electrónica,2,176.09,119.74,45
+T00227,2023-03-07,2023,03,Online,Producto D,Electrónica,1,25.3,16.44,180
+T00228,2023-03-14,2023,03,Tienda 2,Producto F,Hogar,2,195.81,117.49,300
+T00229,2023-03-24,2023,03,Tienda 1,Producto D,Electrónica,2,48.42,31.47,180
+T00230,2023-03-11,2023,03,Tienda 1,Producto A,Electrónica,5,422.42,287.25,45
+T00231,2023-03-06,2023,03,Tienda 2,Producto G,Electrónica,1,121.62,85.14,200
+T00232,2023-03-02,2023,03,Online,Producto C,Hogar,2,130.82,81.11,30
+T00233,2023-03-23,2023,03,Tienda 1,Producto F,Hogar,1,92.24,55.34,300
+T00234,2023-03-27,2023,03,Tienda 2,Producto A,Electrónica,3,262.21,178.3,45
+T00235,2023-03-01,2023,03,Tienda 1,Producto D,Electrónica,1,24.89,16.18,180
+T00236,2023-03-26,2023,03,Tienda 2,Producto H,Indumentaria,1,20.71,12.01,60
+T00237,2023-03-21,2023,03,Tienda 2,Producto D,Electrónica,1,24.08,15.65,180
+T00238,2023-03-23,2023,03,Tienda 2,Producto H,Indumentaria,5,95.36,55.31,60
+T00239,2023-03-17,2023,03,Online,Producto D,Electrónica,2,51.94,33.76,180
+T00240,2023-03-09,2023,03,Online,Producto B,Indumentaria,3,140.99,77.55,120
+T00241,2023-03-26,2023,03,Tienda 1,Producto F,Hogar,1,95.84,57.51,300
+T00242,2023-03-15,2023,03,Tienda 1,Producto A,Electrónica,3,249.5,169.66,45
+T00243,2023-03-10,2023,03,Tienda 2,Producto B,Indumentaria,2,92.85,51.07,120
+T00244,2023-03-21,2023,03,Online,Producto B,Indumentaria,1,44.16,24.29,120
+T00245,2023-03-16,2023,03,Tienda 1,Producto H,Indumentaria,2,38.04,22.06,60
+T00246,2023-03-20,2023,03,Online,Producto A,Electrónica,1,83.75,56.95,45
+T00247,2023-03-10,2023,03,Tienda 2,Producto E,Indumentaria,1,38.87,20.21,90
+T00248,2023-03-13,2023,03,Tienda 2,Producto B,Indumentaria,1,45.76,25.17,120
+T00249,2023-03-03,2023,03,Tienda 2,Producto G,Electrónica,1,122.63,85.84,200
+T00250,2023-03-05,2023,03,Online,Producto C,Hogar,5,340.78,211.28,30
+T00251,2023-03-14,2023,03,Online,Producto F,Hogar,2,183.11,109.87,300
+T00252,2023-03-06,2023,03,Tienda 1,Producto G,Electrónica,1,115.28,80.69,200
+T00253,2023-03-25,2023,03,Tienda 2,Producto C,Hogar,1,66.79,41.41,30
+T00254,2023-03-04,2023,03,Online,Producto C,Hogar,3,194.25,120.44,30
+T00255,2023-03-05,2023,03,Online,Producto H,Indumentaria,4,81.21,47.1,60
+T00256,2023-03-16,2023,03,Tienda 1,Producto B,Indumentaria,5,217.93,119.86,120
+T00257,2023-03-20,2023,03,Tienda 2,Producto C,Hogar,3,186.6,115.69,30
+T00258,2023-03-15,2023,03,Tienda 2,Producto C,Hogar,3,191.64,118.82,30
+T00259,2023-03-28,2023,03,Online,Producto B,Indumentaria,3,128.84,70.86,120
+T00260,2023-03-22,2023,03,Tienda 1,Producto D,Electrónica,2,49.36,32.09,180
+T00261,2023-03-08,2023,03,Tienda 2,Producto E,Indumentaria,1,38.3,19.92,90
+T00262,2023-03-18,2023,03,Tienda 1,Producto B,Indumentaria,1,44.93,24.71,120
+T00263,2023-03-06,2023,03,Tienda 2,Producto F,Hogar,3,290.57,174.34,300
+T00264,2023-03-19,2023,03,Online,Producto H,Indumentaria,1,20.5,11.89,60
+T00265,2023-03-18,2023,03,Online,Producto G,Electrónica,2,243.38,170.36,200
+T00266,2023-03-23,2023,03,Tienda 1,Producto C,Hogar,2,127.07,78.78,30
+T00267,2023-03-05,2023,03,Online,Producto F,Hogar,4,361.43,216.86,300
+T00268,2023-03-14,2023,03,Tienda 1,Producto D,Electrónica,4,97.64,63.46,180
+T00269,2023-03-02,2023,03,Online,Producto D,Electrónica,2,47.66,30.98,180
+T00270,2023-03-28,2023,03,Online,Producto D,Electrónica,1,25.41,16.52,180
+T00271,2023-03-17,2023,03,Tienda 2,Producto B,Indumentaria,4,181.32,99.72,120
+T00272,2023-03-16,2023,03,Tienda 2,Producto F,Hogar,2,198.23,118.94,300
+T00273,2023-03-02,2023,03,Tienda 2,Producto A,Electrónica,1,87.18,59.28,45
+T00274,2023-03-16,2023,03,Online,Producto A,Electrónica,1,83.75,56.95,45
+T00275,2023-03-04,2023,03,Online,Producto D,Electrónica,6,145.11,94.32,180
+T00276,2023-03-18,2023,03,Tienda 2,Producto H,Indumentaria,3,62.33,36.15,60
+T00277,2023-03-09,2023,03,Online,Producto G,Electrónica,5,576.5,403.55,200
+T00278,2023-03-26,2023,03,Tienda 2,Producto E,Indumentaria,4,156.39,81.32,90
+T00279,2023-03-18,2023,03,Online,Producto A,Electrónica,2,176.95,120.33,45
+T00280,2023-03-07,2023,03,Tienda 1,Producto D,Electrónica,2,52.36,34.04,180
+T00281,2023-03-22,2023,03,Tienda 2,Producto F,Hogar,1,99.61,59.77,300
+T00282,2023-03-20,2023,03,Tienda 2,Producto E,Indumentaria,1,37.49,19.49,90
+T00283,2023-03-06,2023,03,Tienda 2,Producto C,Hogar,4,261.9,162.38,30
+T00284,2023-03-15,2023,03,Tienda 1,Producto F,Hogar,3,271.92,163.15,300
+T00285,2023-03-09,2023,03,Online,Producto E,Indumentaria,4,144.75,75.27,90
+T00286,2023-03-06,2023,03,Online,Producto F,Hogar,3,297.1,178.26,300
+T00287,2023-03-02,2023,03,Online,Producto E,Indumentaria,5,181.31,94.28,90
+T00288,2023-03-16,2023,03,Online,Producto B,Indumentaria,4,187.43,103.09,120
+T00289,2023-03-17,2023,03,Online,Producto A,Electrónica,1,87.88,59.76,45
+T00290,2023-04-24,2023,04,Online,Producto A,Electrónica,4,331.81,225.63,45
+T00291,2023-04-25,2023,04,Tienda 1,Producto G,Electrónica,2,251.72,176.2,200
+T00292,2023-04-03,2023,04,Online,Producto B,Indumentaria,3,132.32,72.78,120
+T00293,2023-04-09,2023,04,Tienda 1,Producto A,Electrónica,1,88.98,60.51,45
+T00294,2023-04-20,2023,04,Tienda 1,Producto E,Indumentaria,5,196.71,102.29,90
+T00295,2023-04-15,2023,04,Online,Producto G,Electrónica,3,342.68,239.88,200
+T00296,2023-04-27,2023,04,Tienda 2,Producto B,Indumentaria,3,137.41,75.58,120
+T00297,2023-04-08,2023,04,Tienda 1,Producto C,Hogar,3,202.16,125.34,30
+T00298,2023-04-13,2023,04,Online,Producto G,Electrónica,4,459.24,321.47,200
+T00299,2023-04-24,2023,04,Tienda 1,Producto F,Hogar,3,290.81,174.49,300
+T00300,2023-04-06,2023,04,Online,Producto F,Hogar,2,187.99,112.8,300
+T00301,2023-04-17,2023,04,Tienda 1,Producto H,Indumentaria,3,60.18,34.9,60
+T00302,2023-04-16,2023,04,Online,Producto C,Hogar,1,61.93,38.4,30
+T00303,2023-04-23,2023,04,Tienda 2,Producto F,Hogar,2,195.92,117.55,300
+T00304,2023-04-14,2023,04,Tienda 1,Producto D,Electrónica,3,75.38,49.0,180
+T00305,2023-04-26,2023,04,Tienda 2,Producto H,Indumentaria,3,59.39,34.45,60
+T00306,2023-04-07,2023,04,Tienda 1,Producto C,Hogar,1,65.72,40.74,30
+T00307,2023-04-23,2023,04,Online,Producto A,Electrónica,3,245.17,166.71,45
+T00308,2023-04-16,2023,04,Tienda 1,Producto F,Hogar,6,546.51,327.91,300
+T00309,2023-04-19,2023,04,Tienda 2,Producto E,Indumentaria,1,38.08,19.8,90
+T00310,2023-04-28,2023,04,Tienda 1,Producto D,Electrónica,3,72.19,46.92,180
+T00311,2023-04-27,2023,04,Online,Producto D,Electrónica,1,23.93,15.55,180
+T00312,2023-04-02,2023,04,Online,Producto G,Electrónica,4,503.16,352.21,200
+T00313,2023-04-21,2023,04,Online,Producto G,Electrónica,5,591.78,414.25,200
+T00314,2023-04-01,2023,04,Tienda 2,Producto B,Indumentaria,2,86.15,47.38,120
+T00315,2023-04-18,2023,04,Tienda 2,Producto F,Hogar,2,188.65,113.19,300
+T00316,2023-04-20,2023,04,Online,Producto A,Electrónica,4,335.34,228.03,45
+T00317,2023-04-16,2023,04,Online,Producto E,Indumentaria,1,36.24,18.84,90
+T00318,2023-04-14,2023,04,Online,Producto F,Hogar,1,98.82,59.29,300
+T00319,2023-04-21,2023,04,Tienda 1,Producto D,Electrónica,2,48.57,31.57,180
+T00320,2023-04-18,2023,04,Tienda 2,Producto G,Electrónica,1,115.24,80.67,200
+T00321,2023-04-21,2023,04,Tienda 2,Producto E,Indumentaria,1,37.86,19.68,90
+T00322,2023-04-18,2023,04,Tienda 2,Producto C,Hogar,2,134.73,83.53,30
+T00323,2023-04-10,2023,04,Tienda 1,Producto B,Indumentaria,1,45.26,24.89,120
+T00324,2023-04-03,2023,04,Tienda 1,Producto B,Indumentaria,2,91.59,50.38,120
+T00325,2023-04-26,2023,04,Online,Producto E,Indumentaria,4,150.01,78.0,90
+T00326,2023-04-06,2023,04,Online,Producto E,Indumentaria,1,36.61,19.04,90
+T00327,2023-04-22,2023,04,Tienda 2,Producto E,Indumentaria,2,78.75,40.95,90
+T00328,2023-04-23,2023,04,Online,Producto B,Indumentaria,1,44.27,24.35,120
+T00329,2023-04-14,2023,04,Online,Producto F,Hogar,2,183.21,109.93,300
+T00330,2023-04-07,2023,04,Online,Producto D,Electrónica,2,49.11,31.92,180
+T00331,2023-04-23,2023,04,Tienda 2,Producto A,Electrónica,5,423.94,288.28,45
+T00332,2023-04-20,2023,04,Tienda 2,Producto E,Indumentaria,1,39.85,20.72,90
+T00333,2023-04-26,2023,04,Tienda 2,Producto G,Electrónica,1,121.58,85.11,200
+T00334,2023-04-27,2023,04,Online,Producto E,Indumentaria,4,144.83,75.31,90
+T00335,2023-04-25,2023,04,Tienda 1,Producto E,Indumentaria,2,77.15,40.12,90
+T00336,2023-04-10,2023,04,Online,Producto G,Electrónica,2,239.01,167.31,200
+T00337,2023-04-17,2023,04,Tienda 1,Producto C,Hogar,1,64.57,40.03,30
+T00338,2023-04-17,2023,04,Tienda 2,Producto F,Hogar,1,93.98,56.39,300
+T00339,2023-04-18,2023,04,Tienda 1,Producto D,Electrónica,1,23.76,15.44,180
+T00340,2023-04-12,2023,04,Online,Producto H,Indumentaria,4,76.28,44.24,60
+T00341,2023-04-21,2023,04,Online,Producto G,Electrónica,1,119.81,83.87,200
+T00342,2023-04-20,2023,04,Tienda 2,Producto D,Electrónica,1,25.11,16.32,180
+T00343,2023-04-16,2023,04,Tienda 1,Producto H,Indumentaria,1,20.53,11.91,60
+T00344,2023-04-26,2023,04,Tienda 1,Producto B,Indumentaria,3,133.69,73.53,120
+T00345,2023-04-24,2023,04,Tienda 2,Producto F,Hogar,5,492.75,295.65,300
+T00346,2023-04-10,2023,04,Online,Producto B,Indumentaria,3,138.27,76.05,120
+T00347,2023-04-23,2023,04,Tienda 2,Producto A,Electrónica,4,355.23,241.56,45
+T00348,2023-04-02,2023,04,Tienda 1,Producto G,Electrónica,3,367.66,257.36,200
+T00349,2023-04-01,2023,04,Online,Producto C,Hogar,3,186.65,115.72,30
+T00350,2023-04-16,2023,04,Tienda 2,Producto G,Electrónica,2,242.69,169.88,200
+T00351,2023-04-25,2023,04,Online,Producto B,Indumentaria,3,138.35,76.09,120
+T00352,2023-04-09,2023,04,Online,Producto H,Indumentaria,1,19.54,11.33,60
+T00353,2023-04-21,2023,04,Tienda 2,Producto H,Indumentaria,3,58.78,34.09,60
+T00354,2023-04-18,2023,04,Online,Producto F,Hogar,5,498.4,299.04,300
+T00355,2023-04-05,2023,04,Online,Producto F,Hogar,2,194.27,116.56,300
+T00356,2023-04-25,2023,04,Tienda 2,Producto E,Indumentaria,1,37.53,19.52,90
+T00357,2023-04-21,2023,04,Online,Producto H,Indumentaria,1,20.95,12.15,60
+T00358,2023-04-27,2023,04,Online,Producto C,Hogar,1,66.69,41.35,30
+T00359,2023-04-16,2023,04,Online,Producto A,Electrónica,5,414.49,281.86,45
+T00360,2023-04-24,2023,04,Tienda 2,Producto C,Hogar,4,258.24,160.11,30
+T00361,2023-04-02,2023,04,Tienda 2,Producto G,Electrónica,2,229.58,160.71,200
+T00362,2023-04-12,2023,04,Tienda 2,Producto E,Indumentaria,3,117.62,61.16,90
+T00363,2023-04-12,2023,04,Online,Producto H,Indumentaria,4,78.85,45.73,60
+T00364,2023-04-16,2023,04,Online,Producto E,Indumentaria,4,150.87,78.45,90
+T00365,2023-04-22,2023,04,Tienda 1,Producto G,Electrónica,3,373.19,261.23,200
+T00366,2023-04-18,2023,04,Tienda 1,Producto C,Hogar,5,314.53,195.01,30
+T00367,2023-04-15,2023,04,Online,Producto E,Indumentaria,3,109.79,57.09,90
+T00368,2023-04-26,2023,04,Online,Producto B,Indumentaria,1,43.57,23.96,120
+T00369,2023-04-10,2023,04,Tienda 2,Producto G,Electrónica,1,119.21,83.44,200
+T00370,2023-04-07,2023,04,Online,Producto D,Electrónica,2,49.38,32.09,180
+T00371,2023-04-24,2023,04,Tienda 1,Producto A,Electrónica,1,88.75,60.35,45
+T00372,2023-04-17,2023,04,Tienda 2,Producto D,Electrónica,1,25.16,16.36,180
+T00373,2023-04-22,2023,04,Tienda 2,Producto E,Indumentaria,3,119.11,61.94,90
+T00374,2023-04-19,2023,04,Tienda 1,Producto E,Indumentaria,5,189.06,98.31,90
+T00375,2023-04-10,2023,04,Tienda 1,Producto B,Indumentaria,1,44.55,24.5,120
+T00376,2023-04-04,2023,04,Tienda 1,Producto H,Indumentaria,3,62.86,36.46,60
+T00377,2023-04-05,2023,04,Tienda 2,Producto A,Electrónica,6,529.99,360.39,45
+T00378,2023-04-24,2023,04,Tienda 1,Producto F,Hogar,3,286.18,171.71,300
+T00379,2023-04-22,2023,04,Tienda 1,Producto D,Electrónica,1,25.94,16.86,180
+T00380,2023-04-11,2023,04,Tienda 2,Producto F,Hogar,2,197.71,118.63,300
+T00381,2023-04-07,2023,04,Online,Producto F,Hogar,2,184.95,110.97,300
+T00382,2023-04-07,2023,04,Tienda 1,Producto D,Electrónica,2,50.57,32.87,180
+T00383,2023-04-23,2023,04,Online,Producto E,Indumentaria,2,78.87,41.01,90
+T00384,2023-04-26,2023,04,Tienda 1,Producto D,Electrónica,1,25.33,16.46,180
+T00385,2023-05-10,2023,05,Online,Producto C,Hogar,4,247.6,153.51,30
+T00386,2023-05-06,2023,05,Tienda 1,Producto F,Hogar,5,453.67,272.2,300
+T00387,2023-05-24,2023,05,Online,Producto E,Indumentaria,2,75.11,39.06,90
+T00388,2023-05-10,2023,05,Online,Producto B,Indumentaria,2,86.03,47.31,120
+T00389,2023-05-03,2023,05,Online,Producto C,Hogar,1,61.84,38.34,30
+T00390,2023-05-19,2023,05,Tienda 1,Producto H,Indumentaria,1,20.59,11.94,60
+T00391,2023-05-11,2023,05,Online,Producto H,Indumentaria,1,20.83,12.08,60
+T00392,2023-05-28,2023,05,Tienda 2,Producto D,Electrónica,2,50.31,32.7,180
+T00393,2023-05-02,2023,05,Online,Producto D,Electrónica,6,152.17,98.91,180
+T00394,2023-05-26,2023,05,Online,Producto E,Indumentaria,4,155.65,80.94,90
+T00395,2023-05-02,2023,05,Tienda 2,Producto E,Indumentaria,3,115.94,60.29,90
+T00396,2023-05-24,2023,05,Tienda 1,Producto B,Indumentaria,2,92.82,51.05,120
+T00397,2023-05-18,2023,05,Tienda 1,Producto E,Indumentaria,3,115.06,59.83,90
+T00398,2023-05-28,2023,05,Online,Producto G,Electrónica,3,360.51,252.36,200
+T00399,2023-05-02,2023,05,Tienda 2,Producto G,Electrónica,1,114.63,80.24,200
+T00400,2023-05-08,2023,05,Tienda 2,Producto E,Indumentaria,6,216.81,112.74,90
+T00401,2023-05-09,2023,05,Tienda 2,Producto F,Hogar,3,286.04,171.63,300
+T00402,2023-05-06,2023,05,Tienda 2,Producto A,Electrónica,3,253.06,172.08,45
+T00403,2023-05-02,2023,05,Tienda 1,Producto A,Electrónica,1,85.53,58.16,45
+T00404,2023-05-08,2023,05,Online,Producto G,Electrónica,1,122.31,85.62,200
+T00405,2023-05-11,2023,05,Tienda 1,Producto A,Electrónica,4,331.99,225.75,45
+T00406,2023-05-11,2023,05,Online,Producto A,Electrónica,4,338.75,230.35,45
+T00407,2023-05-24,2023,05,Tienda 2,Producto G,Electrónica,2,240.2,168.14,200
+T00408,2023-05-09,2023,05,Tienda 2,Producto D,Electrónica,4,102.06,66.34,180
+T00409,2023-05-06,2023,05,Online,Producto G,Electrónica,2,232.01,162.41,200
+T00410,2023-05-28,2023,05,Tienda 1,Producto F,Hogar,5,487.99,292.79,300
+T00411,2023-05-17,2023,05,Tienda 1,Producto D,Electrónica,2,48.29,31.39,180
+T00412,2023-05-07,2023,05,Tienda 2,Producto F,Hogar,5,489.14,293.48,300
+T00413,2023-05-28,2023,05,Online,Producto C,Hogar,3,189.9,117.74,30
+T00414,2023-05-10,2023,05,Tienda 1,Producto D,Electrónica,4,97.63,63.46,180
+T00415,2023-05-27,2023,05,Tienda 1,Producto C,Hogar,1,63.09,39.12,30
+T00416,2023-05-09,2023,05,Tienda 1,Producto F,Hogar,1,93.76,56.25,300
+T00417,2023-05-03,2023,05,Tienda 2,Producto H,Indumentaria,1,20.94,12.14,60
+T00418,2023-05-02,2023,05,Online,Producto D,Electrónica,3,77.09,50.11,180
+T00419,2023-05-24,2023,05,Online,Producto D,Electrónica,1,23.92,15.55,180
+T00420,2023-05-17,2023,05,Online,Producto G,Electrónica,5,604.55,423.19,200
+T00421,2023-05-25,2023,05,Online,Producto A,Electrónica,2,169.43,115.21,45
+T00422,2023-05-21,2023,05,Tienda 2,Producto E,Indumentaria,5,198.69,103.32,90
+T00423,2023-05-21,2023,05,Tienda 1,Producto F,Hogar,4,387.17,232.3,300
+T00424,2023-05-06,2023,05,Tienda 1,Producto G,Electrónica,5,588.67,412.07,200
+T00425,2023-05-01,2023,05,Tienda 1,Producto B,Indumentaria,1,44.36,24.4,120
+T00426,2023-05-07,2023,05,Tienda 2,Producto H,Indumentaria,3,61.61,35.73,60
+T00427,2023-05-03,2023,05,Tienda 2,Producto G,Electrónica,1,118.4,82.88,200
+T00428,2023-05-18,2023,05,Tienda 1,Producto C,Hogar,5,312.64,193.84,30
+T00429,2023-05-07,2023,05,Tienda 2,Producto G,Electrónica,1,123.43,86.4,200
+T00430,2023-05-13,2023,05,Tienda 1,Producto B,Indumentaria,1,46.55,25.6,120
+T00431,2023-05-19,2023,05,Tienda 1,Producto E,Indumentaria,3,118.27,61.5,90
+T00432,2023-05-08,2023,05,Tienda 2,Producto E,Indumentaria,2,76.7,39.88,90
+T00433,2023-05-18,2023,05,Tienda 2,Producto H,Indumentaria,3,62.44,36.22,60
+T00434,2023-05-26,2023,05,Tienda 2,Producto A,Electrónica,4,336.66,228.93,45
+T00435,2023-05-16,2023,05,Tienda 2,Producto F,Hogar,2,194.59,116.75,300
+T00436,2023-05-19,2023,05,Tienda 2,Producto C,Hogar,6,372.99,231.25,30
+T00437,2023-05-22,2023,05,Tienda 1,Producto D,Electrónica,1,25.3,16.45,180
+T00438,2023-05-03,2023,05,Online,Producto C,Hogar,4,264.81,164.18,30
+T00439,2023-05-12,2023,05,Tienda 1,Producto B,Indumentaria,1,44.24,24.33,120
+T00440,2023-05-27,2023,05,Online,Producto D,Electrónica,2,47.66,30.98,180
+T00441,2023-05-20,2023,05,Tienda 2,Producto H,Indumentaria,3,60.49,35.09,60
+T00442,2023-05-12,2023,05,Online,Producto F,Hogar,4,388.56,233.13,300
+T00443,2023-05-07,2023,05,Tienda 1,Producto B,Indumentaria,1,43.34,23.84,120
+T00444,2023-05-12,2023,05,Tienda 1,Producto E,Indumentaria,1,37.26,19.38,90
+T00445,2023-05-05,2023,05,Tienda 1,Producto A,Electrónica,4,345.36,234.85,45
+T00446,2023-05-02,2023,05,Online,Producto E,Indumentaria,1,38.45,19.99,90
+T00447,2023-05-15,2023,05,Tienda 2,Producto C,Hogar,3,193.91,120.22,30
+T00448,2023-05-19,2023,05,Online,Producto B,Indumentaria,4,174.34,95.88,120
+T00449,2023-05-15,2023,05,Online,Producto C,Hogar,2,128.86,79.89,30
+T00450,2023-05-23,2023,05,Tienda 2,Producto A,Electrónica,2,165.03,112.22,45
+T00451,2023-05-04,2023,05,Online,Producto G,Electrónica,1,118.08,82.66,200
+T00452,2023-05-27,2023,05,Tienda 2,Producto G,Electrónica,3,365.65,255.95,200
+T00453,2023-05-19,2023,05,Tienda 1,Producto A,Electrónica,3,249.23,169.48,45
+T00454,2023-05-22,2023,05,Tienda 2,Producto D,Electrónica,1,25.46,16.55,180
+T00455,2023-05-05,2023,05,Online,Producto D,Electrónica,1,25.74,16.73,180
+T00456,2023-05-24,2023,05,Tienda 1,Producto H,Indumentaria,2,40.38,23.42,60
+T00457,2023-05-08,2023,05,Online,Producto B,Indumentaria,2,86.21,47.42,120
+T00458,2023-05-20,2023,05,Tienda 1,Producto H,Indumentaria,2,41.51,24.07,60
+T00459,2023-05-02,2023,05,Tienda 2,Producto H,Indumentaria,2,41.86,24.28,60
+T00460,2023-05-02,2023,05,Tienda 1,Producto F,Hogar,2,187.2,112.32,300
+T00461,2023-05-01,2023,05,Online,Producto C,Hogar,2,125.79,77.99,30
+T00462,2023-05-16,2023,05,Tienda 1,Producto G,Electrónica,3,354.86,248.4,200
+T00463,2023-05-23,2023,05,Tienda 2,Producto A,Electrónica,1,86.03,58.5,45
+T00464,2023-05-13,2023,05,Tienda 2,Producto B,Indumentaria,5,217.5,119.62,120
+T00465,2023-05-22,2023,05,Tienda 2,Producto H,Indumentaria,3,60.37,35.01,60
+T00466,2023-05-01,2023,05,Tienda 2,Producto D,Electrónica,1,24.8,16.12,180
+T00467,2023-05-13,2023,05,Tienda 2,Producto H,Indumentaria,5,98.73,57.26,60
+T00468,2023-05-11,2023,05,Tienda 1,Producto F,Hogar,2,192.0,115.2,300
+T00469,2023-05-08,2023,05,Online,Producto A,Electrónica,1,86.86,59.07,45
+T00470,2023-05-02,2023,05,Tienda 1,Producto B,Indumentaria,4,175.43,96.49,120
+T00471,2023-05-12,2023,05,Tienda 2,Producto G,Electrónica,2,247.62,173.33,200
+T00472,2023-05-18,2023,05,Tienda 2,Producto C,Hogar,2,128.91,79.93,30
+T00473,2023-05-11,2023,05,Tienda 2,Producto H,Indumentaria,1,20.28,11.76,60
+T00474,2023-05-08,2023,05,Online,Producto E,Indumentaria,8,289.24,150.41,90
+T00475,2023-05-10,2023,05,Tienda 1,Producto C,Hogar,3,192.75,119.5,30
+T00476,2023-05-09,2023,05,Tienda 1,Producto H,Indumentaria,1,19.37,11.24,60
+T00477,2023-05-28,2023,05,Tienda 2,Producto F,Hogar,3,287.83,172.7,300
+T00478,2023-05-08,2023,05,Online,Producto D,Electrónica,1,25.78,16.76,180
+T00479,2023-05-27,2023,05,Online,Producto H,Indumentaria,1,20.48,11.88,60
+T00480,2023-05-25,2023,05,Tienda 2,Producto C,Hogar,1,66.36,41.14,30
+T00481,2023-05-12,2023,05,Tienda 1,Producto A,Electrónica,2,170.1,115.67,45
+T00482,2023-05-07,2023,05,Tienda 1,Producto A,Electrónica,3,256.93,174.71,45
+T00483,2023-06-24,2023,06,Online,Producto E,Indumentaria,3,108.67,56.51,90
+T00484,2023-06-17,2023,06,Online,Producto E,Indumentaria,2,76.94,40.01,90
+T00485,2023-06-04,2023,06,Online,Producto H,Indumentaria,2,38.72,22.46,60
+T00486,2023-06-06,2023,06,Tienda 1,Producto C,Hogar,6,379.9,235.54,30
+T00487,2023-06-02,2023,06,Online,Producto H,Indumentaria,1,19.1,11.08,60
+T00488,2023-06-20,2023,06,Online,Producto E,Indumentaria,4,147.61,76.76,90
+T00489,2023-06-23,2023,06,Tienda 1,Producto B,Indumentaria,3,141.1,77.61,120
+T00490,2023-06-15,2023,06,Tienda 2,Producto H,Indumentaria,1,19.85,11.51,60
+T00491,2023-06-01,2023,06,Online,Producto B,Indumentaria,3,133.35,73.34,120
+T00492,2023-06-14,2023,06,Tienda 2,Producto H,Indumentaria,3,57.42,33.3,60
+T00493,2023-06-20,2023,06,Online,Producto G,Electrónica,5,599.48,419.64,200
+T00494,2023-06-09,2023,06,Tienda 1,Producto C,Hogar,4,255.37,158.33,30
+T00495,2023-06-01,2023,06,Tienda 2,Producto E,Indumentaria,5,192.46,100.08,90
+T00496,2023-06-13,2023,06,Online,Producto A,Electrónica,3,250.59,170.4,45
+T00497,2023-06-26,2023,06,Tienda 2,Producto H,Indumentaria,1,19.54,11.33,60
+T00498,2023-06-24,2023,06,Tienda 1,Producto B,Indumentaria,1,46.77,25.72,120
+T00499,2023-06-16,2023,06,Online,Producto G,Electrónica,2,236.13,165.29,200
+T00500,2023-06-08,2023,06,Tienda 2,Producto F,Hogar,2,186.4,111.84,300
+T00501,2023-06-25,2023,06,Tienda 2,Producto G,Electrónica,2,230.16,161.11,200
+T00502,2023-06-09,2023,06,Online,Producto G,Electrónica,5,629.38,440.57,200
+T00503,2023-06-03,2023,06,Tienda 1,Producto E,Indumentaria,3,110.07,57.24,90
+T00504,2023-06-05,2023,06,Tienda 2,Producto E,Indumentaria,2,74.54,38.76,90
+T00505,2023-06-15,2023,06,Online,Producto G,Electrónica,2,230.74,161.52,200
+T00506,2023-06-26,2023,06,Tienda 1,Producto D,Electrónica,3,78.75,51.19,180
+T00507,2023-06-08,2023,06,Online,Producto E,Indumentaria,2,79.23,41.2,90
+T00508,2023-06-28,2023,06,Tienda 1,Producto F,Hogar,4,387.57,232.54,300
+T00509,2023-06-28,2023,06,Online,Producto B,Indumentaria,2,90.33,49.68,120
+T00510,2023-06-07,2023,06,Online,Producto H,Indumentaria,2,40.5,23.49,60
+T00511,2023-06-15,2023,06,Tienda 2,Producto A,Electrónica,3,256.89,174.69,45
+T00512,2023-06-23,2023,06,Online,Producto H,Indumentaria,2,41.38,24.0,60
+T00513,2023-06-19,2023,06,Tienda 2,Producto A,Electrónica,4,323.53,220.0,45
+T00514,2023-06-26,2023,06,Online,Producto E,Indumentaria,2,75.45,39.23,90
+T00515,2023-06-24,2023,06,Tienda 2,Producto C,Hogar,1,62.14,38.53,30
+T00516,2023-06-26,2023,06,Tienda 1,Producto E,Indumentaria,1,38.22,19.87,90
+T00517,2023-06-08,2023,06,Online,Producto C,Hogar,2,127.71,79.18,30
+T00518,2023-06-05,2023,06,Tienda 2,Producto C,Hogar,2,136.21,84.45,30
+T00519,2023-06-12,2023,06,Online,Producto B,Indumentaria,4,188.89,103.89,120
+T00520,2023-06-25,2023,06,Tienda 2,Producto A,Electrónica,2,178.46,121.36,45
+T00521,2023-06-09,2023,06,Tienda 2,Producto C,Hogar,1,63.64,39.46,30
+T00522,2023-06-11,2023,06,Tienda 2,Producto D,Electrónica,1,23.96,15.57,180
+T00523,2023-06-13,2023,06,Tienda 2,Producto E,Indumentaria,5,197.33,102.61,90
+T00524,2023-06-05,2023,06,Online,Producto G,Electrónica,4,463.35,324.35,200
+T00525,2023-06-12,2023,06,Tienda 1,Producto D,Electrónica,1,25.33,16.46,180
+T00526,2023-06-21,2023,06,Tienda 1,Producto H,Indumentaria,2,39.05,22.65,60
+T00527,2023-06-23,2023,06,Tienda 2,Producto D,Electrónica,2,50.83,33.04,180
+T00528,2023-06-26,2023,06,Online,Producto H,Indumentaria,1,20.81,12.07,60
+T00529,2023-06-16,2023,06,Tienda 2,Producto D,Electrónica,1,25.72,16.71,180
+T00530,2023-06-16,2023,06,Tienda 2,Producto C,Hogar,3,200.13,124.08,30
+T00531,2023-06-01,2023,06,Tienda 2,Producto E,Indumentaria,4,145.63,75.73,90
+T00532,2023-06-01,2023,06,Tienda 2,Producto C,Hogar,3,200.99,124.61,30
+T00533,2023-06-13,2023,06,Tienda 2,Producto D,Electrónica,3,74.48,48.41,180
+T00534,2023-06-14,2023,06,Tienda 1,Producto F,Hogar,4,374.0,224.4,300
+T00535,2023-06-21,2023,06,Tienda 2,Producto A,Electrónica,1,88.5,60.18,45
+T00536,2023-06-12,2023,06,Tienda 1,Producto G,Electrónica,3,369.53,258.67,200
+T00537,2023-06-17,2023,06,Online,Producto F,Hogar,3,289.72,173.83,300
+T00538,2023-06-28,2023,06,Online,Producto A,Electrónica,6,507.7,345.23,45
+T00539,2023-06-17,2023,06,Tienda 1,Producto C,Hogar,2,127.35,78.96,30
+T00540,2023-06-04,2023,06,Tienda 2,Producto A,Electrónica,3,259.63,176.55,45
+T00541,2023-06-23,2023,06,Tienda 1,Producto E,Indumentaria,1,36.37,18.91,90
+T00542,2023-06-03,2023,06,Tienda 2,Producto G,Electrónica,2,245.6,171.92,200
+T00543,2023-06-26,2023,06,Online,Producto E,Indumentaria,1,37.32,19.41,90
+T00544,2023-06-06,2023,06,Tienda 2,Producto E,Indumentaria,1,37.37,19.43,90
+T00545,2023-06-14,2023,06,Online,Producto A,Electrónica,3,255.77,173.92,45
+T00546,2023-06-16,2023,06,Tienda 2,Producto G,Electrónica,8,1006.56,704.59,200
+T00547,2023-06-08,2023,06,Online,Producto D,Electrónica,4,95.88,62.32,180
+T00548,2023-06-21,2023,06,Tienda 1,Producto C,Hogar,3,195.38,121.14,30
+T00549,2023-06-23,2023,06,Tienda 1,Producto C,Hogar,2,133.73,82.91,30
+T00550,2023-06-16,2023,06,Tienda 1,Producto A,Electrónica,5,436.4,296.75,45
+T00551,2023-06-15,2023,06,Online,Producto H,Indumentaria,7,138.35,80.25,60
+T00552,2023-06-17,2023,06,Tienda 2,Producto H,Indumentaria,1,19.64,11.39,60
+T00553,2023-06-15,2023,06,Tienda 2,Producto H,Indumentaria,3,61.94,35.92,60
+T00554,2023-06-02,2023,06,Tienda 2,Producto E,Indumentaria,2,73.39,38.16,90
+T00555,2023-06-11,2023,06,Tienda 2,Producto B,Indumentaria,3,132.34,72.79,120
+T00556,2023-06-04,2023,06,Tienda 1,Producto B,Indumentaria,2,91.42,50.28,120
+T00557,2023-06-16,2023,06,Tienda 1,Producto B,Indumentaria,1,44.14,24.28,120
+T00558,2023-06-10,2023,06,Online,Producto D,Electrónica,2,49.56,32.21,180
+T00559,2023-06-19,2023,06,Tienda 2,Producto D,Electrónica,2,48.49,31.52,180
+T00560,2023-06-03,2023,06,Tienda 1,Producto F,Hogar,1,99.11,59.47,300
+T00561,2023-06-05,2023,06,Tienda 2,Producto E,Indumentaria,5,199.46,103.72,90
+T00562,2023-06-22,2023,06,Tienda 1,Producto C,Hogar,5,336.73,208.77,30
+T00563,2023-06-24,2023,06,Tienda 1,Producto A,Electrónica,1,81.7,55.56,45
+T00564,2023-06-16,2023,06,Online,Producto H,Indumentaria,2,39.68,23.01,60
+T00565,2023-06-09,2023,06,Tienda 1,Producto E,Indumentaria,2,74.36,38.66,90
+T00566,2023-06-02,2023,06,Tienda 1,Producto H,Indumentaria,1,20.24,11.74,60
+T00567,2023-06-24,2023,06,Online,Producto G,Electrónica,2,229.71,160.8,200
+T00568,2023-06-14,2023,06,Online,Producto H,Indumentaria,3,60.25,34.95,60
+T00569,2023-06-11,2023,06,Online,Producto D,Electrónica,4,96.83,62.94,180
+T00570,2023-06-02,2023,06,Tienda 2,Producto F,Hogar,2,185.07,111.04,300
+T00571,2023-06-26,2023,06,Online,Producto H,Indumentaria,1,19.46,11.29,60
+T00572,2023-06-26,2023,06,Online,Producto H,Indumentaria,1,19.26,11.17,60
+T00573,2023-06-04,2023,06,Tienda 1,Producto D,Electrónica,1,25.22,16.39,180
+T00574,2023-06-18,2023,06,Online,Producto B,Indumentaria,2,92.23,50.73,120
+T00575,2023-06-17,2023,06,Tienda 1,Producto A,Electrónica,2,163.75,111.35,45
+T00576,2023-06-01,2023,06,Tienda 2,Producto A,Electrónica,2,165.56,112.58,45
+T00577,2023-06-27,2023,06,Online,Producto B,Indumentaria,4,175.74,96.65,120
+T00578,2023-06-18,2023,06,Tienda 2,Producto A,Electrónica,2,177.25,120.53,45
+T00579,2023-06-24,2023,06,Tienda 2,Producto C,Hogar,3,201.13,124.7,30
+T00580,2023-06-26,2023,06,Tienda 2,Producto F,Hogar,1,96.06,57.63,300
+T00581,2023-06-19,2023,06,Online,Producto D,Electrónica,1,24.98,16.23,180
+T00582,2023-06-02,2023,06,Tienda 1,Producto D,Electrónica,5,129.34,84.07,180
+T00583,2023-06-19,2023,06,Tienda 1,Producto H,Indumentaria,2,38.85,22.54,60
+T00584,2023-06-23,2023,06,Tienda 2,Producto F,Hogar,1,93.92,56.35,300
+T00585,2023-06-04,2023,06,Tienda 1,Producto G,Electrónica,4,470.91,329.63,200
+T00586,2023-06-20,2023,06,Online,Producto G,Electrónica,2,228.34,159.84,200
+T00587,2023-07-13,2023,07,Online,Producto A,Electrónica,2,162.83,110.73,45
+T00588,2023-07-15,2023,07,Online,Producto D,Electrónica,1,25.12,16.33,180
+T00589,2023-07-10,2023,07,Tienda 1,Producto A,Electrónica,3,253.89,172.64,45
+T00590,2023-07-11,2023,07,Online,Producto E,Indumentaria,5,184.44,95.91,90
+T00591,2023-07-01,2023,07,Online,Producto E,Indumentaria,3,108.48,56.41,90
+T00592,2023-07-16,2023,07,Tienda 1,Producto A,Electrónica,3,261.2,177.62,45
+T00593,2023-07-13,2023,07,Tienda 1,Producto C,Hogar,1,61.81,38.32,30
+T00594,2023-07-28,2023,07,Tienda 1,Producto B,Indumentaria,3,136.57,75.12,120
+T00595,2023-07-16,2023,07,Tienda 2,Producto G,Electrónica,4,498.28,348.79,200
+T00596,2023-07-05,2023,07,Tienda 2,Producto G,Electrónica,2,246.55,172.59,200
+T00597,2023-07-20,2023,07,Online,Producto C,Hogar,3,202.89,125.79,30
+T00598,2023-07-10,2023,07,Tienda 1,Producto C,Hogar,4,254.12,157.55,30
+T00599,2023-07-05,2023,07,Tienda 2,Producto E,Indumentaria,5,185.97,96.71,90
+T00600,2023-07-08,2023,07,Tienda 1,Producto B,Indumentaria,1,44.98,24.74,120
+T00601,2023-07-05,2023,07,Tienda 2,Producto G,Electrónica,1,123.22,86.25,200
+T00602,2023-07-10,2023,07,Tienda 2,Producto F,Hogar,5,453.88,272.33,300
+T00603,2023-07-19,2023,07,Tienda 2,Producto D,Electrónica,3,78.41,50.97,180
+T00604,2023-07-12,2023,07,Online,Producto C,Hogar,3,200.61,124.38,30
+T00605,2023-07-13,2023,07,Tienda 2,Producto E,Indumentaria,4,159.23,82.8,90
+T00606,2023-07-19,2023,07,Tienda 2,Producto G,Electrónica,1,118.96,83.27,200
+T00607,2023-07-15,2023,07,Tienda 2,Producto F,Hogar,4,397.65,238.59,300
+T00608,2023-07-10,2023,07,Tienda 1,Producto B,Indumentaria,1,46.9,25.8,120
+T00609,2023-07-16,2023,07,Online,Producto B,Indumentaria,1,46.22,25.42,120
+T00610,2023-07-15,2023,07,Tienda 2,Producto G,Electrónica,5,574.02,401.81,200
+T00611,2023-07-12,2023,07,Online,Producto F,Hogar,2,196.6,117.96,300
+T00612,2023-07-12,2023,07,Tienda 1,Producto E,Indumentaria,1,38.25,19.89,90
+T00613,2023-07-14,2023,07,Tienda 2,Producto D,Electrónica,3,76.15,49.5,180
+T00614,2023-07-09,2023,07,Tienda 2,Producto D,Electrónica,1,26.21,17.04,180
+T00615,2023-07-23,2023,07,Online,Producto E,Indumentaria,1,37.72,19.61,90
+T00616,2023-07-19,2023,07,Online,Producto F,Hogar,3,299.2,179.52,300
+T00617,2023-07-09,2023,07,Online,Producto E,Indumentaria,3,113.5,59.02,90
+T00618,2023-07-01,2023,07,Tienda 1,Producto A,Electrónica,2,164.54,111.89,45
+T00619,2023-07-19,2023,07,Tienda 1,Producto C,Hogar,1,65.49,40.6,30
+T00620,2023-07-20,2023,07,Online,Producto H,Indumentaria,3,61.25,35.53,60
+T00621,2023-07-02,2023,07,Tienda 2,Producto G,Electrónica,2,233.16,163.21,200
+T00622,2023-07-03,2023,07,Tienda 1,Producto A,Electrónica,2,178.28,121.23,45
+T00623,2023-07-10,2023,07,Online,Producto G,Electrónica,2,240.29,168.2,200
+T00624,2023-07-15,2023,07,Tienda 1,Producto H,Indumentaria,1,19.24,11.16,60
+T00625,2023-07-20,2023,07,Tienda 1,Producto H,Indumentaria,1,20.74,12.03,60
+T00626,2023-07-14,2023,07,Tienda 1,Producto D,Electrónica,1,25.18,16.37,180
+T00627,2023-07-19,2023,07,Online,Producto E,Indumentaria,7,270.29,140.55,90
+T00628,2023-07-05,2023,07,Tienda 1,Producto F,Hogar,4,364.34,218.6,300
+T00629,2023-07-07,2023,07,Online,Producto A,Electrónica,1,88.53,60.2,45
+T00630,2023-07-26,2023,07,Tienda 1,Producto E,Indumentaria,3,119.15,61.96,90
+T00631,2023-07-08,2023,07,Tienda 2,Producto G,Electrónica,2,228.02,159.61,200
+T00632,2023-07-17,2023,07,Tienda 2,Producto G,Electrónica,2,230.2,161.14,200
+T00633,2023-07-15,2023,07,Online,Producto G,Electrónica,4,478.9,335.23,200
+T00634,2023-07-25,2023,07,Tienda 2,Producto E,Indumentaria,1,36.43,18.94,90
+T00635,2023-07-02,2023,07,Online,Producto A,Electrónica,1,85.44,58.1,45
+T00636,2023-07-16,2023,07,Tienda 2,Producto G,Electrónica,1,115.21,80.65,200
+T00637,2023-07-15,2023,07,Tienda 2,Producto E,Indumentaria,3,111.65,58.06,90
+T00638,2023-07-23,2023,07,Online,Producto H,Indumentaria,1,20.98,12.17,60
+T00639,2023-07-18,2023,07,Tienda 2,Producto B,Indumentaria,2,92.32,50.78,120
+T00640,2023-07-05,2023,07,Online,Producto E,Indumentaria,4,147.4,76.65,90
+T00641,2023-07-12,2023,07,Tienda 2,Producto A,Electrónica,6,493.3,335.44,45
+T00642,2023-07-26,2023,07,Tienda 2,Producto C,Hogar,1,66.16,41.02,30
+T00643,2023-07-12,2023,07,Online,Producto H,Indumentaria,3,58.72,34.06,60
+T00644,2023-07-25,2023,07,Tienda 1,Producto D,Electrónica,2,47.91,31.14,180
+T00645,2023-07-22,2023,07,Tienda 2,Producto E,Indumentaria,1,39.11,20.34,90
+T00646,2023-07-27,2023,07,Tienda 1,Producto E,Indumentaria,3,110.49,57.46,90
+T00647,2023-07-04,2023,07,Tienda 2,Producto E,Indumentaria,2,77.55,40.33,90
+T00648,2023-07-02,2023,07,Online,Producto D,Electrónica,5,126.54,82.25,180
+T00649,2023-07-21,2023,07,Tienda 1,Producto A,Electrónica,3,259.42,176.41,45
+T00650,2023-07-05,2023,07,Online,Producto C,Hogar,2,132.8,82.33,30
+T00651,2023-07-20,2023,07,Tienda 1,Producto A,Electrónica,2,166.91,113.5,45
+T00652,2023-07-08,2023,07,Tienda 1,Producto D,Electrónica,1,24.21,15.74,180
+T00653,2023-07-02,2023,07,Online,Producto F,Hogar,2,183.38,110.03,300
+T00654,2023-07-17,2023,07,Tienda 2,Producto C,Hogar,2,127.49,79.05,30
+T00655,2023-07-21,2023,07,Online,Producto E,Indumentaria,1,36.34,18.89,90
+T00656,2023-07-20,2023,07,Tienda 2,Producto A,Electrónica,2,166.47,113.2,45
+T00657,2023-07-14,2023,07,Online,Producto E,Indumentaria,1,37.26,19.37,90
+T00658,2023-07-05,2023,07,Online,Producto H,Indumentaria,4,78.6,45.59,60
+T00659,2023-07-05,2023,07,Online,Producto F,Hogar,4,393.67,236.2,300
+T00660,2023-07-12,2023,07,Online,Producto H,Indumentaria,3,60.41,35.04,60
+T00661,2023-07-17,2023,07,Online,Producto E,Indumentaria,2,74.7,38.84,90
+T00662,2023-07-20,2023,07,Tienda 1,Producto C,Hogar,3,190.23,117.94,30
+T00663,2023-07-17,2023,07,Tienda 1,Producto F,Hogar,4,383.92,230.35,300
+T00664,2023-07-17,2023,07,Online,Producto E,Indumentaria,2,77.89,40.5,90
+T00665,2023-07-15,2023,07,Online,Producto A,Electrónica,3,245.36,166.85,45
+T00666,2023-07-26,2023,07,Online,Producto E,Indumentaria,1,38.14,19.83,90
+T00667,2023-07-21,2023,07,Tienda 1,Producto B,Indumentaria,6,267.13,146.92,120
+T00668,2023-07-11,2023,07,Online,Producto E,Indumentaria,5,190.62,99.12,90
+T00669,2023-07-11,2023,07,Tienda 1,Producto C,Hogar,2,126.02,78.13,30
+T00670,2023-07-14,2023,07,Tienda 1,Producto B,Indumentaria,3,130.8,71.94,120
+T00671,2023-07-21,2023,07,Online,Producto A,Electrónica,1,86.38,58.74,45
+T00672,2023-07-24,2023,07,Online,Producto A,Electrónica,6,521.99,354.95,45
+T00673,2023-07-27,2023,07,Online,Producto B,Indumentaria,1,45.97,25.29,120
+T00674,2023-07-21,2023,07,Tienda 2,Producto A,Electrónica,1,81.92,55.71,45
+T00675,2023-07-13,2023,07,Tienda 2,Producto D,Electrónica,2,50.61,32.9,180
+T00676,2023-07-17,2023,07,Online,Producto A,Electrónica,2,177.74,120.86,45
+T00677,2023-07-15,2023,07,Online,Producto D,Electrónica,3,73.87,48.02,180
+T00678,2023-07-17,2023,07,Online,Producto H,Indumentaria,1,20.84,12.09,60
+T00679,2023-07-25,2023,07,Online,Producto D,Electrónica,1,26.11,16.97,180
+T00680,2023-07-28,2023,07,Online,Producto G,Electrónica,3,364.45,255.11,200
+T00681,2023-07-18,2023,07,Tienda 1,Producto B,Indumentaria,4,174.92,96.2,120
+T00682,2023-07-13,2023,07,Tienda 1,Producto C,Hogar,2,131.98,81.83,30
+T00683,2023-07-21,2023,07,Tienda 2,Producto F,Hogar,1,97.68,58.61,300
+T00684,2023-07-26,2023,07,Online,Producto H,Indumentaria,5,96.22,55.81,60
+T00685,2023-08-19,2023,08,Tienda 1,Producto F,Hogar,2,192.56,115.54,300
+T00686,2023-08-15,2023,08,Tienda 1,Producto G,Electrónica,1,125.6,87.92,200
+T00687,2023-08-08,2023,08,Tienda 1,Producto C,Hogar,1,66.94,41.51,30
+T00688,2023-08-19,2023,08,Online,Producto G,Electrónica,2,233.76,163.63,200
+T00689,2023-08-10,2023,08,Online,Producto H,Indumentaria,5,97.78,56.71,60
+T00690,2023-08-03,2023,08,Tienda 2,Producto H,Indumentaria,3,61.96,35.93,60
+T00691,2023-08-08,2023,08,Tienda 2,Producto G,Electrónica,3,372.25,260.58,200
+T00692,2023-08-23,2023,08,Online,Producto G,Electrónica,2,229.25,160.47,200
+T00693,2023-08-02,2023,08,Online,Producto D,Electrónica,2,50.34,32.72,180
+T00694,2023-08-25,2023,08,Online,Producto C,Hogar,3,203.54,126.19,30
+T00695,2023-08-17,2023,08,Tienda 2,Producto H,Indumentaria,2,38.02,22.05,60
+T00696,2023-08-01,2023,08,Tienda 1,Producto D,Electrónica,1,24.85,16.15,180
+T00697,2023-08-10,2023,08,Tienda 2,Producto A,Electrónica,2,162.11,110.23,45
+T00698,2023-08-15,2023,08,Online,Producto A,Electrónica,1,84.69,57.59,45
+T00699,2023-08-21,2023,08,Online,Producto B,Indumentaria,3,140.51,77.28,120
+T00700,2023-08-02,2023,08,Online,Producto F,Hogar,1,98.98,59.39,300
+T00701,2023-08-10,2023,08,Tienda 2,Producto C,Hogar,5,320.27,198.57,30
+T00702,2023-08-08,2023,08,Tienda 1,Producto C,Hogar,1,64.42,39.94,30
+T00703,2023-08-04,2023,08,Tienda 2,Producto C,Hogar,1,63.79,39.55,30
+T00704,2023-08-05,2023,08,Online,Producto A,Electrónica,2,166.57,113.27,45
+T00705,2023-08-28,2023,08,Tienda 2,Producto D,Electrónica,2,50.34,32.72,180
+T00706,2023-08-16,2023,08,Online,Producto C,Hogar,1,62.83,38.95,30
+T00707,2023-08-19,2023,08,Tienda 1,Producto H,Indumentaria,3,61.48,35.66,60
+T00708,2023-08-07,2023,08,Online,Producto E,Indumentaria,6,238.32,123.93,90
+T00709,2023-08-20,2023,08,Online,Producto B,Indumentaria,3,135.51,74.53,120
+T00710,2023-08-27,2023,08,Tienda 1,Producto C,Hogar,4,269.04,166.8,30
+T00711,2023-08-20,2023,08,Tienda 1,Producto F,Hogar,2,195.94,117.56,300
+T00712,2023-08-25,2023,08,Online,Producto F,Hogar,4,361.05,216.63,300
+T00713,2023-08-02,2023,08,Tienda 1,Producto H,Indumentaria,3,57.72,33.48,60
+T00714,2023-08-03,2023,08,Online,Producto E,Indumentaria,7,264.23,137.4,90
+T00715,2023-08-16,2023,08,Online,Producto E,Indumentaria,3,109.8,57.1,90
+T00716,2023-08-05,2023,08,Tienda 1,Producto F,Hogar,2,198.12,118.87,300
+T00717,2023-08-12,2023,08,Tienda 2,Producto C,Hogar,1,63.77,39.53,30
+T00718,2023-08-06,2023,08,Tienda 1,Producto C,Hogar,2,134.91,83.64,30
+T00719,2023-08-25,2023,08,Tienda 1,Producto C,Hogar,3,204.07,126.52,30
+T00720,2023-08-11,2023,08,Tienda 2,Producto C,Hogar,4,254.83,157.99,30
+T00721,2023-08-25,2023,08,Tienda 1,Producto D,Electrónica,1,24.62,16.0,180
+T00722,2023-08-20,2023,08,Tienda 1,Producto F,Hogar,1,92.8,55.68,300
+T00723,2023-08-26,2023,08,Tienda 2,Producto C,Hogar,1,64.77,40.16,30
+T00724,2023-08-09,2023,08,Tienda 2,Producto A,Electrónica,6,520.5,353.94,45
+T00725,2023-08-28,2023,08,Tienda 2,Producto G,Electrónica,2,247.15,173.01,200
+T00726,2023-08-12,2023,08,Online,Producto F,Hogar,5,481.4,288.84,300
+T00727,2023-08-06,2023,08,Tienda 2,Producto C,Hogar,4,253.16,156.96,30
+T00728,2023-08-14,2023,08,Tienda 2,Producto H,Indumentaria,1,20.27,11.76,60
+T00729,2023-08-12,2023,08,Tienda 2,Producto B,Indumentaria,1,46.01,25.31,120
+T00730,2023-08-08,2023,08,Tienda 2,Producto F,Hogar,4,367.6,220.56,300
+T00731,2023-08-02,2023,08,Tienda 1,Producto F,Hogar,1,95.02,57.01,300
+T00732,2023-08-09,2023,08,Tienda 1,Producto G,Electrónica,3,374.7,262.29,200
+T00733,2023-08-03,2023,08,Tienda 2,Producto G,Electrónica,1,123.56,86.49,200
+T00734,2023-08-10,2023,08,Online,Producto G,Electrónica,1,116.94,81.86,200
+T00735,2023-08-07,2023,08,Online,Producto D,Electrónica,2,51.89,33.73,180
+T00736,2023-08-20,2023,08,Online,Producto A,Electrónica,3,256.23,174.24,45
+T00737,2023-08-25,2023,08,Tienda 2,Producto C,Hogar,6,373.84,231.78,30
+T00738,2023-08-19,2023,08,Tienda 1,Producto A,Electrónica,1,88.67,60.3,45
+T00739,2023-08-19,2023,08,Tienda 1,Producto A,Electrónica,4,341.29,232.08,45
+T00740,2023-08-01,2023,08,Tienda 2,Producto C,Hogar,4,255.83,158.62,30
+T00741,2023-08-24,2023,08,Tienda 1,Producto F,Hogar,3,271.04,162.62,300
+T00742,2023-08-27,2023,08,Online,Producto D,Electrónica,2,48.57,31.57,180
+T00743,2023-08-03,2023,08,Online,Producto A,Electrónica,1,87.08,59.21,45
+T00744,2023-08-16,2023,08,Tienda 1,Producto A,Electrónica,2,165.1,112.27,45
+T00745,2023-08-25,2023,08,Online,Producto G,Electrónica,5,602.99,422.09,200
+T00746,2023-08-23,2023,08,Tienda 1,Producto F,Hogar,2,183.55,110.13,300
+T00747,2023-08-22,2023,08,Tienda 2,Producto F,Hogar,3,280.48,168.29,300
+T00748,2023-08-17,2023,08,Tienda 2,Producto F,Hogar,2,186.14,111.68,300
+T00749,2023-08-05,2023,08,Tienda 2,Producto A,Electrónica,6,526.91,358.3,45
+T00750,2023-08-09,2023,08,Tienda 1,Producto A,Electrónica,2,176.9,120.29,45
+T00751,2023-08-24,2023,08,Tienda 2,Producto A,Electrónica,2,176.75,120.19,45
+T00752,2023-08-26,2023,08,Online,Producto A,Electrónica,1,81.01,55.09,45
+T00753,2023-08-16,2023,08,Tienda 2,Producto B,Indumentaria,3,139.76,76.87,120
+T00754,2023-08-04,2023,08,Online,Producto F,Hogar,4,375.06,225.03,300
+T00755,2023-08-26,2023,08,Tienda 1,Producto F,Hogar,4,377.05,226.23,300
+T00756,2023-08-23,2023,08,Tienda 1,Producto F,Hogar,2,189.94,113.97,300
+T00757,2023-08-14,2023,08,Tienda 2,Producto H,Indumentaria,3,58.54,33.95,60
+T00758,2023-08-06,2023,08,Tienda 1,Producto C,Hogar,2,134.92,83.65,30
+T00759,2023-08-03,2023,08,Tienda 1,Producto H,Indumentaria,3,61.24,35.52,60
+T00760,2023-08-17,2023,08,Tienda 1,Producto B,Indumentaria,3,138.94,76.42,120
+T00761,2023-08-19,2023,08,Tienda 2,Producto G,Electrónica,2,250.74,175.51,200
+T00762,2023-08-25,2023,08,Tienda 2,Producto B,Indumentaria,3,135.8,74.69,120
+T00763,2023-08-12,2023,08,Tienda 1,Producto B,Indumentaria,4,178.03,97.91,120
+T00764,2023-08-25,2023,08,Tienda 1,Producto H,Indumentaria,2,41.51,24.08,60
+T00765,2023-08-01,2023,08,Online,Producto G,Electrónica,1,118.98,83.29,200
+T00766,2023-08-22,2023,08,Tienda 1,Producto A,Electrónica,2,162.03,110.18,45
+T00767,2023-08-24,2023,08,Tienda 1,Producto A,Electrónica,1,88.24,60.0,45
+T00768,2023-08-03,2023,08,Online,Producto F,Hogar,2,198.13,118.88,300
+T00769,2023-08-24,2023,08,Tienda 2,Producto E,Indumentaria,3,109.16,56.77,90
+T00770,2023-08-26,2023,08,Tienda 1,Producto C,Hogar,1,68.06,42.2,30
+T00771,2023-08-07,2023,08,Online,Producto A,Electrónica,2,165.21,112.34,45
+T00772,2023-08-27,2023,08,Tienda 2,Producto F,Hogar,2,196.39,117.83,300
+T00773,2023-08-13,2023,08,Online,Producto B,Indumentaria,8,349.26,192.09,120
+T00774,2023-08-24,2023,08,Tienda 2,Producto A,Electrónica,4,333.28,226.63,45
+T00775,2023-08-11,2023,08,Online,Producto E,Indumentaria,2,77.93,40.52,90
+T00776,2023-08-13,2023,08,Tienda 1,Producto G,Electrónica,3,357.64,250.35,200
+T00777,2023-08-13,2023,08,Online,Producto B,Indumentaria,2,92.86,51.07,120
+T00778,2023-08-05,2023,08,Tienda 1,Producto F,Hogar,1,97.86,58.71,300
+T00779,2023-08-27,2023,08,Tienda 2,Producto E,Indumentaria,6,231.38,120.32,90
+T00780,2023-08-17,2023,08,Tienda 1,Producto C,Hogar,4,272.95,169.23,30
+T00781,2023-08-16,2023,08,Tienda 2,Producto E,Indumentaria,1,37.61,19.56,90
+T00782,2023-08-27,2023,08,Tienda 1,Producto C,Hogar,2,127.5,79.05,30
+T00783,2023-08-04,2023,08,Online,Producto F,Hogar,3,281.61,168.97,300
+T00784,2023-09-08,2023,09,Tienda 1,Producto C,Hogar,1,64.07,39.72,30
+T00785,2023-09-05,2023,09,Online,Producto D,Electrónica,4,97.23,63.2,180
+T00786,2023-09-09,2023,09,Online,Producto D,Electrónica,4,99.36,64.59,180
+T00787,2023-09-07,2023,09,Tienda 1,Producto H,Indumentaria,1,19.87,11.52,60
+T00788,2023-09-20,2023,09,Online,Producto E,Indumentaria,2,77.14,40.11,90
+T00789,2023-09-11,2023,09,Online,Producto H,Indumentaria,6,115.53,67.01,60
+T00790,2023-09-05,2023,09,Online,Producto E,Indumentaria,5,193.38,100.56,90
+T00791,2023-09-21,2023,09,Tienda 1,Producto D,Electrónica,4,97.82,63.58,180
+T00792,2023-09-18,2023,09,Online,Producto A,Electrónica,3,245.21,166.74,45
+T00793,2023-09-23,2023,09,Online,Producto H,Indumentaria,2,41.8,24.25,60
+T00794,2023-09-19,2023,09,Online,Producto E,Indumentaria,1,39.05,20.31,90
+T00795,2023-09-13,2023,09,Online,Producto C,Hogar,1,63.48,39.36,30
+T00796,2023-09-14,2023,09,Tienda 2,Producto H,Indumentaria,1,20.98,12.17,60
+T00797,2023-09-10,2023,09,Tienda 2,Producto F,Hogar,1,98.71,59.23,300
+T00798,2023-09-23,2023,09,Tienda 1,Producto A,Electrónica,1,81.72,55.57,45
+T00799,2023-09-03,2023,09,Tienda 1,Producto E,Indumentaria,1,36.25,18.85,90
+T00800,2023-09-01,2023,09,Tienda 1,Producto B,Indumentaria,3,141.61,77.89,120
+T00801,2023-09-09,2023,09,Online,Producto E,Indumentaria,5,188.05,97.79,90
+T00802,2023-09-09,2023,09,Online,Producto H,Indumentaria,2,38.01,22.05,60
+T00803,2023-09-04,2023,09,Online,Producto H,Indumentaria,4,80.51,46.7,60
+T00804,2023-09-21,2023,09,Tienda 1,Producto B,Indumentaria,2,86.48,47.56,120
+T00805,2023-09-19,2023,09,Tienda 1,Producto H,Indumentaria,1,19.06,11.06,60
+T00806,2023-09-19,2023,09,Tienda 2,Producto F,Hogar,3,294.88,176.93,300
+T00807,2023-09-06,2023,09,Tienda 2,Producto A,Electrónica,4,343.23,233.39,45
+T00808,2023-09-15,2023,09,Tienda 1,Producto A,Electrónica,2,167.93,114.19,45
+T00809,2023-09-09,2023,09,Tienda 1,Producto H,Indumentaria,2,41.69,24.18,60
+T00810,2023-09-18,2023,09,Online,Producto B,Indumentaria,1,45.25,24.89,120
+T00811,2023-09-16,2023,09,Tienda 1,Producto A,Electrónica,1,81.19,55.21,45
+T00812,2023-09-01,2023,09,Tienda 2,Producto E,Indumentaria,3,113.87,59.21,90
+T00813,2023-09-17,2023,09,Tienda 1,Producto H,Indumentaria,3,59.44,34.47,60
+T00814,2023-09-11,2023,09,Online,Producto B,Indumentaria,5,218.73,120.3,120
+T00815,2023-09-11,2023,09,Online,Producto H,Indumentaria,1,19.76,11.46,60
+T00816,2023-09-06,2023,09,Online,Producto D,Electrónica,2,49.7,32.31,180
+T00817,2023-09-27,2023,09,Online,Producto A,Electrónica,5,418.36,284.48,45
+T00818,2023-09-24,2023,09,Tienda 2,Producto C,Hogar,3,197.18,122.25,30
+T00819,2023-09-19,2023,09,Tienda 1,Producto D,Electrónica,3,73.77,47.95,180
+T00820,2023-09-09,2023,09,Tienda 1,Producto H,Indumentaria,2,40.16,23.29,60
+T00821,2023-09-21,2023,09,Tienda 1,Producto B,Indumentaria,1,45.23,24.87,120
+T00822,2023-09-26,2023,09,Tienda 1,Producto D,Electrónica,5,130.99,85.15,180
+T00823,2023-09-10,2023,09,Tienda 1,Producto F,Hogar,1,96.45,57.87,300
+T00824,2023-09-24,2023,09,Tienda 1,Producto F,Hogar,4,393.59,236.16,300
+T00825,2023-09-22,2023,09,Online,Producto C,Hogar,5,309.74,192.04,30
+T00826,2023-09-07,2023,09,Tienda 1,Producto H,Indumentaria,4,80.67,46.79,60
+T00827,2023-09-03,2023,09,Tienda 1,Producto E,Indumentaria,1,36.39,18.92,90
+T00828,2023-09-06,2023,09,Tienda 2,Producto F,Hogar,1,95.64,57.38,300
+T00829,2023-09-02,2023,09,Tienda 1,Producto E,Indumentaria,1,39.84,20.72,90
+T00830,2023-09-09,2023,09,Online,Producto C,Hogar,4,264.51,164.0,30
+T00831,2023-09-13,2023,09,Online,Producto C,Hogar,1,62.33,38.65,30
+T00832,2023-09-20,2023,09,Online,Producto D,Electrónica,1,25.53,16.59,180
+T00833,2023-09-12,2023,09,Tienda 2,Producto B,Indumentaria,4,176.31,96.97,120
+T00834,2023-09-26,2023,09,Online,Producto F,Hogar,1,97.21,58.33,300
+T00835,2023-09-22,2023,09,Tienda 1,Producto C,Hogar,2,127.58,79.1,30
+T00836,2023-09-26,2023,09,Tienda 2,Producto C,Hogar,2,133.33,82.66,30
+T00837,2023-09-18,2023,09,Online,Producto C,Hogar,5,336.24,208.47,30
+T00838,2023-09-24,2023,09,Tienda 2,Producto G,Electrónica,2,250.29,175.2,200
+T00839,2023-09-16,2023,09,Tienda 1,Producto G,Electrónica,1,121.63,85.14,200
+T00840,2023-09-10,2023,09,Online,Producto F,Hogar,1,97.46,58.48,300
+T00841,2023-09-03,2023,09,Tienda 1,Producto D,Electrónica,1,23.93,15.56,180
+T00842,2023-09-08,2023,09,Online,Producto E,Indumentaria,1,38.91,20.23,90
+T00843,2023-09-27,2023,09,Tienda 2,Producto F,Hogar,1,95.9,57.54,300
+T00844,2023-09-02,2023,09,Online,Producto H,Indumentaria,4,76.89,44.6,60
+T00845,2023-09-08,2023,09,Tienda 2,Producto A,Electrónica,5,409.28,278.31,45
+T00846,2023-09-28,2023,09,Online,Producto E,Indumentaria,1,36.52,18.99,90
+T00847,2023-09-27,2023,09,Online,Producto F,Hogar,1,92.13,55.28,300
+T00848,2023-09-19,2023,09,Tienda 1,Producto B,Indumentaria,2,86.16,47.39,120
+T00849,2023-09-03,2023,09,Online,Producto C,Hogar,1,64.04,39.71,30
+T00850,2023-09-03,2023,09,Tienda 2,Producto C,Hogar,6,391.7,242.85,30
+T00851,2023-09-10,2023,09,Tienda 1,Producto C,Hogar,1,63.37,39.29,30
+T00852,2023-09-28,2023,09,Online,Producto D,Electrónica,1,24.09,15.66,180
+T00853,2023-09-28,2023,09,Tienda 1,Producto C,Hogar,1,63.0,39.06,30
+T00854,2023-09-16,2023,09,Tienda 1,Producto A,Electrónica,4,349.81,237.87,45
+T00855,2023-09-19,2023,09,Tienda 2,Producto G,Electrónica,1,125.61,87.92,200
+T00856,2023-09-25,2023,09,Online,Producto C,Hogar,2,135.06,83.74,30
+T00857,2023-09-02,2023,09,Tienda 1,Producto F,Hogar,3,282.19,169.32,300
+T00858,2023-09-27,2023,09,Online,Producto G,Electrónica,3,359.44,251.61,200
+T00859,2023-09-07,2023,09,Online,Producto C,Hogar,3,187.53,116.27,30
+T00860,2023-09-06,2023,09,Tienda 2,Producto B,Indumentaria,1,46.49,25.57,120
+T00861,2023-09-18,2023,09,Tienda 1,Producto G,Electrónica,2,251.81,176.27,200
+T00862,2023-09-18,2023,09,Tienda 2,Producto C,Hogar,3,203.05,125.89,30
+T00863,2023-09-21,2023,09,Tienda 2,Producto E,Indumentaria,2,77.13,40.11,90
+T00864,2023-09-11,2023,09,Online,Producto H,Indumentaria,2,39.13,22.69,60
+T00865,2023-09-27,2023,09,Tienda 1,Producto A,Electrónica,2,165.32,112.42,45
+T00866,2023-09-03,2023,09,Tienda 1,Producto C,Hogar,2,124.46,77.16,30
+T00867,2023-09-02,2023,09,Tienda 2,Producto D,Electrónica,1,26.07,16.94,180
+T00868,2023-09-19,2023,09,Tienda 2,Producto B,Indumentaria,5,217.71,119.74,120
+T00869,2023-09-15,2023,09,Tienda 2,Producto A,Electrónica,2,167.56,113.94,45
+T00870,2023-09-06,2023,09,Tienda 2,Producto D,Electrónica,2,47.82,31.08,180
+T00871,2023-09-23,2023,09,Tienda 2,Producto C,Hogar,2,133.46,82.75,30
+T00872,2023-09-05,2023,09,Online,Producto C,Hogar,4,272.88,169.18,30
+T00873,2023-09-02,2023,09,Online,Producto A,Electrónica,3,248.04,168.66,45
+T00874,2023-09-21,2023,09,Online,Producto B,Indumentaria,1,43.88,24.14,120
+T00875,2023-09-10,2023,09,Tienda 2,Producto C,Hogar,1,63.51,39.38,30
+T00876,2023-09-09,2023,09,Online,Producto H,Indumentaria,1,19.83,11.5,60
+T00877,2023-09-28,2023,09,Tienda 1,Producto A,Electrónica,1,89.06,60.56,45
+T00878,2023-09-24,2023,09,Tienda 1,Producto H,Indumentaria,3,58.61,34.0,60
+T00879,2023-09-24,2023,09,Tienda 1,Producto H,Indumentaria,5,103.54,60.05,60
+T00880,2023-09-18,2023,09,Tienda 1,Producto E,Indumentaria,4,155.81,81.02,90
+T00881,2023-09-19,2023,09,Online,Producto A,Electrónica,4,350.75,238.51,45
+T00882,2023-09-05,2023,09,Tienda 2,Producto G,Electrónica,1,121.8,85.26,200
+T00883,2023-09-04,2023,09,Tienda 2,Producto C,Hogar,5,320.02,198.41,30
+T00884,2023-10-13,2023,10,Online,Producto H,Indumentaria,2,40.27,23.35,60
+T00885,2023-10-28,2023,10,Tienda 2,Producto B,Indumentaria,1,44.76,24.62,120
+T00886,2023-10-28,2023,10,Online,Producto B,Indumentaria,3,138.37,76.1,120
+T00887,2023-10-21,2023,10,Tienda 2,Producto G,Electrónica,1,124.11,86.87,200
+T00888,2023-10-28,2023,10,Online,Producto F,Hogar,3,272.63,163.58,300
+T00889,2023-10-07,2023,10,Online,Producto A,Electrónica,1,86.58,58.88,45
+T00890,2023-10-27,2023,10,Tienda 1,Producto H,Indumentaria,2,39.0,22.62,60
+T00891,2023-10-18,2023,10,Tienda 1,Producto F,Hogar,2,181.46,108.88,300
+T00892,2023-10-04,2023,10,Tienda 2,Producto A,Electrónica,1,86.53,58.84,45
+T00893,2023-10-16,2023,10,Tienda 2,Producto F,Hogar,3,273.65,164.19,300
+T00894,2023-10-15,2023,10,Tienda 2,Producto G,Electrónica,2,240.06,168.04,200
+T00895,2023-10-13,2023,10,Tienda 1,Producto G,Electrónica,1,121.65,85.15,200
+T00896,2023-10-27,2023,10,Tienda 2,Producto C,Hogar,1,67.45,41.82,30
+T00897,2023-10-08,2023,10,Tienda 2,Producto A,Electrónica,3,265.64,180.64,45
+T00898,2023-10-02,2023,10,Tienda 1,Producto B,Indumentaria,4,182.6,100.43,120
+T00899,2023-10-25,2023,10,Tienda 2,Producto G,Electrónica,3,356.48,249.53,200
+T00900,2023-10-19,2023,10,Tienda 2,Producto A,Electrónica,4,347.74,236.47,45
+T00901,2023-10-28,2023,10,Tienda 1,Producto F,Hogar,3,278.55,167.13,300
+T00902,2023-10-14,2023,10,Tienda 1,Producto E,Indumentaria,1,36.43,18.94,90
+T00903,2023-10-15,2023,10,Tienda 1,Producto A,Electrónica,3,251.07,170.73,45
+T00904,2023-10-16,2023,10,Online,Producto A,Electrónica,3,261.27,177.66,45
+T00905,2023-10-19,2023,10,Online,Producto C,Hogar,8,513.61,318.44,30
+T00906,2023-10-22,2023,10,Tienda 1,Producto E,Indumentaria,1,39.85,20.72,90
+T00907,2023-10-26,2023,10,Tienda 2,Producto F,Hogar,1,95.74,57.44,300
+T00908,2023-10-10,2023,10,Online,Producto E,Indumentaria,3,111.79,58.13,90
+T00909,2023-10-16,2023,10,Tienda 2,Producto F,Hogar,4,380.78,228.47,300
+T00910,2023-10-18,2023,10,Tienda 2,Producto E,Indumentaria,1,37.86,19.69,90
+T00911,2023-10-11,2023,10,Online,Producto E,Indumentaria,2,75.87,39.45,90
+T00912,2023-10-11,2023,10,Tienda 1,Producto B,Indumentaria,2,91.5,50.33,120
+T00913,2023-10-06,2023,10,Tienda 2,Producto F,Hogar,4,398.4,239.04,300
+T00914,2023-10-10,2023,10,Online,Producto C,Hogar,5,311.71,193.26,30
+T00915,2023-10-10,2023,10,Tienda 1,Producto D,Electrónica,6,156.93,102.01,180
+T00916,2023-10-10,2023,10,Online,Producto G,Electrónica,4,462.36,323.65,200
+T00917,2023-10-12,2023,10,Tienda 2,Producto H,Indumentaria,5,101.76,59.02,60
+T00918,2023-10-05,2023,10,Tienda 1,Producto G,Electrónica,2,243.01,170.11,200
+T00919,2023-10-11,2023,10,Tienda 1,Producto E,Indumentaria,1,38.1,19.81,90
+T00920,2023-10-08,2023,10,Tienda 2,Producto F,Hogar,1,97.8,58.68,300
+T00921,2023-10-19,2023,10,Tienda 1,Producto G,Electrónica,2,244.1,170.87,200
+T00922,2023-10-02,2023,10,Tienda 2,Producto H,Indumentaria,7,143.79,83.4,60
+T00923,2023-10-12,2023,10,Tienda 2,Producto F,Hogar,4,372.68,223.61,300
+T00924,2023-10-25,2023,10,Tienda 1,Producto G,Electrónica,2,251.06,175.75,200
+T00925,2023-10-21,2023,10,Tienda 1,Producto G,Electrónica,3,361.61,253.13,200
+T00926,2023-10-23,2023,10,Tienda 1,Producto C,Hogar,4,263.32,163.26,30
+T00927,2023-10-28,2023,10,Tienda 2,Producto H,Indumentaria,1,20.51,11.89,60
+T00928,2023-10-06,2023,10,Tienda 2,Producto F,Hogar,4,373.28,223.97,300
+T00929,2023-10-24,2023,10,Tienda 1,Producto G,Electrónica,4,478.06,334.64,200
+T00930,2023-10-02,2023,10,Online,Producto A,Electrónica,4,324.91,220.94,45
+T00931,2023-10-14,2023,10,Tienda 1,Producto A,Electrónica,2,171.5,116.62,45
+T00932,2023-10-01,2023,10,Tienda 2,Producto C,Hogar,1,64.68,40.1,30
+T00933,2023-10-08,2023,10,Tienda 1,Producto E,Indumentaria,3,111.2,57.82,90
+T00934,2023-10-22,2023,10,Tienda 2,Producto D,Electrónica,5,124.6,80.99,180
+T00935,2023-10-01,2023,10,Online,Producto F,Hogar,6,551.35,330.81,300
+T00936,2023-10-14,2023,10,Online,Producto F,Hogar,2,193.11,115.86,300
+T00937,2023-10-28,2023,10,Tienda 2,Producto A,Electrónica,1,81.64,55.52,45
+T00938,2023-10-05,2023,10,Tienda 1,Producto C,Hogar,3,198.76,123.23,30
+T00939,2023-10-17,2023,10,Tienda 1,Producto A,Electrónica,1,85.73,58.29,45
+T00940,2023-10-17,2023,10,Tienda 1,Producto E,Indumentaria,2,73.75,38.35,90
+T00941,2023-10-12,2023,10,Online,Producto F,Hogar,3,279.96,167.98,300
+T00942,2023-10-17,2023,10,Tienda 1,Producto E,Indumentaria,1,37.62,19.56,90
+T00943,2023-10-10,2023,10,Tienda 1,Producto A,Electrónica,1,86.64,58.91,45
+T00944,2023-10-14,2023,10,Tienda 1,Producto F,Hogar,2,190.78,114.47,300
+T00945,2023-10-01,2023,10,Online,Producto C,Hogar,5,326.82,202.63,30
+T00946,2023-10-03,2023,10,Online,Producto G,Electrónica,2,243.3,170.31,200
+T00947,2023-10-24,2023,10,Online,Producto D,Electrónica,1,24.99,16.24,180
+T00948,2023-10-19,2023,10,Tienda 1,Producto C,Hogar,3,202.18,125.35,30
+T00949,2023-10-09,2023,10,Tienda 1,Producto A,Electrónica,4,324.25,220.49,45
+T00950,2023-10-24,2023,10,Online,Producto D,Electrónica,3,71.3,46.34,180
+T00951,2023-10-12,2023,10,Tienda 1,Producto A,Electrónica,1,80.78,54.93,45
+T00952,2023-10-23,2023,10,Tienda 1,Producto H,Indumentaria,2,40.01,23.21,60
+T00953,2023-10-28,2023,10,Tienda 1,Producto B,Indumentaria,4,188.91,103.9,120
+T00954,2023-10-28,2023,10,Online,Producto D,Electrónica,1,24.32,15.81,180
+T00955,2023-10-01,2023,10,Tienda 2,Producto C,Hogar,4,268.96,166.76,30
+T00956,2023-10-10,2023,10,Online,Producto H,Indumentaria,2,41.86,24.28,60
+T00957,2023-10-24,2023,10,Tienda 2,Producto F,Hogar,3,298.14,178.88,300
+T00958,2023-10-20,2023,10,Online,Producto D,Electrónica,4,100.0,65.0,180
+T00959,2023-10-05,2023,10,Online,Producto H,Indumentaria,4,83.77,48.58,60
+T00960,2023-10-05,2023,10,Online,Producto F,Hogar,2,183.16,109.9,300
+T00961,2023-10-23,2023,10,Tienda 2,Producto F,Hogar,1,94.29,56.57,300
+T00962,2023-10-14,2023,10,Tienda 2,Producto C,Hogar,1,64.01,39.68,30
+T00963,2023-10-20,2023,10,Online,Producto H,Indumentaria,3,60.72,35.22,60
+T00964,2023-10-09,2023,10,Online,Producto C,Hogar,1,66.72,41.37,30
+T00965,2023-10-27,2023,10,Online,Producto G,Electrónica,2,230.69,161.48,200
+T00966,2023-10-25,2023,10,Tienda 1,Producto A,Electrónica,2,168.38,114.5,45
+T00967,2023-10-04,2023,10,Tienda 2,Producto B,Indumentaria,2,89.73,49.35,120
+T00968,2023-10-13,2023,10,Tienda 2,Producto E,Indumentaria,5,188.57,98.05,90
+T00969,2023-10-13,2023,10,Online,Producto E,Indumentaria,1,38.27,19.9,90
+T00970,2023-10-11,2023,10,Online,Producto E,Indumentaria,2,77.53,40.32,90
+T00971,2023-10-08,2023,10,Tienda 2,Producto F,Hogar,1,95.45,57.27,300
+T00972,2023-10-10,2023,10,Online,Producto F,Hogar,2,198.18,118.91,300
+T00973,2023-10-18,2023,10,Online,Producto B,Indumentaria,1,45.86,25.22,120
+T00974,2023-10-03,2023,10,Tienda 1,Producto B,Indumentaria,2,86.09,47.35,120
+T00975,2023-10-22,2023,10,Online,Producto A,Electrónica,2,165.2,112.34,45
+T00976,2023-10-14,2023,10,Online,Producto F,Hogar,1,99.03,59.42,300
+T00977,2023-10-21,2023,10,Tienda 2,Producto C,Hogar,5,317.39,196.78,30
+T00978,2023-10-28,2023,10,Online,Producto A,Electrónica,3,254.81,173.27,45
+T00979,2023-10-23,2023,10,Online,Producto F,Hogar,8,743.04,445.82,300
+T00980,2023-11-19,2023,11,Online,Producto C,Hogar,4,250.7,155.44,30
+T00981,2023-11-17,2023,11,Tienda 2,Producto A,Electrónica,3,255.33,173.62,45
+T00982,2023-11-09,2023,11,Online,Producto H,Indumentaria,1,20.99,12.17,60
+T00983,2023-11-11,2023,11,Online,Producto C,Hogar,4,257.3,159.52,30
+T00984,2023-11-17,2023,11,Online,Producto C,Hogar,4,262.68,162.86,30
+T00985,2023-11-19,2023,11,Tienda 2,Producto H,Indumentaria,1,19.7,11.42,60
+T00986,2023-11-06,2023,11,Online,Producto H,Indumentaria,1,19.04,11.04,60
+T00987,2023-11-27,2023,11,Tienda 1,Producto E,Indumentaria,4,144.65,75.22,90
+T00988,2023-11-21,2023,11,Tienda 1,Producto A,Electrónica,8,663.93,451.47,45
+T00989,2023-11-09,2023,11,Tienda 1,Producto D,Electrónica,1,25.69,16.7,180
+T00990,2023-11-06,2023,11,Online,Producto D,Electrónica,1,24.31,15.8,180
+T00991,2023-11-06,2023,11,Tienda 2,Producto G,Electrónica,1,122.26,85.58,200
+T00992,2023-11-27,2023,11,Tienda 2,Producto E,Indumentaria,1,37.88,19.7,90
+T00993,2023-11-19,2023,11,Tienda 1,Producto F,Hogar,3,278.62,167.17,300
+T00994,2023-11-06,2023,11,Tienda 1,Producto F,Hogar,5,455.32,273.19,300
+T00995,2023-11-21,2023,11,Tienda 2,Producto G,Electrónica,5,587.92,411.55,200
+T00996,2023-11-21,2023,11,Online,Producto C,Hogar,1,68.2,42.29,30
+T00997,2023-11-23,2023,11,Online,Producto A,Electrónica,1,87.73,59.66,45
+T00998,2023-11-10,2023,11,Tienda 2,Producto H,Indumentaria,1,20.9,12.12,60
+T00999,2023-11-19,2023,11,Tienda 2,Producto D,Electrónica,5,127.07,82.6,180
+T01000,2023-11-22,2023,11,Online,Producto B,Indumentaria,2,86.6,47.63,120
+T01001,2023-11-19,2023,11,Online,Producto E,Indumentaria,2,76.63,39.85,90
+T01002,2023-11-25,2023,11,Tienda 1,Producto E,Indumentaria,8,290.52,151.07,90
+T01003,2023-11-19,2023,11,Tienda 2,Producto A,Electrónica,1,81.86,55.67,45
+T01004,2023-11-20,2023,11,Tienda 2,Producto G,Electrónica,2,228.77,160.14,200
+T01005,2023-11-13,2023,11,Tienda 2,Producto D,Electrónica,4,100.62,65.4,180
+T01006,2023-11-23,2023,11,Tienda 1,Producto F,Hogar,3,293.49,176.09,300
+T01007,2023-11-23,2023,11,Tienda 1,Producto G,Electrónica,5,574.41,402.09,200
+T01008,2023-11-16,2023,11,Tienda 1,Producto B,Indumentaria,7,305.36,167.95,120
+T01009,2023-11-27,2023,11,Tienda 2,Producto A,Electrónica,1,87.12,59.24,45
+T01010,2023-11-06,2023,11,Tienda 1,Producto F,Hogar,1,93.62,56.17,300
+T01011,2023-11-23,2023,11,Tienda 2,Producto A,Electrónica,2,169.09,114.98,45
+T01012,2023-11-15,2023,11,Online,Producto A,Electrónica,3,253.69,172.51,45
+T01013,2023-11-28,2023,11,Tienda 1,Producto G,Electrónica,3,363.49,254.44,200
+T01014,2023-11-02,2023,11,Tienda 1,Producto D,Electrónica,2,51.16,33.25,180
+T01015,2023-11-21,2023,11,Tienda 1,Producto H,Indumentaria,7,141.69,82.18,60
+T01016,2023-11-26,2023,11,Tienda 2,Producto B,Indumentaria,1,44.71,24.59,120
+T01017,2023-11-22,2023,11,Tienda 2,Producto E,Indumentaria,3,109.24,56.81,90
+T01018,2023-11-17,2023,11,Tienda 1,Producto E,Indumentaria,7,274.9,142.95,90
+T01019,2023-11-18,2023,11,Online,Producto D,Electrónica,7,176.27,114.57,180
+T01020,2023-11-16,2023,11,Tienda 2,Producto A,Electrónica,3,267.69,182.03,45
+T01021,2023-11-20,2023,11,Online,Producto C,Hogar,1,64.75,40.15,30
+T01022,2023-11-27,2023,11,Tienda 1,Producto B,Indumentaria,1,42.77,23.52,120
+T01023,2023-11-28,2023,11,Tienda 2,Producto F,Hogar,1,97.21,58.33,300
+T01024,2023-11-01,2023,11,Tienda 2,Producto E,Indumentaria,2,72.72,37.81,90
+T01025,2023-11-25,2023,11,Tienda 1,Producto B,Indumentaria,3,138.63,76.25,120
+T01026,2023-11-22,2023,11,Tienda 2,Producto A,Electrónica,2,172.57,117.35,45
+T01027,2023-11-22,2023,11,Tienda 1,Producto C,Hogar,7,442.28,274.21,30
+T01028,2023-11-21,2023,11,Tienda 1,Producto E,Indumentaria,2,75.42,39.22,90
+T01029,2023-11-27,2023,11,Tienda 2,Producto D,Electrónica,2,50.11,32.57,180
+T01030,2023-11-28,2023,11,Tienda 2,Producto A,Electrónica,1,89.11,60.6,45
+T01031,2023-11-16,2023,11,Tienda 2,Producto D,Electrónica,2,52.26,33.97,180
+T01032,2023-11-21,2023,11,Online,Producto C,Hogar,4,264.01,163.68,30
+T01033,2023-11-09,2023,11,Tienda 2,Producto B,Indumentaria,1,46.43,25.54,120
+T01034,2023-11-28,2023,11,Tienda 2,Producto H,Indumentaria,1,20.3,11.78,60
+T01035,2023-11-17,2023,11,Tienda 2,Producto B,Indumentaria,2,93.55,51.45,120
+T01036,2023-11-08,2023,11,Tienda 1,Producto G,Electrónica,3,357.11,249.98,200
+T01037,2023-11-26,2023,11,Tienda 2,Producto B,Indumentaria,1,47.07,25.89,120
+T01038,2023-11-22,2023,11,Tienda 2,Producto B,Indumentaria,1,43.95,24.17,120
+T01039,2023-11-07,2023,11,Tienda 2,Producto H,Indumentaria,1,19.75,11.46,60
+T01040,2023-11-09,2023,11,Online,Producto C,Hogar,4,253.01,156.86,30
+T01041,2023-11-07,2023,11,Tienda 2,Producto E,Indumentaria,4,158.53,82.44,90
+T01042,2023-11-03,2023,11,Tienda 1,Producto F,Hogar,1,94.19,56.51,300
+T01043,2023-11-10,2023,11,Tienda 2,Producto F,Hogar,2,182.14,109.29,300
+T01044,2023-11-04,2023,11,Tienda 2,Producto C,Hogar,2,132.77,82.32,30
+T01045,2023-11-21,2023,11,Tienda 2,Producto G,Electrónica,4,475.57,332.9,200
+T01046,2023-11-17,2023,11,Tienda 2,Producto C,Hogar,1,68.22,42.3,30
+T01047,2023-11-27,2023,11,Online,Producto E,Indumentaria,2,74.0,38.48,90
+T01048,2023-11-23,2023,11,Online,Producto B,Indumentaria,2,92.86,51.07,120
+T01049,2023-11-14,2023,11,Online,Producto C,Hogar,5,337.64,209.34,30
+T01050,2023-11-12,2023,11,Tienda 1,Producto F,Hogar,2,189.13,113.48,300
+T01051,2023-11-18,2023,11,Online,Producto H,Indumentaria,4,82.78,48.01,60
+T01052,2023-11-02,2023,11,Online,Producto G,Electrónica,5,625.86,438.1,200
+T01053,2023-11-13,2023,11,Tienda 2,Producto C,Hogar,2,127.43,79.01,30
+T01054,2023-11-14,2023,11,Online,Producto E,Indumentaria,3,109.25,56.81,90
+T01055,2023-11-14,2023,11,Tienda 1,Producto C,Hogar,2,129.72,80.43,30
+T01056,2023-11-03,2023,11,Tienda 2,Producto G,Electrónica,2,230.0,161.0,200
+T01057,2023-11-02,2023,11,Online,Producto A,Electrónica,5,424.75,288.83,45
+T01058,2023-11-22,2023,11,Tienda 2,Producto H,Indumentaria,4,79.98,46.39,60
+T01059,2023-11-18,2023,11,Tienda 1,Producto H,Indumentaria,2,41.12,23.85,60
+T01060,2023-11-01,2023,11,Tienda 1,Producto G,Electrónica,1,124.69,87.28,200
+T01061,2023-12-10,2023,12,Tienda 2,Producto C,Hogar,2,134.08,83.13,30
+T01062,2023-12-15,2023,12,Tienda 2,Producto G,Electrónica,6,691.44,484.01,200
+T01063,2023-12-20,2023,12,Online,Producto F,Hogar,2,186.85,112.11,300
+T01064,2023-12-14,2023,12,Tienda 1,Producto E,Indumentaria,3,114.19,59.38,90
+T01065,2023-12-26,2023,12,Online,Producto H,Indumentaria,2,41.55,24.1,60
+T01066,2023-12-17,2023,12,Tienda 2,Producto B,Indumentaria,3,138.03,75.92,120
+T01067,2023-12-28,2023,12,Tienda 1,Producto B,Indumentaria,3,133.37,73.36,120
+T01068,2023-12-03,2023,12,Tienda 1,Producto A,Electrónica,1,84.53,57.48,45
+T01069,2023-12-26,2023,12,Tienda 1,Producto B,Indumentaria,4,185.85,102.22,120
+T01070,2023-12-22,2023,12,Tienda 1,Producto C,Hogar,1,66.46,41.21,30
+T01071,2023-12-13,2023,12,Tienda 1,Producto C,Hogar,1,67.0,41.54,30
+T01072,2023-12-12,2023,12,Tienda 1,Producto A,Electrónica,1,84.08,57.17,45
+T01073,2023-12-14,2023,12,Tienda 2,Producto E,Indumentaria,6,226.62,117.84,90
+T01074,2023-12-19,2023,12,Tienda 1,Producto H,Indumentaria,1,19.92,11.55,60
+T01075,2023-12-25,2023,12,Tienda 1,Producto F,Hogar,2,194.64,116.78,300
+T01076,2023-12-21,2023,12,Tienda 1,Producto F,Hogar,4,382.46,229.47,300
+T01077,2023-12-19,2023,12,Tienda 1,Producto A,Electrónica,1,85.44,58.1,45
+T01078,2023-12-21,2023,12,Tienda 1,Producto H,Indumentaria,2,41.4,24.01,60
+T01079,2023-12-22,2023,12,Tienda 1,Producto A,Electrónica,2,177.59,120.76,45
+T01080,2023-12-03,2023,12,Tienda 2,Producto E,Indumentaria,3,116.36,60.51,90
+T01081,2023-12-19,2023,12,Tienda 2,Producto F,Hogar,6,592.57,355.54,300
+T01082,2023-12-07,2023,12,Online,Producto F,Hogar,3,274.97,164.98,300
+T01083,2023-12-23,2023,12,Tienda 2,Producto F,Hogar,2,194.93,116.96,300
+T01084,2023-12-12,2023,12,Tienda 2,Producto B,Indumentaria,6,268.02,147.41,120
+T01085,2023-12-02,2023,12,Tienda 2,Producto H,Indumentaria,2,41.55,24.1,60
+T01086,2023-12-23,2023,12,Tienda 2,Producto E,Indumentaria,1,37.84,19.67,90
+T01087,2023-12-10,2023,12,Tienda 1,Producto G,Electrónica,2,237.9,166.53,200
+T01088,2023-12-14,2023,12,Online,Producto H,Indumentaria,1,19.0,11.02,60
+T01089,2023-12-12,2023,12,Tienda 2,Producto A,Electrónica,4,331.9,225.69,45
+T01090,2023-12-26,2023,12,Tienda 1,Producto A,Electrónica,1,83.64,56.87,45
+T01091,2023-12-19,2023,12,Online,Producto A,Electrónica,1,83.05,56.47,45
+T01092,2023-12-12,2023,12,Online,Producto H,Indumentaria,1,20.44,11.86,60
+T01093,2023-12-22,2023,12,Tienda 1,Producto C,Hogar,1,63.33,39.26,30
+T01094,2023-12-09,2023,12,Tienda 2,Producto H,Indumentaria,2,40.88,23.71,60
+T01095,2023-12-17,2023,12,Tienda 1,Producto E,Indumentaria,2,74.9,38.95,90
+T01096,2023-12-05,2023,12,Online,Producto G,Electrónica,4,490.89,343.62,200
+T01097,2023-12-17,2023,12,Tienda 1,Producto E,Indumentaria,1,38.52,20.03,90
+T01098,2023-12-13,2023,12,Tienda 2,Producto A,Electrónica,1,88.15,59.94,45
+T01099,2023-12-04,2023,12,Tienda 1,Producto C,Hogar,3,191.47,118.71,30
+T01100,2023-12-23,2023,12,Tienda 1,Producto B,Indumentaria,2,88.57,48.71,120
+T01101,2023-12-11,2023,12,Online,Producto D,Electrónica,3,76.96,50.02,180
+T01102,2023-12-23,2023,12,Online,Producto D,Electrónica,2,48.44,31.49,180
+T01103,2023-12-15,2023,12,Online,Producto B,Indumentaria,3,132.58,72.92,120
+T01104,2023-12-01,2023,12,Tienda 2,Producto C,Hogar,1,63.66,39.47,30
+T01105,2023-12-11,2023,12,Online,Producto C,Hogar,1,66.98,41.53,30
+T01106,2023-12-24,2023,12,Online,Producto F,Hogar,1,97.6,58.56,300
+T01107,2023-12-04,2023,12,Tienda 1,Producto H,Indumentaria,6,121.31,70.36,60
+T01108,2023-12-14,2023,12,Tienda 2,Producto C,Hogar,2,129.67,80.4,30
+T01109,2023-12-28,2023,12,Tienda 1,Producto D,Electrónica,1,24.49,15.92,180
+T01110,2023-12-24,2023,12,Tienda 2,Producto E,Indumentaria,3,115.51,60.07,90
+T01111,2023-12-20,2023,12,Tienda 1,Producto E,Indumentaria,4,154.33,80.25,90
+T01112,2023-12-19,2023,12,Online,Producto B,Indumentaria,1,45.46,25.0,120
+T01113,2023-12-05,2023,12,Tienda 2,Producto E,Indumentaria,3,113.02,58.77,90
+T01114,2023-12-01,2023,12,Tienda 2,Producto E,Indumentaria,3,115.54,60.08,90
+T01115,2023-12-10,2023,12,Tienda 2,Producto F,Hogar,2,196.81,118.09,300
+T01116,2023-12-03,2023,12,Online,Producto F,Hogar,2,184.11,110.47,300
+T01117,2023-12-06,2023,12,Tienda 2,Producto C,Hogar,3,203.69,126.29,30
+T01118,2023-12-18,2023,12,Online,Producto C,Hogar,2,124.15,76.98,30
+T01119,2023-12-20,2023,12,Tienda 1,Producto E,Indumentaria,4,150.14,78.07,90
+T01120,2023-12-11,2023,12,Tienda 2,Producto B,Indumentaria,5,234.97,129.23,120
+T01121,2023-12-10,2023,12,Online,Producto H,Indumentaria,2,40.77,23.64,60
+T01122,2023-12-15,2023,12,Online,Producto B,Indumentaria,5,220.12,121.07,120
+T01123,2023-12-02,2023,12,Tienda 1,Producto H,Indumentaria,3,61.06,35.42,60
+T01124,2023-12-09,2023,12,Tienda 2,Producto D,Electrónica,1,26.12,16.98,180
+T01125,2023-12-08,2023,12,Online,Producto H,Indumentaria,2,38.4,22.27,60
+T01126,2023-12-05,2023,12,Tienda 1,Producto D,Electrónica,5,122.01,79.31,180
+T01127,2023-12-08,2023,12,Tienda 1,Producto E,Indumentaria,5,182.49,94.89,90
+T01128,2023-12-08,2023,12,Tienda 1,Producto C,Hogar,2,135.14,83.79,30
+T01129,2023-12-16,2023,12,Online,Producto D,Electrónica,2,49.95,32.47,180
+T01130,2023-12-12,2023,12,Online,Producto F,Hogar,1,94.16,56.49,300
+T01131,2023-12-17,2023,12,Online,Producto H,Indumentaria,2,41.25,23.92,60
+T01132,2023-12-15,2023,12,Online,Producto E,Indumentaria,3,116.27,60.46,90
+T01133,2023-12-06,2023,12,Tienda 1,Producto C,Hogar,3,196.7,121.95,30
+T01134,2023-12-08,2023,12,Tienda 1,Producto F,Hogar,1,92.74,55.65,300
+T01135,2023-12-25,2023,12,Online,Producto B,Indumentaria,2,92.5,50.88,120
+T01136,2023-12-28,2023,12,Tienda 1,Producto A,Electrónica,1,85.49,58.13,45
+T01137,2023-12-06,2023,12,Tienda 2,Producto D,Electrónica,4,99.5,64.67,180
+T01138,2023-12-20,2023,12,Online,Producto D,Electrónica,1,25.48,16.56,180
+T01139,2023-12-19,2023,12,Tienda 2,Producto B,Indumentaria,1,46.59,25.63,120
+T01140,2023-12-20,2023,12,Online,Producto D,Electrónica,2,51.99,33.79,180
+T01141,2023-12-28,2023,12,Online,Producto C,Hogar,3,202.38,125.48,30
+T01142,2023-12-01,2023,12,Tienda 2,Producto B,Indumentaria,5,223.78,123.08,120
+T01143,2023-12-11,2023,12,Tienda 1,Producto E,Indumentaria,4,145.2,75.5,90
+T01144,2023-12-25,2023,12,Tienda 1,Producto H,Indumentaria,1,19.11,11.09,60
+T01145,2023-12-05,2023,12,Online,Producto D,Electrónica,1,24.09,15.66,180
+T01146,2023-12-05,2023,12,Online,Producto F,Hogar,2,182.82,109.69,300
+T01147,2023-12-27,2023,12,Tienda 2,Producto C,Hogar,3,201.78,125.1,30
+T01148,2023-12-05,2023,12,Tienda 1,Producto D,Electrónica,8,206.11,133.97,180
+T01149,2023-12-15,2023,12,Online,Producto B,Indumentaria,2,91.98,50.59,120
+T01150,2023-12-27,2023,12,Online,Producto D,Electrónica,2,47.97,31.18,180
+T01151,2023-12-14,2023,12,Online,Producto E,Indumentaria,3,110.24,57.32,90
+T01152,2023-12-17,2023,12,Online,Producto F,Hogar,2,190.21,114.12,300
+T01153,2023-12-16,2023,12,Online,Producto B,Indumentaria,2,90.71,49.89,120
+T01154,2023-12-04,2023,12,Tienda 2,Producto B,Indumentaria,3,130.99,72.04,120
+T01155,2023-12-13,2023,12,Tienda 1,Producto E,Indumentaria,3,113.77,59.16,90
+T01156,2023-12-09,2023,12,Tienda 1,Producto F,Hogar,2,190.38,114.23,300
+T01157,2023-12-26,2023,12,Tienda 1,Producto C,Hogar,1,62.55,38.78,30
+T01158,2023-12-05,2023,12,Online,Producto A,Electrónica,1,88.92,60.47,45
+T01159,2023-12-14,2023,12,Tienda 2,Producto C,Hogar,2,132.08,81.89,30
+T01160,2023-12-07,2023,12,Tienda 1,Producto B,Indumentaria,2,86.38,47.51,120
+T01161,2023-12-19,2023,12,Tienda 2,Producto F,Hogar,3,270.93,162.56,300
+T01162,2023-12-03,2023,12,Tienda 1,Producto C,Hogar,1,63.03,39.08,30
+T01163,2023-12-03,2023,12,Online,Producto C,Hogar,2,126.0,78.12,30
+T01164,2023-12-11,2023,12,Tienda 2,Producto H,Indumentaria,1,19.14,11.1,60
+T01165,2023-12-27,2023,12,Online,Producto D,Electrónica,1,26.07,16.95,180
+T01166,2023-12-23,2023,12,Tienda 1,Producto G,Electrónica,1,114.96,80.47,200
+T01167,2023-12-03,2023,12,Online,Producto A,Electrónica,1,82.84,56.33,45
+T01168,2024-01-25,2024,01,Online,Producto A,Electrónica,2,183.44,124.74,45
+T01169,2024-01-02,2024,01,Tienda 1,Producto H,Indumentaria,3,62.97,36.53,60
+T01170,2024-01-24,2024,01,Tienda 2,Producto H,Indumentaria,5,105.62,61.26,60
+T01171,2024-01-11,2024,01,Online,Producto C,Hogar,2,131.57,81.57,30
+T01172,2024-01-12,2024,01,Tienda 2,Producto F,Hogar,1,100.6,60.36,300
+T01173,2024-01-07,2024,01,Tienda 1,Producto B,Indumentaria,2,96.95,53.32,120
+T01174,2024-01-28,2024,01,Tienda 1,Producto G,Electrónica,3,360.65,252.45,200
+T01175,2024-01-26,2024,01,Tienda 1,Producto A,Electrónica,5,465.46,316.51,45
+T01176,2024-01-04,2024,01,Online,Producto A,Electrónica,1,89.51,60.87,45
+T01177,2024-01-04,2024,01,Tienda 2,Producto F,Hogar,1,98.49,59.09,300
+T01178,2024-01-10,2024,01,Online,Producto H,Indumentaria,2,42.47,24.64,60
+T01179,2024-01-18,2024,01,Tienda 2,Producto C,Hogar,1,65.32,40.5,30
+T01180,2024-01-09,2024,01,Tienda 1,Producto F,Hogar,1,97.38,58.43,300
+T01181,2024-01-15,2024,01,Tienda 1,Producto F,Hogar,2,191.01,114.61,300
+T01182,2024-01-17,2024,01,Tienda 1,Producto E,Indumentaria,2,78.45,40.79,90
+T01183,2024-01-20,2024,01,Tienda 1,Producto B,Indumentaria,2,93.64,51.5,120
+T01184,2024-01-11,2024,01,Online,Producto G,Electrónica,2,249.77,174.84,200
+T01185,2024-01-10,2024,01,Tienda 2,Producto A,Electrónica,1,85.8,58.34,45
+T01186,2024-01-16,2024,01,Online,Producto F,Hogar,2,202.48,121.49,300
+T01187,2024-01-19,2024,01,Tienda 2,Producto D,Electrónica,5,128.62,83.61,180
+T01188,2024-01-27,2024,01,Tienda 2,Producto G,Electrónica,1,125.77,88.04,200
+T01189,2024-01-23,2024,01,Tienda 1,Producto F,Hogar,3,290.58,174.35,300
+T01190,2024-01-08,2024,01,Tienda 2,Producto A,Electrónica,3,269.74,183.43,45
+T01191,2024-01-27,2024,01,Tienda 1,Producto G,Electrónica,1,122.19,85.53,200
+T01192,2024-01-09,2024,01,Online,Producto F,Hogar,2,199.29,119.57,300
+T01193,2024-01-08,2024,01,Online,Producto A,Electrónica,2,171.21,116.42,45
+T01194,2024-01-24,2024,01,Tienda 2,Producto E,Indumentaria,2,81.19,42.22,90
+T01195,2024-01-11,2024,01,Tienda 1,Producto E,Indumentaria,5,190.38,99.0,90
+T01196,2024-01-18,2024,01,Online,Producto D,Electrónica,2,50.17,32.61,180
+T01197,2024-01-18,2024,01,Tienda 1,Producto C,Hogar,2,134.14,83.16,30
+T01198,2024-01-04,2024,01,Online,Producto E,Indumentaria,2,80.0,41.6,90
+T01199,2024-01-05,2024,01,Tienda 2,Producto H,Indumentaria,4,82.29,47.73,60
+T01200,2024-01-21,2024,01,Tienda 2,Producto H,Indumentaria,4,85.19,49.41,60
+T01201,2024-01-17,2024,01,Online,Producto C,Hogar,4,272.63,169.03,30
+T01202,2024-01-05,2024,01,Online,Producto C,Hogar,5,346.87,215.06,30
+T01203,2024-01-02,2024,01,Tienda 1,Producto E,Indumentaria,3,120.48,62.65,90
+T01204,2024-01-20,2024,01,Tienda 1,Producto D,Electrónica,3,75.79,49.26,180
+T01205,2024-01-14,2024,01,Tienda 1,Producto H,Indumentaria,2,40.33,23.39,60
+T01206,2024-01-02,2024,01,Tienda 1,Producto D,Electrónica,3,78.63,51.11,180
+T01207,2024-01-05,2024,01,Tienda 2,Producto C,Hogar,5,325.31,201.69,30
+T01208,2024-01-15,2024,01,Tienda 2,Producto F,Hogar,2,205.62,123.37,300
+T01209,2024-01-25,2024,01,Tienda 2,Producto E,Indumentaria,6,241.36,125.51,90
+T01210,2024-01-08,2024,01,Tienda 1,Producto C,Hogar,5,336.92,208.89,30
+T01211,2024-01-08,2024,01,Tienda 2,Producto G,Electrónica,1,125.6,87.92,200
+T01212,2024-01-07,2024,01,Online,Producto C,Hogar,2,132.04,81.86,30
+T01213,2024-01-24,2024,01,Tienda 2,Producto F,Hogar,1,100.53,60.32,300
+T01214,2024-01-24,2024,01,Tienda 2,Producto G,Electrónica,4,493.99,345.79,200
+T01215,2024-01-18,2024,01,Tienda 1,Producto F,Hogar,2,200.93,120.56,300
+T01216,2024-01-23,2024,01,Tienda 1,Producto D,Electrónica,4,104.08,67.65,180
+T01217,2024-01-27,2024,01,Tienda 2,Producto E,Indumentaria,4,165.97,86.3,90
+T01218,2024-01-03,2024,01,Online,Producto F,Hogar,6,575.33,345.2,300
+T01219,2024-01-17,2024,01,Online,Producto D,Electrónica,4,104.1,67.66,180
+T01220,2024-01-21,2024,01,Online,Producto C,Hogar,1,64.9,40.24,30
+T01221,2024-01-24,2024,01,Tienda 1,Producto C,Hogar,4,265.54,164.63,30
+T01222,2024-01-02,2024,01,Tienda 2,Producto H,Indumentaria,2,42.55,24.68,60
+T01223,2024-01-03,2024,01,Tienda 1,Producto E,Indumentaria,2,76.0,39.52,90
+T01224,2024-01-18,2024,01,Tienda 2,Producto D,Electrónica,3,77.77,50.55,180
+T01225,2024-01-03,2024,01,Online,Producto B,Indumentaria,2,93.55,51.45,120
+T01226,2024-01-02,2024,01,Tienda 2,Producto E,Indumentaria,5,190.25,98.93,90
+T01227,2024-01-14,2024,01,Tienda 1,Producto E,Indumentaria,1,41.85,21.76,90
+T01228,2024-01-26,2024,01,Tienda 1,Producto A,Electrónica,1,88.16,59.95,45
+T01229,2024-01-13,2024,01,Online,Producto D,Electrónica,2,52.43,34.08,180
+T01230,2024-01-04,2024,01,Online,Producto F,Hogar,7,715.89,429.53,300
+T01231,2024-01-28,2024,01,Online,Producto F,Hogar,3,292.64,175.58,300
+T01232,2024-01-07,2024,01,Online,Producto B,Indumentaria,3,140.58,77.32,120
+T01233,2024-01-13,2024,01,Tienda 1,Producto A,Electrónica,5,462.35,314.4,45
+T01234,2024-01-06,2024,01,Tienda 2,Producto F,Hogar,4,386.88,232.13,300
+T01235,2024-01-23,2024,01,Tienda 1,Producto C,Hogar,1,67.35,41.76,30
+T01236,2024-01-12,2024,01,Online,Producto E,Indumentaria,4,166.35,86.5,90
+T01237,2024-01-24,2024,01,Tienda 2,Producto A,Electrónica,1,86.9,59.09,45
+T01238,2024-01-18,2024,01,Tienda 2,Producto F,Hogar,1,101.05,60.63,300
+T01239,2024-01-11,2024,01,Online,Producto H,Indumentaria,1,21.88,12.69,60
+T01240,2024-01-19,2024,01,Tienda 2,Producto E,Indumentaria,2,80.91,42.07,90
+T01241,2024-01-03,2024,01,Tienda 2,Producto F,Hogar,4,385.05,231.03,300
+T01242,2024-01-13,2024,01,Tienda 2,Producto B,Indumentaria,6,285.62,157.09,120
+T01243,2024-01-20,2024,01,Online,Producto A,Electrónica,5,448.9,305.25,45
+T01244,2024-01-09,2024,01,Online,Producto C,Hogar,4,268.72,166.61,30
+T01245,2024-01-03,2024,01,Tienda 1,Producto E,Indumentaria,3,115.78,60.21,90
+T01246,2024-01-25,2024,01,Tienda 1,Producto G,Electrónica,1,121.59,85.12,200
+T01247,2024-01-07,2024,01,Online,Producto H,Indumentaria,4,84.57,49.05,60
+T01248,2024-01-27,2024,01,Tienda 1,Producto E,Indumentaria,3,120.43,62.62,90
+T01249,2024-01-28,2024,01,Tienda 1,Producto C,Hogar,1,67.24,41.69,30
+T01250,2024-01-25,2024,01,Online,Producto A,Electrónica,4,364.84,248.09,45
+T01251,2024-01-01,2024,01,Online,Producto D,Electrónica,4,101.76,66.14,180
+T01252,2024-01-26,2024,01,Online,Producto G,Electrónica,4,480.99,336.7,200
+T01253,2024-01-09,2024,01,Tienda 2,Producto H,Indumentaria,1,20.57,11.93,60
+T01254,2024-01-14,2024,01,Online,Producto F,Hogar,1,103.63,62.18,300
+T01255,2024-01-24,2024,01,Tienda 2,Producto H,Indumentaria,3,64.45,37.38,60
+T01256,2024-01-22,2024,01,Tienda 1,Producto B,Indumentaria,9,409.25,225.09,120
+T01257,2024-01-14,2024,01,Online,Producto A,Electrónica,1,88.95,60.48,45
+T01258,2024-01-08,2024,01,Tienda 1,Producto E,Indumentaria,3,114.37,59.47,90
+T01259,2024-01-08,2024,01,Online,Producto D,Electrónica,2,52.14,33.89,180
+T01260,2024-01-25,2024,01,Tienda 1,Producto A,Electrónica,6,508.88,346.04,45
+T01261,2024-01-22,2024,01,Tienda 1,Producto C,Hogar,6,402.72,249.69,30
+T01262,2024-01-08,2024,01,Tienda 1,Producto H,Indumentaria,3,65.46,37.97,60
+T01263,2024-01-07,2024,01,Tienda 1,Producto D,Electrónica,3,78.35,50.93,180
+T01264,2024-01-02,2024,01,Online,Producto F,Hogar,5,512.74,307.64,300
+T01265,2024-01-04,2024,01,Online,Producto C,Hogar,1,66.84,41.44,30
+T01266,2024-01-18,2024,01,Tienda 2,Producto E,Indumentaria,2,76.91,39.99,90
+T01267,2024-01-15,2024,01,Tienda 1,Producto B,Indumentaria,1,45.04,24.77,120
+T01268,2024-01-09,2024,01,Tienda 1,Producto H,Indumentaria,1,20.71,12.01,60
+T01269,2024-01-12,2024,01,Tienda 1,Producto A,Electrónica,1,93.39,63.51,45
+T01270,2024-01-13,2024,01,Tienda 2,Producto E,Indumentaria,2,78.29,40.71,90
+T01271,2024-01-15,2024,01,Tienda 1,Producto E,Indumentaria,5,196.02,101.93,90
+T01272,2024-01-28,2024,01,Tienda 1,Producto H,Indumentaria,1,21.36,12.39,60
+T01273,2024-01-03,2024,01,Tienda 2,Producto F,Hogar,2,204.01,122.4,300
+T01274,2024-01-20,2024,01,Tienda 1,Producto F,Hogar,8,833.21,499.93,300
+T01275,2024-01-17,2024,01,Online,Producto A,Electrónica,1,86.12,58.56,45
+T01276,2024-01-23,2024,01,Online,Producto H,Indumentaria,7,152.69,88.56,60
+T01277,2024-01-06,2024,01,Tienda 2,Producto C,Hogar,1,67.45,41.82,30
+T01278,2024-01-23,2024,01,Online,Producto A,Electrónica,3,262.47,178.48,45
+T01279,2024-01-17,2024,01,Tienda 2,Producto A,Electrónica,1,90.31,61.41,45
+T01280,2024-01-13,2024,01,Tienda 1,Producto H,Indumentaria,1,21.36,12.39,60
+T01281,2024-01-14,2024,01,Tienda 1,Producto E,Indumentaria,2,81.78,42.53,90
+T01282,2024-01-22,2024,01,Tienda 2,Producto D,Electrónica,1,25.18,16.37,180
+T01283,2024-01-04,2024,01,Tienda 2,Producto G,Electrónica,3,386.7,270.69,200
+T01284,2024-01-08,2024,01,Online,Producto E,Indumentaria,5,199.15,103.56,90
+T01285,2024-01-26,2024,01,Tienda 1,Producto F,Hogar,2,202.95,121.77,300
+T01286,2024-01-03,2024,01,Tienda 2,Producto G,Electrónica,3,390.85,273.6,200
+T01287,2024-01-19,2024,01,Tienda 1,Producto D,Electrónica,1,25.75,16.74,180
+T01288,2024-01-04,2024,01,Online,Producto D,Electrónica,2,50.53,32.84,180
+T01289,2024-01-19,2024,01,Tienda 2,Producto G,Electrónica,1,125.92,88.14,200
+T01290,2024-01-18,2024,01,Tienda 2,Producto D,Electrónica,2,51.45,33.44,180
+T01291,2024-01-02,2024,01,Online,Producto F,Hogar,2,207.05,124.23,300
+T01292,2024-01-15,2024,01,Tienda 1,Producto D,Electrónica,2,54.11,35.17,180
+T01293,2024-02-18,2024,02,Tienda 2,Producto C,Hogar,4,282.78,175.33,30
+T01294,2024-02-02,2024,02,Online,Producto F,Hogar,1,102.94,61.76,300
+T01295,2024-02-15,2024,02,Online,Producto H,Indumentaria,4,82.96,48.12,60
+T01296,2024-02-22,2024,02,Online,Producto H,Indumentaria,3,62.24,36.1,60
+T01297,2024-02-26,2024,02,Tienda 2,Producto A,Electrónica,1,93.07,63.29,45
+T01298,2024-02-03,2024,02,Online,Producto E,Indumentaria,2,76.18,39.61,90
+T01299,2024-02-01,2024,02,Tienda 1,Producto F,Hogar,4,413.08,247.85,300
+T01300,2024-02-02,2024,02,Online,Producto A,Electrónica,2,187.25,127.33,45
+T01301,2024-02-14,2024,02,Online,Producto G,Electrónica,5,629.37,440.56,200
+T01302,2024-02-05,2024,02,Tienda 2,Producto A,Electrónica,4,373.73,254.13,45
+T01303,2024-02-20,2024,02,Tienda 2,Producto A,Electrónica,5,449.08,305.38,45
+T01304,2024-02-15,2024,02,Online,Producto E,Indumentaria,5,190.36,98.99,90
+T01305,2024-02-28,2024,02,Tienda 1,Producto B,Indumentaria,2,95.37,52.45,120
+T01306,2024-02-05,2024,02,Tienda 2,Producto B,Indumentaria,3,148.22,81.52,120
+T01307,2024-02-16,2024,02,Tienda 1,Producto E,Indumentaria,2,82.79,43.05,90
+T01308,2024-02-11,2024,02,Online,Producto H,Indumentaria,5,101.92,59.11,60
+T01309,2024-02-15,2024,02,Tienda 1,Producto B,Indumentaria,3,140.89,77.49,120
+T01310,2024-02-07,2024,02,Tienda 1,Producto E,Indumentaria,1,39.12,20.34,90
+T01311,2024-02-10,2024,02,Online,Producto C,Hogar,3,211.37,131.05,30
+T01312,2024-02-06,2024,02,Online,Producto B,Indumentaria,2,90.68,49.87,120
+T01313,2024-02-27,2024,02,Tienda 2,Producto E,Indumentaria,5,192.54,100.12,90
+T01314,2024-02-18,2024,02,Tienda 2,Producto A,Electrónica,1,87.43,59.45,45
+T01315,2024-02-15,2024,02,Tienda 2,Producto G,Electrónica,6,771.08,539.76,200
+T01316,2024-02-09,2024,02,Tienda 2,Producto F,Hogar,5,513.47,308.08,300
+T01317,2024-02-09,2024,02,Online,Producto D,Electrónica,2,50.31,32.7,180
+T01318,2024-02-25,2024,02,Online,Producto D,Electrónica,2,50.87,33.07,180
+T01319,2024-02-15,2024,02,Tienda 1,Producto D,Electrónica,3,78.21,50.84,180
+T01320,2024-02-23,2024,02,Tienda 2,Producto B,Indumentaria,3,136.54,75.09,120
+T01321,2024-02-08,2024,02,Online,Producto A,Electrónica,1,88.84,60.41,45
+T01322,2024-02-10,2024,02,Online,Producto H,Indumentaria,2,40.22,23.33,60
+T01323,2024-02-11,2024,02,Online,Producto H,Indumentaria,2,43.81,25.41,60
+T01324,2024-02-27,2024,02,Tienda 1,Producto H,Indumentaria,2,42.98,24.93,60
+T01325,2024-02-04,2024,02,Tienda 1,Producto C,Hogar,3,207.08,128.39,30
+T01326,2024-02-08,2024,02,Online,Producto C,Hogar,3,204.36,126.71,30
+T01327,2024-02-08,2024,02,Tienda 2,Producto A,Electrónica,4,371.52,252.64,45
+T01328,2024-02-16,2024,02,Tienda 1,Producto G,Electrónica,6,727.89,509.52,200
+T01329,2024-02-09,2024,02,Online,Producto A,Electrónica,5,443.67,301.69,45
+T01330,2024-02-18,2024,02,Tienda 1,Producto E,Indumentaria,2,76.31,39.68,90
+T01331,2024-02-01,2024,02,Tienda 2,Producto A,Electrónica,2,186.97,127.14,45
+T01332,2024-02-25,2024,02,Tienda 1,Producto G,Electrónica,5,603.05,422.13,200
+T01333,2024-02-14,2024,02,Online,Producto H,Indumentaria,2,40.67,23.59,60
+T01334,2024-02-17,2024,02,Tienda 2,Producto C,Hogar,3,199.91,123.95,30
+T01335,2024-02-22,2024,02,Tienda 1,Producto C,Hogar,3,210.54,130.53,30
+T01336,2024-02-27,2024,02,Tienda 1,Producto G,Electrónica,4,489.66,342.76,200
+T01337,2024-02-13,2024,02,Online,Producto D,Electrónica,3,79.24,51.51,180
+T01338,2024-02-11,2024,02,Tienda 2,Producto B,Indumentaria,6,279.99,154.0,120
+T01339,2024-02-15,2024,02,Tienda 1,Producto A,Electrónica,3,276.85,188.26,45
+T01340,2024-02-28,2024,02,Online,Producto B,Indumentaria,1,45.49,25.02,120
+T01341,2024-02-17,2024,02,Tienda 2,Producto G,Electrónica,2,256.64,179.65,200
+T01342,2024-02-27,2024,02,Online,Producto D,Electrónica,2,54.47,35.41,180
+T01343,2024-02-03,2024,02,Tienda 1,Producto B,Indumentaria,4,193.07,106.19,120
+T01344,2024-02-23,2024,02,Tienda 2,Producto G,Electrónica,1,128.11,89.68,200
+T01345,2024-02-18,2024,02,Tienda 1,Producto E,Indumentaria,3,114.63,59.61,90
+T01346,2024-02-13,2024,02,Tienda 2,Producto B,Indumentaria,4,193.67,106.52,120
+T01347,2024-02-13,2024,02,Tienda 2,Producto C,Hogar,1,67.17,41.65,30
+T01348,2024-02-22,2024,02,Tienda 1,Producto F,Hogar,3,308.77,185.26,300
+T01349,2024-02-19,2024,02,Tienda 2,Producto D,Electrónica,7,180.05,117.04,180
+T01350,2024-02-18,2024,02,Tienda 1,Producto F,Hogar,5,522.34,313.4,300
+T01351,2024-02-28,2024,02,Tienda 2,Producto D,Electrónica,1,26.32,17.11,180
+T01352,2024-02-11,2024,02,Tienda 1,Producto D,Electrónica,5,126.28,82.08,180
+T01353,2024-02-11,2024,02,Tienda 2,Producto F,Hogar,2,193.23,115.94,300
+T01354,2024-02-15,2024,02,Tienda 1,Producto E,Indumentaria,1,39.34,20.46,90
+T01355,2024-02-25,2024,02,Online,Producto A,Electrónica,2,171.06,116.32,45
+T01356,2024-02-27,2024,02,Online,Producto E,Indumentaria,1,41.6,21.63,90
+T01357,2024-02-14,2024,02,Tienda 1,Producto E,Indumentaria,3,113.94,59.25,90
+T01358,2024-02-28,2024,02,Tienda 2,Producto A,Electrónica,5,434.13,295.21,45
+T01359,2024-02-05,2024,02,Online,Producto E,Indumentaria,1,38.58,20.06,90
+T01360,2024-02-16,2024,02,Tienda 1,Producto F,Hogar,1,100.55,60.33,300
+T01361,2024-02-10,2024,02,Online,Producto E,Indumentaria,1,41.51,21.59,90
+T01362,2024-02-08,2024,02,Tienda 1,Producto A,Electrónica,3,276.56,188.06,45
+T01363,2024-02-20,2024,02,Online,Producto G,Electrónica,1,128.12,89.69,200
+T01364,2024-02-26,2024,02,Online,Producto F,Hogar,2,205.67,123.4,300
+T01365,2024-02-12,2024,02,Tienda 1,Producto A,Electrónica,4,341.14,231.98,45
+T01366,2024-02-19,2024,02,Tienda 1,Producto A,Electrónica,3,275.36,187.24,45
+T01367,2024-02-28,2024,02,Tienda 2,Producto G,Electrónica,4,487.7,341.39,200
+T01368,2024-02-26,2024,02,Online,Producto H,Indumentaria,2,40.5,23.49,60
+T01369,2024-02-08,2024,02,Tienda 1,Producto E,Indumentaria,1,39.74,20.66,90
+T01370,2024-02-12,2024,02,Online,Producto B,Indumentaria,6,281.83,155.01,120
+T01371,2024-02-16,2024,02,Online,Producto B,Indumentaria,4,185.24,101.88,120
+T01372,2024-02-02,2024,02,Online,Producto H,Indumentaria,3,63.75,36.98,60
+T01373,2024-02-02,2024,02,Online,Producto C,Hogar,1,69.03,42.8,30
+T01374,2024-02-09,2024,02,Online,Producto A,Electrónica,5,443.14,301.33,45
+T01375,2024-02-01,2024,02,Tienda 1,Producto H,Indumentaria,5,107.3,62.23,60
+T01376,2024-02-16,2024,02,Tienda 2,Producto A,Electrónica,2,170.9,116.21,45
+T01377,2024-02-20,2024,02,Tienda 1,Producto G,Electrónica,3,362.43,253.7,200
+T01378,2024-02-05,2024,02,Tienda 1,Producto F,Hogar,4,408.64,245.18,300
+T01379,2024-02-23,2024,02,Tienda 2,Producto B,Indumentaria,2,97.16,53.44,120
+T01380,2024-02-21,2024,02,Tienda 2,Producto C,Hogar,3,208.45,129.24,30
+T01381,2024-02-06,2024,02,Tienda 2,Producto E,Indumentaria,2,78.75,40.95,90
+T01382,2024-02-10,2024,02,Tienda 1,Producto D,Electrónica,2,50.83,33.04,180
+T01383,2024-02-19,2024,02,Online,Producto D,Electrónica,1,27.2,17.68,180
+T01384,2024-02-24,2024,02,Tienda 2,Producto C,Hogar,1,65.97,40.9,30
+T01385,2024-02-22,2024,02,Tienda 2,Producto C,Hogar,6,418.62,259.55,30
+T01386,2024-02-17,2024,02,Tienda 2,Producto A,Electrónica,2,172.32,117.18,45
+T01387,2024-02-26,2024,02,Tienda 2,Producto E,Indumentaria,6,244.96,127.38,90
+T01388,2024-02-14,2024,02,Tienda 1,Producto H,Indumentaria,1,20.85,12.09,60
+T01389,2024-02-06,2024,02,Tienda 1,Producto C,Hogar,1,69.71,43.22,30
+T01390,2024-02-28,2024,02,Online,Producto E,Indumentaria,1,39.15,20.36,90
+T01391,2024-02-06,2024,02,Tienda 2,Producto B,Indumentaria,6,279.9,153.94,120
+T01392,2024-02-23,2024,02,Tienda 1,Producto E,Indumentaria,3,118.82,61.79,90
+T01393,2024-02-20,2024,02,Online,Producto C,Hogar,3,213.63,132.45,30
+T01394,2024-02-28,2024,02,Tienda 1,Producto B,Indumentaria,5,238.06,130.93,120
+T01395,2024-02-19,2024,02,Tienda 2,Producto B,Indumentaria,3,134.82,74.15,120
+T01396,2024-02-17,2024,02,Tienda 1,Producto B,Indumentaria,2,95.7,52.63,120
+T01397,2024-02-06,2024,02,Tienda 1,Producto H,Indumentaria,1,21.99,12.75,60
+T01398,2024-02-05,2024,02,Tienda 2,Producto F,Hogar,2,207.8,124.68,300
+T01399,2024-02-17,2024,02,Online,Producto D,Electrónica,2,54.86,35.66,180
+T01400,2024-02-23,2024,02,Tienda 1,Producto F,Hogar,2,198.55,119.13,300
+T01401,2024-02-10,2024,02,Tienda 2,Producto H,Indumentaria,1,21.73,12.6,60
+T01402,2024-02-22,2024,02,Tienda 1,Producto H,Indumentaria,1,21.8,12.64,60
+T01403,2024-02-09,2024,02,Tienda 1,Producto D,Electrónica,1,27.45,17.84,180
+T01404,2024-02-04,2024,02,Tienda 2,Producto E,Indumentaria,7,288.51,150.03,90
+T01405,2024-02-28,2024,02,Tienda 2,Producto B,Indumentaria,3,142.33,78.28,120
+T01406,2024-02-26,2024,02,Tienda 2,Producto E,Indumentaria,2,75.9,39.47,90
+T01407,2024-02-17,2024,02,Tienda 1,Producto H,Indumentaria,5,104.38,60.54,60
+T01408,2024-02-10,2024,02,Tienda 1,Producto D,Electrónica,1,27.55,17.91,180
+T01409,2024-02-27,2024,02,Tienda 2,Producto G,Electrónica,3,382.63,267.84,200
+T01410,2024-02-13,2024,02,Online,Producto C,Hogar,2,138.04,85.58,30
+T01411,2024-02-14,2024,02,Tienda 2,Producto B,Indumentaria,3,136.83,75.26,120
+T01412,2024-03-18,2024,03,Tienda 1,Producto B,Indumentaria,3,146.2,80.41,120
+T01413,2024-03-12,2024,03,Tienda 2,Producto E,Indumentaria,6,242.46,126.08,90
+T01414,2024-03-21,2024,03,Tienda 1,Producto D,Electrónica,2,52.46,34.1,180
+T01415,2024-03-10,2024,03,Online,Producto D,Electrónica,4,108.82,70.73,180
+T01416,2024-03-26,2024,03,Tienda 2,Producto C,Hogar,2,142.05,88.07,30
+T01417,2024-03-03,2024,03,Online,Producto C,Hogar,1,68.04,42.19,30
+T01418,2024-03-19,2024,03,Tienda 1,Producto C,Hogar,4,261.92,162.39,30
+T01419,2024-03-09,2024,03,Tienda 1,Producto A,Electrónica,4,348.07,236.69,45
+T01420,2024-03-24,2024,03,Tienda 2,Producto C,Hogar,3,209.2,129.7,30
+T01421,2024-03-02,2024,03,Tienda 1,Producto C,Hogar,6,404.35,250.7,30
+T01422,2024-03-01,2024,03,Tienda 1,Producto C,Hogar,3,197.3,122.32,30
+T01423,2024-03-11,2024,03,Tienda 2,Producto F,Hogar,5,480.58,288.35,300
+T01424,2024-03-16,2024,03,Tienda 1,Producto A,Electrónica,1,89.35,60.76,45
+T01425,2024-03-18,2024,03,Tienda 1,Producto F,Hogar,3,305.12,183.07,300
+T01426,2024-03-25,2024,03,Online,Producto G,Electrónica,2,248.68,174.07,200
+T01427,2024-03-19,2024,03,Online,Producto D,Electrónica,5,131.49,85.47,180
+T01428,2024-03-11,2024,03,Tienda 2,Producto F,Hogar,2,199.81,119.89,300
+T01429,2024-03-16,2024,03,Online,Producto F,Hogar,2,204.84,122.9,300
+T01430,2024-03-06,2024,03,Tienda 1,Producto B,Indumentaria,4,192.09,105.65,120
+T01431,2024-03-04,2024,03,Tienda 1,Producto E,Indumentaria,3,120.78,62.8,90
+T01432,2024-03-17,2024,03,Tienda 1,Producto H,Indumentaria,3,60.09,34.85,60
+T01433,2024-03-09,2024,03,Tienda 1,Producto B,Indumentaria,2,90.38,49.71,120
+T01434,2024-03-09,2024,03,Tienda 1,Producto C,Hogar,2,143.08,88.71,30
+T01435,2024-03-28,2024,03,Tienda 2,Producto F,Hogar,4,410.97,246.58,300
+T01436,2024-03-09,2024,03,Tienda 2,Producto D,Electrónica,3,78.09,50.76,180
+T01437,2024-03-05,2024,03,Online,Producto F,Hogar,1,102.3,61.38,300
+T01438,2024-03-25,2024,03,Tienda 2,Producto E,Indumentaria,1,39.87,20.73,90
+T01439,2024-03-13,2024,03,Online,Producto A,Electrónica,6,533.62,362.86,45
+T01440,2024-03-16,2024,03,Tienda 1,Producto D,Electrónica,1,26.84,17.45,180
+T01441,2024-03-12,2024,03,Tienda 1,Producto G,Electrónica,1,124.32,87.02,200
+T01442,2024-03-11,2024,03,Online,Producto B,Indumentaria,7,333.74,183.56,120
+T01443,2024-03-05,2024,03,Online,Producto F,Hogar,2,208.54,125.13,300
+T01444,2024-03-21,2024,03,Online,Producto G,Electrónica,2,247.91,173.54,200
+T01445,2024-03-09,2024,03,Tienda 2,Producto A,Electrónica,1,91.34,62.11,45
+T01446,2024-03-28,2024,03,Tienda 1,Producto C,Hogar,3,206.23,127.86,30
+T01447,2024-03-09,2024,03,Tienda 1,Producto B,Indumentaria,2,92.41,50.82,120
+T01448,2024-03-18,2024,03,Tienda 2,Producto B,Indumentaria,1,49.4,27.17,120
+T01449,2024-03-06,2024,03,Online,Producto E,Indumentaria,3,122.3,63.59,90
+T01450,2024-03-04,2024,03,Tienda 2,Producto B,Indumentaria,5,226.36,124.5,120
+T01451,2024-03-18,2024,03,Online,Producto D,Electrónica,2,54.38,35.35,180
+T01452,2024-03-25,2024,03,Tienda 1,Producto F,Hogar,2,196.42,117.85,300
+T01453,2024-03-01,2024,03,Tienda 2,Producto G,Electrónica,3,383.12,268.19,200
+T01454,2024-03-04,2024,03,Tienda 2,Producto D,Electrónica,3,82.44,53.58,180
+T01455,2024-03-09,2024,03,Tienda 1,Producto H,Indumentaria,2,40.28,23.36,60
+T01456,2024-03-24,2024,03,Tienda 1,Producto A,Electrónica,3,271.65,184.72,45
+T01457,2024-03-22,2024,03,Tienda 1,Producto A,Electrónica,5,465.67,316.66,45
+T01458,2024-03-07,2024,03,Online,Producto H,Indumentaria,1,22.02,12.77,60
+T01459,2024-03-22,2024,03,Tienda 2,Producto C,Hogar,4,273.34,169.47,30
+T01460,2024-03-26,2024,03,Online,Producto C,Hogar,1,69.6,43.15,30
+T01461,2024-03-23,2024,03,Tienda 2,Producto B,Indumentaria,2,94.32,51.88,120
+T01462,2024-03-23,2024,03,Tienda 2,Producto D,Electrónica,1,25.96,16.87,180
+T01463,2024-03-14,2024,03,Tienda 1,Producto A,Electrónica,4,344.42,234.21,45
+T01464,2024-03-01,2024,03,Tienda 2,Producto A,Electrónica,3,279.15,189.82,45
+T01465,2024-03-01,2024,03,Online,Producto H,Indumentaria,7,142.88,82.87,60
+T01466,2024-03-09,2024,03,Tienda 1,Producto H,Indumentaria,2,40.31,23.38,60
+T01467,2024-03-07,2024,03,Online,Producto H,Indumentaria,5,105.41,61.14,60
+T01468,2024-03-09,2024,03,Tienda 2,Producto D,Electrónica,2,50.78,33.01,180
+T01469,2024-03-20,2024,03,Tienda 1,Producto H,Indumentaria,3,65.88,38.21,60
+T01470,2024-03-08,2024,03,Online,Producto G,Electrónica,4,516.74,361.72,200
+T01471,2024-03-18,2024,03,Online,Producto G,Electrónica,2,248.33,173.83,200
+T01472,2024-03-15,2024,03,Online,Producto B,Indumentaria,2,90.27,49.65,120
+T01473,2024-03-25,2024,03,Online,Producto B,Indumentaria,2,93.16,51.24,120
+T01474,2024-03-28,2024,03,Tienda 1,Producto F,Hogar,9,918.37,551.02,300
+T01475,2024-03-11,2024,03,Online,Producto F,Hogar,4,410.71,246.42,300
+T01476,2024-03-27,2024,03,Online,Producto E,Indumentaria,6,243.3,126.52,90
+T01477,2024-03-16,2024,03,Online,Producto H,Indumentaria,1,20.66,11.98,60
+T01478,2024-03-05,2024,03,Online,Producto A,Electrónica,2,181.65,123.53,45
+T01479,2024-03-24,2024,03,Online,Producto F,Hogar,4,395.47,237.28,300
+T01480,2024-03-16,2024,03,Tienda 2,Producto C,Hogar,1,67.15,41.64,30
+T01481,2024-03-25,2024,03,Online,Producto A,Electrónica,1,86.22,58.63,45
+T01482,2024-03-04,2024,03,Tienda 1,Producto B,Indumentaria,3,137.01,75.36,120
+T01483,2024-03-28,2024,03,Tienda 1,Producto G,Electrónica,2,244.58,171.21,200
+T01484,2024-03-12,2024,03,Tienda 2,Producto H,Indumentaria,3,60.3,34.97,60
+T01485,2024-03-01,2024,03,Tienda 1,Producto C,Hogar,2,138.71,86.0,30
+T01486,2024-03-06,2024,03,Tienda 1,Producto H,Indumentaria,5,102.42,59.4,60
+T01487,2024-03-18,2024,03,Online,Producto A,Electrónica,5,463.36,315.09,45
+T01488,2024-03-01,2024,03,Tienda 1,Producto B,Indumentaria,5,240.99,132.54,120
+T01489,2024-03-14,2024,03,Tienda 1,Producto F,Hogar,1,104.57,62.74,300
+T01490,2024-03-11,2024,03,Tienda 1,Producto G,Electrónica,2,244.58,171.2,200
+T01491,2024-03-23,2024,03,Tienda 1,Producto H,Indumentaria,1,20.82,12.08,60
+T01492,2024-03-01,2024,03,Online,Producto E,Indumentaria,2,76.7,39.89,90
+T01493,2024-03-25,2024,03,Tienda 2,Producto B,Indumentaria,1,45.75,25.16,120
+T01494,2024-03-08,2024,03,Tienda 2,Producto H,Indumentaria,1,19.97,11.58,60
+T01495,2024-03-20,2024,03,Tienda 1,Producto A,Electrónica,3,256.32,174.3,45
+T01496,2024-03-26,2024,03,Tienda 1,Producto E,Indumentaria,2,80.06,41.63,90
+T01497,2024-03-27,2024,03,Tienda 2,Producto H,Indumentaria,3,63.77,36.99,60
+T01498,2024-03-24,2024,03,Tienda 1,Producto G,Electrónica,2,263.9,184.73,200
+T01499,2024-03-12,2024,03,Tienda 1,Producto D,Electrónica,3,75.54,49.1,180
+T01500,2024-03-21,2024,03,Tienda 2,Producto B,Indumentaria,1,48.44,26.64,120
+T01501,2024-03-16,2024,03,Tienda 1,Producto D,Electrónica,4,110.06,71.54,180
+T01502,2024-03-26,2024,03,Online,Producto A,Electrónica,4,347.07,236.01,45
+T01503,2024-03-27,2024,03,Online,Producto B,Indumentaria,2,96.56,53.11,120
+T01504,2024-03-20,2024,03,Tienda 1,Producto B,Indumentaria,2,93.03,51.16,120
+T01505,2024-03-09,2024,03,Online,Producto A,Electrónica,4,343.5,233.58,45
+T01506,2024-03-19,2024,03,Tienda 1,Producto A,Electrónica,5,425.44,289.3,45
+T01507,2024-03-27,2024,03,Tienda 2,Producto H,Indumentaria,3,65.37,37.92,60
+T01508,2024-03-28,2024,03,Online,Producto A,Electrónica,5,434.57,295.51,45
+T01509,2024-03-25,2024,03,Tienda 2,Producto H,Indumentaria,3,61.56,35.71,60
+T01510,2024-03-13,2024,03,Online,Producto G,Electrónica,1,126.13,88.29,200
+T01511,2024-03-24,2024,03,Tienda 2,Producto G,Electrónica,3,368.19,257.73,200
+T01512,2024-03-15,2024,03,Online,Producto H,Indumentaria,3,62.02,35.97,60
+T01513,2024-03-08,2024,03,Online,Producto D,Electrónica,9,227.8,148.07,180
+T01514,2024-03-27,2024,03,Online,Producto B,Indumentaria,7,322.62,177.44,120
+T01515,2024-03-02,2024,03,Tienda 1,Producto E,Indumentaria,1,41.33,21.49,90
+T01516,2024-03-14,2024,03,Tienda 1,Producto C,Hogar,3,196.26,121.68,30
+T01517,2024-03-07,2024,03,Tienda 2,Producto D,Electrónica,3,81.15,52.75,180
+T01518,2024-03-26,2024,03,Tienda 1,Producto H,Indumentaria,5,101.03,58.6,60
+T01519,2024-03-12,2024,03,Tienda 1,Producto E,Indumentaria,1,41.18,21.41,90
+T01520,2024-03-05,2024,03,Tienda 1,Producto B,Indumentaria,8,379.09,208.5,120
+T01521,2024-03-24,2024,03,Online,Producto B,Indumentaria,3,138.61,76.24,120
+T01522,2024-03-13,2024,03,Tienda 1,Producto F,Hogar,5,502.51,301.51,300
+T01523,2024-03-09,2024,03,Online,Producto C,Hogar,1,65.84,40.82,30
+T01524,2024-03-03,2024,03,Tienda 1,Producto B,Indumentaria,3,142.45,78.35,120
+T01525,2024-03-21,2024,03,Tienda 2,Producto F,Hogar,3,286.14,171.68,300
+T01526,2024-03-07,2024,03,Tienda 1,Producto E,Indumentaria,3,123.1,64.01,90
+T01527,2024-03-26,2024,03,Tienda 2,Producto G,Electrónica,8,976.28,683.39,200
+T01528,2024-03-07,2024,03,Tienda 1,Producto H,Indumentaria,1,20.53,11.91,60
+T01529,2024-03-14,2024,03,Online,Producto D,Electrónica,3,77.33,50.26,180
+T01530,2024-03-05,2024,03,Online,Producto G,Electrónica,3,386.85,270.8,200
+T01531,2024-03-06,2024,03,Tienda 1,Producto H,Indumentaria,3,62.09,36.01,60
+T01532,2024-03-17,2024,03,Tienda 2,Producto C,Hogar,4,267.85,166.07,30
+T01533,2024-03-08,2024,03,Online,Producto E,Indumentaria,1,39.75,20.67,90
+T01534,2024-03-10,2024,03,Tienda 1,Producto C,Hogar,4,281.86,174.75,30
+T01535,2024-03-03,2024,03,Tienda 2,Producto F,Hogar,5,475.6,285.36,300
+T01536,2024-03-27,2024,03,Tienda 1,Producto E,Indumentaria,5,202.78,105.44,90
+T01537,2024-03-24,2024,03,Tienda 2,Producto F,Hogar,5,485.58,291.35,300
+T01538,2024-03-16,2024,03,Tienda 2,Producto C,Hogar,1,65.47,40.59,30
+T01539,2024-03-05,2024,03,Tienda 1,Producto F,Hogar,1,95.55,57.33,300
+T01540,2024-03-27,2024,03,Tienda 2,Producto G,Electrónica,3,385.96,270.17,200
+T01541,2024-04-27,2024,04,Tienda 1,Producto G,Electrónica,6,724.13,506.89,200
+T01542,2024-04-12,2024,04,Tienda 1,Producto H,Indumentaria,2,42.91,24.89,60
+T01543,2024-04-03,2024,04,Tienda 2,Producto G,Electrónica,6,750.06,525.04,200
+T01544,2024-04-20,2024,04,Tienda 2,Producto E,Indumentaria,3,125.29,65.15,90
+T01545,2024-04-14,2024,04,Tienda 1,Producto F,Hogar,2,200.41,120.24,300
+T01546,2024-04-14,2024,04,Tienda 2,Producto A,Electrónica,3,278.36,189.28,45
+T01547,2024-04-16,2024,04,Online,Producto A,Electrónica,1,87.71,59.64,45
+T01548,2024-04-28,2024,04,Online,Producto E,Indumentaria,6,242.23,125.96,90
+T01549,2024-04-06,2024,04,Online,Producto H,Indumentaria,9,188.7,109.45,60
+T01550,2024-04-19,2024,04,Tienda 1,Producto B,Indumentaria,3,143.69,79.03,120
+T01551,2024-04-11,2024,04,Online,Producto D,Electrónica,4,105.76,68.75,180
+T01552,2024-04-22,2024,04,Tienda 2,Producto A,Electrónica,2,179.63,122.15,45
+T01553,2024-04-15,2024,04,Tienda 2,Producto C,Hogar,3,207.29,128.52,30
+T01554,2024-04-06,2024,04,Tienda 2,Producto H,Indumentaria,4,85.01,49.31,60
+T01555,2024-04-05,2024,04,Tienda 1,Producto D,Electrónica,3,75.19,48.87,180
+T01556,2024-04-15,2024,04,Tienda 2,Producto G,Electrónica,3,373.58,261.5,200
+T01557,2024-04-06,2024,04,Online,Producto D,Electrónica,3,76.8,49.92,180
+T01558,2024-04-20,2024,04,Tienda 2,Producto G,Electrónica,2,249.13,174.39,200
+T01559,2024-04-26,2024,04,Online,Producto C,Hogar,1,70.66,43.81,30
+T01560,2024-04-13,2024,04,Tienda 2,Producto C,Hogar,3,214.34,132.89,30
+T01561,2024-04-09,2024,04,Online,Producto E,Indumentaria,5,196.0,101.92,90
+T01562,2024-04-19,2024,04,Tienda 2,Producto D,Electrónica,1,26.59,17.29,180
+T01563,2024-04-23,2024,04,Tienda 2,Producto E,Indumentaria,2,82.32,42.81,90
+T01564,2024-04-02,2024,04,Tienda 1,Producto F,Hogar,1,96.06,57.63,300
+T01565,2024-04-25,2024,04,Tienda 2,Producto H,Indumentaria,2,42.34,24.56,60
+T01566,2024-04-09,2024,04,Tienda 1,Producto D,Electrónica,2,50.15,32.6,180
+T01567,2024-04-09,2024,04,Tienda 2,Producto G,Electrónica,3,385.74,270.02,200
+T01568,2024-04-21,2024,04,Online,Producto C,Hogar,2,140.11,86.87,30
+T01569,2024-04-02,2024,04,Online,Producto C,Hogar,7,466.16,289.02,30
+T01570,2024-04-26,2024,04,Online,Producto A,Electrónica,4,374.23,254.48,45
+T01571,2024-04-27,2024,04,Tienda 2,Producto F,Hogar,1,95.52,57.31,300
+T01572,2024-04-05,2024,04,Tienda 1,Producto G,Electrónica,5,653.0,457.1,200
+T01573,2024-04-04,2024,04,Tienda 2,Producto D,Electrónica,2,52.12,33.88,180
+T01574,2024-04-02,2024,04,Online,Producto F,Hogar,1,102.04,61.22,300
+T01575,2024-04-16,2024,04,Online,Producto C,Hogar,1,67.3,41.73,30
+T01576,2024-04-22,2024,04,Online,Producto A,Electrónica,3,267.05,181.59,45
+T01577,2024-04-08,2024,04,Tienda 1,Producto E,Indumentaria,4,156.93,81.61,90
+T01578,2024-04-04,2024,04,Online,Producto H,Indumentaria,1,20.6,11.95,60
+T01579,2024-04-14,2024,04,Tienda 2,Producto C,Hogar,1,69.12,42.86,30
+T01580,2024-04-22,2024,04,Tienda 2,Producto B,Indumentaria,1,49.18,27.05,120
+T01581,2024-04-25,2024,04,Online,Producto G,Electrónica,2,261.08,182.76,200
+T01582,2024-04-03,2024,04,Online,Producto D,Electrónica,2,53.36,34.68,180
+T01583,2024-04-02,2024,04,Online,Producto H,Indumentaria,5,101.58,58.92,60
+T01584,2024-04-28,2024,04,Tienda 2,Producto F,Hogar,2,193.75,116.25,300
+T01585,2024-04-25,2024,04,Online,Producto B,Indumentaria,1,48.99,26.94,120
+T01586,2024-04-11,2024,04,Tienda 1,Producto E,Indumentaria,1,41.36,21.51,90
+T01587,2024-04-27,2024,04,Online,Producto E,Indumentaria,3,119.45,62.11,90
+T01588,2024-04-07,2024,04,Tienda 2,Producto H,Indumentaria,3,63.75,36.97,60
+T01589,2024-04-08,2024,04,Tienda 2,Producto D,Electrónica,3,79.23,51.5,180
+T01590,2024-04-17,2024,04,Tienda 2,Producto G,Electrónica,3,365.66,255.96,200
+T01591,2024-04-22,2024,04,Tienda 1,Producto B,Indumentaria,3,142.39,78.32,120
+T01592,2024-04-10,2024,04,Online,Producto D,Electrónica,5,128.03,83.22,180
+T01593,2024-04-17,2024,04,Tienda 2,Producto D,Electrónica,1,25.66,16.68,180
+T01594,2024-04-17,2024,04,Tienda 1,Producto C,Hogar,3,200.19,124.12,30
+T01595,2024-04-07,2024,04,Tienda 2,Producto C,Hogar,2,131.29,81.4,30
+T01596,2024-04-24,2024,04,Online,Producto B,Indumentaria,2,91.42,50.28,120
+T01597,2024-04-16,2024,04,Online,Producto B,Indumentaria,4,186.42,102.53,120
+T01598,2024-04-26,2024,04,Tienda 2,Producto H,Indumentaria,4,84.63,49.09,60
+T01599,2024-04-01,2024,04,Tienda 2,Producto F,Hogar,2,206.17,123.7,300
+T01600,2024-04-24,2024,04,Online,Producto G,Electrónica,2,245.59,171.91,200
+T01601,2024-04-14,2024,04,Tienda 2,Producto C,Hogar,3,204.75,126.94,30
+T01602,2024-04-02,2024,04,Tienda 2,Producto E,Indumentaria,1,41.84,21.75,90
+T01603,2024-04-06,2024,04,Tienda 1,Producto C,Hogar,2,142.52,88.36,30
+T01604,2024-04-02,2024,04,Tienda 1,Producto F,Hogar,1,98.43,59.06,300
+T01605,2024-04-02,2024,04,Tienda 2,Producto D,Electrónica,4,104.16,67.71,180
+T01606,2024-04-13,2024,04,Tienda 2,Producto B,Indumentaria,3,147.86,81.32,120
+T01607,2024-04-03,2024,04,Tienda 2,Producto C,Hogar,3,204.2,126.61,30
+T01608,2024-04-19,2024,04,Tienda 1,Producto G,Electrónica,1,131.05,91.74,200
+T01609,2024-04-17,2024,04,Tienda 1,Producto G,Electrónica,3,370.69,259.48,200
+T01610,2024-04-07,2024,04,Tienda 2,Producto F,Hogar,2,190.75,114.45,300
+T01611,2024-04-21,2024,04,Online,Producto F,Hogar,4,394.96,236.97,300
+T01612,2024-04-11,2024,04,Online,Producto A,Electrónica,3,255.08,173.45,45
+T01613,2024-04-25,2024,04,Online,Producto C,Hogar,4,285.0,176.7,30
+T01614,2024-04-26,2024,04,Tienda 2,Producto E,Indumentaria,1,40.68,21.15,90
+T01615,2024-04-02,2024,04,Online,Producto A,Electrónica,1,92.16,62.67,45
+T01616,2024-04-26,2024,04,Tienda 2,Producto B,Indumentaria,3,141.7,77.93,120
+T01617,2024-04-18,2024,04,Tienda 2,Producto G,Electrónica,2,261.62,183.13,200
+T01618,2024-04-11,2024,04,Online,Producto C,Hogar,2,137.19,85.06,30
+T01619,2024-04-10,2024,04,Online,Producto B,Indumentaria,4,193.25,106.28,120
+T01620,2024-04-24,2024,04,Tienda 1,Producto D,Electrónica,3,79.68,51.79,180
+T01621,2024-04-21,2024,04,Tienda 2,Producto D,Electrónica,1,26.73,17.38,180
+T01622,2024-04-26,2024,04,Tienda 2,Producto B,Indumentaria,4,187.31,103.02,120
+T01623,2024-04-18,2024,04,Tienda 1,Producto B,Indumentaria,1,45.89,25.24,120
+T01624,2024-04-04,2024,04,Online,Producto G,Electrónica,5,633.71,443.6,200
+T01625,2024-04-22,2024,04,Tienda 1,Producto F,Hogar,2,194.94,116.96,300
+T01626,2024-04-03,2024,04,Tienda 1,Producto A,Electrónica,1,86.94,59.12,45
+T01627,2024-04-16,2024,04,Tienda 1,Producto G,Electrónica,2,252.04,176.43,200
+T01628,2024-04-19,2024,04,Tienda 1,Producto H,Indumentaria,3,61.4,35.61,60
+T01629,2024-04-23,2024,04,Tienda 2,Producto G,Electrónica,1,120.66,84.46,200
+T01630,2024-04-10,2024,04,Tienda 2,Producto G,Electrónica,1,122.49,85.74,200
+T01631,2024-04-02,2024,04,Online,Producto E,Indumentaria,1,39.83,20.71,90
+T01632,2024-04-15,2024,04,Tienda 2,Producto D,Electrónica,3,78.73,51.17,180
+T01633,2024-04-08,2024,04,Tienda 2,Producto F,Hogar,5,484.21,290.53,300
+T01634,2024-04-28,2024,04,Tienda 2,Producto B,Indumentaria,4,179.91,98.95,120
+T01635,2024-04-10,2024,04,Tienda 1,Producto D,Electrónica,2,51.18,33.27,180
+T01636,2024-04-09,2024,04,Online,Producto C,Hogar,3,212.03,131.46,30
+T01637,2024-04-20,2024,04,Online,Producto H,Indumentaria,4,81.47,47.25,60
+T01638,2024-04-19,2024,04,Tienda 1,Producto A,Electrónica,3,260.01,176.8,45
+T01639,2024-04-05,2024,04,Tienda 2,Producto E,Indumentaria,5,209.47,108.93,90
+T01640,2024-04-26,2024,04,Online,Producto D,Electrónica,3,78.15,50.8,180
+T01641,2024-04-24,2024,04,Tienda 1,Producto H,Indumentaria,2,42.11,24.42,60
+T01642,2024-04-21,2024,04,Online,Producto D,Electrónica,4,109.05,70.88,180
+T01643,2024-04-27,2024,04,Tienda 2,Producto D,Electrónica,9,238.81,155.22,180
+T01644,2024-04-09,2024,04,Tienda 1,Producto G,Electrónica,2,239.88,167.92,200
+T01645,2024-04-18,2024,04,Tienda 1,Producto B,Indumentaria,5,228.08,125.45,120
+T01646,2024-04-27,2024,04,Online,Producto C,Hogar,2,130.49,80.91,30
+T01647,2024-04-20,2024,04,Tienda 2,Producto F,Hogar,2,191.04,114.63,300
+T01648,2024-04-10,2024,04,Tienda 2,Producto A,Electrónica,3,255.13,173.49,45
+T01649,2024-04-11,2024,04,Online,Producto G,Electrónica,1,123.79,86.65,200
+T01650,2024-04-04,2024,04,Tienda 2,Producto F,Hogar,4,410.12,246.07,300
+T01651,2024-05-24,2024,05,Online,Producto C,Hogar,1,68.31,42.35,30
+T01652,2024-05-28,2024,05,Online,Producto H,Indumentaria,3,63.14,36.62,60
+T01653,2024-05-20,2024,05,Tienda 2,Producto B,Indumentaria,1,48.96,26.93,120
+T01654,2024-05-05,2024,05,Tienda 1,Producto E,Indumentaria,2,77.27,40.18,90
+T01655,2024-05-24,2024,05,Tienda 2,Producto A,Electrónica,2,172.08,117.01,45
+T01656,2024-05-25,2024,05,Online,Producto A,Electrónica,1,91.99,62.55,45
+T01657,2024-05-02,2024,05,Online,Producto E,Indumentaria,3,114.72,59.65,90
+T01658,2024-05-22,2024,05,Tienda 2,Producto H,Indumentaria,3,65.05,37.73,60
+T01659,2024-05-27,2024,05,Tienda 2,Producto H,Indumentaria,1,20.06,11.63,60
+T01660,2024-05-09,2024,05,Online,Producto E,Indumentaria,4,161.74,84.1,90
+T01661,2024-05-07,2024,05,Tienda 2,Producto B,Indumentaria,1,46.12,25.37,120
+T01662,2024-05-25,2024,05,Tienda 1,Producto E,Indumentaria,1,39.01,20.29,90
+T01663,2024-05-19,2024,05,Tienda 2,Producto D,Electrónica,5,136.1,88.47,180
+T01664,2024-05-11,2024,05,Tienda 1,Producto A,Electrónica,2,171.76,116.8,45
+T01665,2024-05-15,2024,05,Tienda 2,Producto A,Electrónica,4,347.64,236.39,45
+T01666,2024-05-09,2024,05,Tienda 1,Producto H,Indumentaria,2,40.54,23.51,60
+T01667,2024-05-09,2024,05,Online,Producto H,Indumentaria,3,60.44,35.06,60
+T01668,2024-05-09,2024,05,Tienda 1,Producto C,Hogar,6,397.02,246.15,30
+T01669,2024-05-08,2024,05,Tienda 2,Producto A,Electrónica,3,268.72,182.73,45
+T01670,2024-05-04,2024,05,Tienda 1,Producto G,Electrónica,5,650.78,455.55,200
+T01671,2024-05-10,2024,05,Tienda 2,Producto B,Indumentaria,3,140.01,77.0,120
+T01672,2024-05-01,2024,05,Tienda 1,Producto F,Hogar,2,209.47,125.68,300
+T01673,2024-05-07,2024,05,Tienda 1,Producto E,Indumentaria,3,120.26,62.53,90
+T01674,2024-05-08,2024,05,Online,Producto F,Hogar,4,412.55,247.53,300
+T01675,2024-05-28,2024,05,Tienda 1,Producto D,Electrónica,5,135.83,88.29,180
+T01676,2024-05-16,2024,05,Tienda 1,Producto F,Hogar,1,97.87,58.72,300
+T01677,2024-05-19,2024,05,Tienda 2,Producto A,Electrónica,1,85.41,58.08,45
+T01678,2024-05-16,2024,05,Tienda 1,Producto E,Indumentaria,2,77.67,40.39,90
+T01679,2024-05-26,2024,05,Tienda 2,Producto B,Indumentaria,6,285.58,157.07,120
+T01680,2024-05-25,2024,05,Online,Producto D,Electrónica,2,54.6,35.49,180
+T01681,2024-05-13,2024,05,Online,Producto F,Hogar,1,97.25,58.35,300
+T01682,2024-05-11,2024,05,Online,Producto E,Indumentaria,1,39.99,20.79,90
+T01683,2024-05-09,2024,05,Tienda 1,Producto G,Electrónica,5,661.3,462.91,200
+T01684,2024-05-16,2024,05,Tienda 1,Producto H,Indumentaria,3,64.17,37.22,60
+T01685,2024-05-25,2024,05,Tienda 2,Producto B,Indumentaria,3,137.35,75.54,120
+T01686,2024-05-10,2024,05,Tienda 2,Producto H,Indumentaria,3,64.0,37.12,60
+T01687,2024-05-07,2024,05,Tienda 2,Producto C,Hogar,3,211.73,131.27,30
+T01688,2024-05-08,2024,05,Tienda 1,Producto A,Electrónica,1,86.67,58.93,45
+T01689,2024-05-04,2024,05,Tienda 1,Producto E,Indumentaria,5,192.67,100.19,90
+T01690,2024-05-13,2024,05,Online,Producto G,Electrónica,1,121.67,85.17,200
+T01691,2024-05-21,2024,05,Tienda 2,Producto G,Electrónica,9,1137.23,796.06,200
+T01692,2024-05-10,2024,05,Tienda 1,Producto A,Electrónica,1,88.07,59.89,45
+T01693,2024-05-15,2024,05,Online,Producto F,Hogar,2,190.07,114.04,300
+T01694,2024-05-17,2024,05,Online,Producto H,Indumentaria,5,107.5,62.35,60
+T01695,2024-05-16,2024,05,Tienda 2,Producto B,Indumentaria,2,94.95,52.22,120
+T01696,2024-05-28,2024,05,Online,Producto C,Hogar,4,274.53,170.21,30
+T01697,2024-05-11,2024,05,Tienda 2,Producto D,Electrónica,3,82.38,53.55,180
+T01698,2024-05-06,2024,05,Online,Producto E,Indumentaria,2,78.69,40.92,90
+T01699,2024-05-19,2024,05,Tienda 2,Producto D,Electrónica,1,27.09,17.61,180
+T01700,2024-05-07,2024,05,Tienda 1,Producto D,Electrónica,4,109.79,71.36,180
+T01701,2024-05-13,2024,05,Online,Producto B,Indumentaria,1,49.12,27.02,120
+T01702,2024-05-21,2024,05,Online,Producto D,Electrónica,8,208.13,135.28,180
+T01703,2024-05-02,2024,05,Tienda 1,Producto F,Hogar,4,394.21,236.52,300
+T01704,2024-05-18,2024,05,Online,Producto D,Electrónica,4,100.52,65.34,180
+T01705,2024-05-06,2024,05,Online,Producto B,Indumentaria,3,141.13,77.62,120
+T01706,2024-05-01,2024,05,Tienda 1,Producto A,Electrónica,6,525.25,357.17,45
+T01707,2024-05-24,2024,05,Online,Producto G,Electrónica,5,644.36,451.05,200
+T01708,2024-05-27,2024,05,Tienda 1,Producto E,Indumentaria,1,40.72,21.18,90
+T01709,2024-05-18,2024,05,Online,Producto A,Electrónica,3,264.21,179.66,45
+T01710,2024-05-18,2024,05,Online,Producto B,Indumentaria,3,141.47,77.81,120
+T01711,2024-05-04,2024,05,Tienda 1,Producto D,Electrónica,1,27.07,17.59,180
+T01712,2024-05-14,2024,05,Online,Producto F,Hogar,1,104.31,62.58,300
+T01713,2024-05-13,2024,05,Tienda 1,Producto H,Indumentaria,2,42.38,24.58,60
+T01714,2024-05-11,2024,05,Tienda 1,Producto D,Electrónica,2,53.97,35.08,180
+T01715,2024-05-01,2024,05,Online,Producto A,Electrónica,2,186.12,126.56,45
+T01716,2024-05-02,2024,05,Tienda 2,Producto F,Hogar,4,415.9,249.54,300
+T01717,2024-05-25,2024,05,Online,Producto C,Hogar,5,349.71,216.82,30
+T01718,2024-05-01,2024,05,Online,Producto B,Indumentaria,4,191.63,105.4,120
+T01719,2024-05-16,2024,05,Online,Producto F,Hogar,3,292.69,175.61,300
+T01720,2024-05-02,2024,05,Tienda 2,Producto H,Indumentaria,4,84.4,48.95,60
+T01721,2024-05-16,2024,05,Tienda 2,Producto H,Indumentaria,2,43.24,25.08,60
+T01722,2024-05-26,2024,05,Online,Producto D,Electrónica,2,51.13,33.23,180
+T01723,2024-05-09,2024,05,Tienda 2,Producto H,Indumentaria,1,21.67,12.57,60
+T01724,2024-05-06,2024,05,Online,Producto C,Hogar,4,273.0,169.26,30
+T01725,2024-05-19,2024,05,Online,Producto F,Hogar,2,198.12,118.87,300
+T01726,2024-05-01,2024,05,Tienda 2,Producto G,Electrónica,3,384.14,268.9,200
+T01727,2024-05-18,2024,05,Tienda 1,Producto D,Electrónica,3,78.6,51.09,180
+T01728,2024-05-19,2024,05,Tienda 2,Producto A,Electrónica,1,86.48,58.81,45
+T01729,2024-05-03,2024,05,Online,Producto D,Electrónica,2,51.78,33.66,180
+T01730,2024-05-14,2024,05,Tienda 2,Producto F,Hogar,4,385.15,231.09,300
+T01731,2024-05-10,2024,05,Online,Producto C,Hogar,4,271.02,168.03,30
+T01732,2024-05-04,2024,05,Tienda 1,Producto B,Indumentaria,4,190.91,105.0,120
+T01733,2024-05-26,2024,05,Tienda 2,Producto B,Indumentaria,4,186.41,102.52,120
+T01734,2024-05-12,2024,05,Tienda 2,Producto C,Hogar,1,64.92,40.25,30
+T01735,2024-05-23,2024,05,Tienda 2,Producto G,Electrónica,5,627.69,439.38,200
+T01736,2024-05-26,2024,05,Tienda 2,Producto B,Indumentaria,4,184.94,101.72,120
+T01737,2024-05-15,2024,05,Tienda 1,Producto D,Electrónica,4,105.74,68.73,180
+T01738,2024-05-13,2024,05,Online,Producto H,Indumentaria,2,42.03,24.38,60
+T01739,2024-05-08,2024,05,Tienda 2,Producto C,Hogar,2,130.35,80.82,30
+T01740,2024-05-14,2024,05,Online,Producto A,Electrónica,1,89.56,60.9,45
+T01741,2024-05-18,2024,05,Tienda 1,Producto E,Indumentaria,5,191.02,99.33,90
+T01742,2024-05-08,2024,05,Online,Producto C,Hogar,3,206.4,127.97,30
+T01743,2024-05-10,2024,05,Tienda 2,Producto G,Electrónica,7,840.85,588.6,200
+T01744,2024-05-07,2024,05,Online,Producto D,Electrónica,3,80.23,52.15,180
+T01745,2024-05-27,2024,05,Tienda 2,Producto D,Electrónica,1,27.07,17.59,180
+T01746,2024-05-25,2024,05,Online,Producto C,Hogar,2,133.66,82.87,30
+T01747,2024-05-26,2024,05,Online,Producto H,Indumentaria,1,19.95,11.57,60
+T01748,2024-05-06,2024,05,Tienda 1,Producto F,Hogar,2,208.09,124.86,300
+T01749,2024-05-23,2024,05,Tienda 2,Producto B,Indumentaria,1,47.03,25.87,120
+T01750,2024-05-12,2024,05,Tienda 2,Producto G,Electrónica,1,123.57,86.5,200
+T01751,2024-05-07,2024,05,Tienda 2,Producto G,Electrónica,3,371.06,259.74,200
+T01752,2024-05-18,2024,05,Tienda 2,Producto D,Electrónica,5,132.94,86.41,180
+T01753,2024-05-16,2024,05,Tienda 2,Producto A,Electrónica,2,181.62,123.5,45
+T01754,2024-05-19,2024,05,Tienda 2,Producto E,Indumentaria,2,79.67,41.43,90
+T01755,2024-05-24,2024,05,Online,Producto F,Hogar,1,102.97,61.78,300
+T01756,2024-06-05,2024,06,Tienda 2,Producto A,Electrónica,2,171.09,116.34,45
+T01757,2024-06-01,2024,06,Tienda 1,Producto E,Indumentaria,2,83.25,43.29,90
+T01758,2024-06-11,2024,06,Online,Producto G,Electrónica,4,488.95,342.26,200
+T01759,2024-06-01,2024,06,Tienda 2,Producto B,Indumentaria,4,190.65,104.86,120
+T01760,2024-06-21,2024,06,Tienda 2,Producto E,Indumentaria,2,83.02,43.17,90
+T01761,2024-06-24,2024,06,Online,Producto B,Indumentaria,4,183.55,100.95,120
+T01762,2024-06-22,2024,06,Online,Producto A,Electrónica,1,92.4,62.83,45
+T01763,2024-06-15,2024,06,Tienda 2,Producto A,Electrónica,7,617.8,420.1,45
+T01764,2024-06-09,2024,06,Tienda 1,Producto H,Indumentaria,6,123.09,71.39,60
+T01765,2024-06-06,2024,06,Tienda 2,Producto H,Indumentaria,5,105.07,60.94,60
+T01766,2024-06-06,2024,06,Tienda 2,Producto D,Electrónica,5,128.88,83.77,180
+T01767,2024-06-11,2024,06,Online,Producto H,Indumentaria,5,107.12,62.13,60
+T01768,2024-06-12,2024,06,Tienda 1,Producto B,Indumentaria,5,231.3,127.21,120
+T01769,2024-06-20,2024,06,Online,Producto G,Electrónica,4,503.98,352.79,200
+T01770,2024-06-04,2024,06,Tienda 2,Producto H,Indumentaria,3,60.5,35.09,60
+T01771,2024-06-09,2024,06,Tienda 1,Producto A,Electrónica,9,787.51,535.51,45
+T01772,2024-06-07,2024,06,Tienda 2,Producto G,Electrónica,1,129.27,90.49,200
+T01773,2024-06-22,2024,06,Tienda 2,Producto C,Hogar,2,140.31,86.99,30
+T01774,2024-06-22,2024,06,Tienda 2,Producto F,Hogar,2,198.91,119.35,300
+T01775,2024-06-21,2024,06,Tienda 2,Producto C,Hogar,4,279.02,172.99,30
+T01776,2024-06-26,2024,06,Tienda 1,Producto H,Indumentaria,3,65.66,38.08,60
+T01777,2024-06-21,2024,06,Tienda 1,Producto G,Electrónica,3,360.39,252.27,200
+T01778,2024-06-06,2024,06,Tienda 2,Producto B,Indumentaria,4,182.41,100.33,120
+T01779,2024-06-10,2024,06,Tienda 1,Producto E,Indumentaria,5,193.09,100.41,90
+T01780,2024-06-23,2024,06,Tienda 1,Producto A,Electrónica,4,344.05,233.95,45
+T01781,2024-06-17,2024,06,Tienda 2,Producto F,Hogar,1,104.54,62.72,300
+T01782,2024-06-23,2024,06,Online,Producto B,Indumentaria,8,359.43,197.68,120
+T01783,2024-06-21,2024,06,Tienda 2,Producto C,Hogar,1,66.01,40.93,30
+T01784,2024-06-03,2024,06,Online,Producto F,Hogar,2,205.53,123.32,300
+T01785,2024-06-26,2024,06,Tienda 1,Producto B,Indumentaria,1,46.18,25.4,120
+T01786,2024-06-18,2024,06,Tienda 2,Producto H,Indumentaria,5,100.61,58.35,60
+T01787,2024-06-08,2024,06,Tienda 1,Producto F,Hogar,3,307.89,184.73,300
+T01788,2024-06-10,2024,06,Online,Producto B,Indumentaria,2,94.78,52.13,120
+T01789,2024-06-15,2024,06,Tienda 2,Producto H,Indumentaria,1,20.26,11.75,60
+T01790,2024-06-13,2024,06,Tienda 2,Producto H,Indumentaria,1,21.82,12.65,60
+T01791,2024-06-21,2024,06,Online,Producto C,Hogar,5,356.53,221.05,30
+T01792,2024-06-08,2024,06,Online,Producto F,Hogar,1,96.01,57.61,300
+T01793,2024-06-16,2024,06,Online,Producto G,Electrónica,2,254.47,178.13,200
+T01794,2024-06-13,2024,06,Tienda 1,Producto C,Hogar,1,65.96,40.9,30
+T01795,2024-06-02,2024,06,Online,Producto B,Indumentaria,2,90.58,49.82,120
+T01796,2024-06-16,2024,06,Tienda 2,Producto H,Indumentaria,5,102.85,59.65,60
+T01797,2024-06-08,2024,06,Online,Producto B,Indumentaria,2,92.22,50.72,120
+T01798,2024-06-02,2024,06,Online,Producto A,Electrónica,6,530.67,360.85,45
+T01799,2024-06-18,2024,06,Tienda 1,Producto G,Electrónica,3,364.31,255.02,200
+T01800,2024-06-22,2024,06,Tienda 1,Producto A,Electrónica,3,276.04,187.71,45
+T01801,2024-06-07,2024,06,Tienda 1,Producto D,Electrónica,4,103.98,67.58,180
+T01802,2024-06-21,2024,06,Tienda 1,Producto A,Electrónica,1,87.81,59.71,45
+T01803,2024-06-07,2024,06,Tienda 1,Producto C,Hogar,5,347.79,215.63,30
+T01804,2024-06-19,2024,06,Tienda 1,Producto C,Hogar,6,420.59,260.77,30
+T01805,2024-06-17,2024,06,Tienda 1,Producto B,Indumentaria,2,96.41,53.03,120
+T01806,2024-06-28,2024,06,Online,Producto E,Indumentaria,5,201.02,104.53,90
+T01807,2024-06-23,2024,06,Tienda 2,Producto A,Electrónica,2,172.05,116.99,45
+T01808,2024-06-06,2024,06,Tienda 2,Producto B,Indumentaria,2,93.23,51.28,120
+T01809,2024-06-16,2024,06,Tienda 1,Producto G,Electrónica,1,124.07,86.85,200
+T01810,2024-06-12,2024,06,Online,Producto G,Electrónica,2,247.65,173.35,200
+T01811,2024-06-26,2024,06,Tienda 2,Producto B,Indumentaria,2,94.47,51.96,120
+T01812,2024-06-09,2024,06,Tienda 1,Producto H,Indumentaria,3,64.93,37.66,60
+T01813,2024-06-19,2024,06,Tienda 2,Producto C,Hogar,4,261.09,161.88,30
+T01814,2024-06-05,2024,06,Tienda 1,Producto C,Hogar,5,346.74,214.98,30
+T01815,2024-06-19,2024,06,Online,Producto D,Electrónica,1,27.0,17.55,180
+T01816,2024-06-13,2024,06,Tienda 1,Producto E,Indumentaria,2,82.84,43.08,90
+T01817,2024-06-09,2024,06,Online,Producto E,Indumentaria,1,38.54,20.04,90
+T01818,2024-06-26,2024,06,Tienda 2,Producto H,Indumentaria,4,80.48,46.68,60
+T01819,2024-06-02,2024,06,Online,Producto F,Hogar,2,199.26,119.56,300
+T01820,2024-06-11,2024,06,Tienda 1,Producto F,Hogar,2,205.02,123.01,300
+T01821,2024-06-11,2024,06,Online,Producto H,Indumentaria,1,21.39,12.41,60
+T01822,2024-06-28,2024,06,Online,Producto H,Indumentaria,5,103.6,60.09,60
+T01823,2024-06-04,2024,06,Tienda 2,Producto F,Hogar,3,299.55,179.73,300
+T01824,2024-06-26,2024,06,Tienda 1,Producto D,Electrónica,2,51.72,33.62,180
+T01825,2024-06-04,2024,06,Tienda 2,Producto A,Electrónica,3,272.89,185.57,45
+T01826,2024-06-18,2024,06,Tienda 2,Producto F,Hogar,4,411.29,246.78,300
+T01827,2024-06-13,2024,06,Tienda 2,Producto C,Hogar,3,203.03,125.88,30
+T01828,2024-06-13,2024,06,Online,Producto H,Indumentaria,1,20.38,11.82,60
+T01829,2024-06-26,2024,06,Online,Producto F,Hogar,2,195.48,117.29,300
+T01830,2024-06-12,2024,06,Online,Producto C,Hogar,2,131.03,81.24,30
+T01831,2024-06-12,2024,06,Tienda 1,Producto E,Indumentaria,7,280.23,145.72,90
+T01832,2024-06-06,2024,06,Online,Producto G,Electrónica,1,124.73,87.31,200
+T01833,2024-06-26,2024,06,Online,Producto A,Electrónica,3,267.7,182.03,45
+T01834,2024-06-20,2024,06,Tienda 1,Producto B,Indumentaria,1,45.23,24.88,120
+T01835,2024-06-25,2024,06,Tienda 2,Producto B,Indumentaria,3,143.77,79.07,120
+T01836,2024-06-17,2024,06,Tienda 2,Producto G,Electrónica,2,264.49,185.15,200
+T01837,2024-06-05,2024,06,Online,Producto C,Hogar,3,206.1,127.78,30
+T01838,2024-06-28,2024,06,Tienda 1,Producto F,Hogar,3,309.32,185.59,300
+T01839,2024-06-24,2024,06,Tienda 1,Producto G,Electrónica,3,373.97,261.78,200
+T01840,2024-06-24,2024,06,Online,Producto B,Indumentaria,2,90.98,50.04,120
+T01841,2024-06-16,2024,06,Tienda 2,Producto C,Hogar,1,68.44,42.43,30
+T01842,2024-06-07,2024,06,Online,Producto G,Electrónica,3,370.12,259.09,200
+T01843,2024-06-04,2024,06,Tienda 1,Producto B,Indumentaria,3,141.43,77.79,120
+T01844,2024-06-18,2024,06,Tienda 1,Producto A,Electrónica,2,181.38,123.34,45
+T01845,2024-06-04,2024,06,Tienda 1,Producto E,Indumentaria,1,39.06,20.31,90
+T01846,2024-06-08,2024,06,Tienda 1,Producto D,Electrónica,2,51.84,33.69,180
+T01847,2024-06-21,2024,06,Tienda 2,Producto B,Indumentaria,5,235.36,129.45,120
+T01848,2024-06-08,2024,06,Tienda 1,Producto E,Indumentaria,2,79.84,41.52,90
+T01849,2024-06-12,2024,06,Tienda 2,Producto B,Indumentaria,2,93.85,51.62,120
+T01850,2024-06-05,2024,06,Tienda 2,Producto E,Indumentaria,4,158.5,82.42,90
+T01851,2024-06-19,2024,06,Online,Producto C,Hogar,9,626.22,388.26,30
+T01852,2024-06-25,2024,06,Tienda 1,Producto E,Indumentaria,3,119.07,61.92,90
+T01853,2024-06-02,2024,06,Online,Producto F,Hogar,1,98.93,59.36,300
+T01854,2024-06-20,2024,06,Tienda 2,Producto E,Indumentaria,9,353.94,184.05,90
+T01855,2024-06-23,2024,06,Online,Producto C,Hogar,2,132.67,82.26,30
+T01856,2024-06-09,2024,06,Tienda 1,Producto E,Indumentaria,2,78.46,40.8,90
+T01857,2024-06-06,2024,06,Tienda 2,Producto B,Indumentaria,3,136.8,75.24,120
+T01858,2024-06-18,2024,06,Online,Producto H,Indumentaria,5,106.75,61.92,60
+T01859,2024-06-01,2024,06,Online,Producto A,Electrónica,1,87.0,59.16,45
+T01860,2024-06-18,2024,06,Tienda 2,Producto A,Electrónica,3,266.18,181.0,45
+T01861,2024-06-16,2024,06,Tienda 2,Producto C,Hogar,1,70.95,43.99,30
+T01862,2024-06-06,2024,06,Tienda 2,Producto C,Hogar,3,195.63,121.29,30
+T01863,2024-06-19,2024,06,Tienda 2,Producto G,Electrónica,5,632.97,443.08,200
+T01864,2024-06-22,2024,06,Online,Producto D,Electrónica,6,159.54,103.7,180
+T01865,2024-06-10,2024,06,Tienda 1,Producto A,Electrónica,2,179.59,122.12,45
+T01866,2024-06-22,2024,06,Tienda 2,Producto E,Indumentaria,4,154.4,80.29,90
+T01867,2024-06-25,2024,06,Tienda 1,Producto E,Indumentaria,1,41.08,21.36,90
+T01868,2024-07-17,2024,07,Online,Producto A,Electrónica,5,451.85,307.26,45
+T01869,2024-07-17,2024,07,Online,Producto G,Electrónica,5,608.86,426.2,200
+T01870,2024-07-27,2024,07,Online,Producto E,Indumentaria,2,77.35,40.22,90
+T01871,2024-07-24,2024,07,Tienda 2,Producto A,Electrónica,1,93.65,63.68,45
+T01872,2024-07-17,2024,07,Tienda 1,Producto H,Indumentaria,2,42.79,24.82,60
+T01873,2024-07-27,2024,07,Online,Producto F,Hogar,7,725.34,435.2,300
+T01874,2024-07-06,2024,07,Tienda 1,Producto A,Electrónica,2,170.89,116.21,45
+T01875,2024-07-10,2024,07,Tienda 2,Producto D,Electrónica,1,27.14,17.64,180
+T01876,2024-07-18,2024,07,Tienda 2,Producto G,Electrónica,6,761.95,533.37,200
+T01877,2024-07-20,2024,07,Tienda 1,Producto F,Hogar,2,202.08,121.25,300
+T01878,2024-07-14,2024,07,Tienda 2,Producto B,Indumentaria,3,139.12,76.52,120
+T01879,2024-07-02,2024,07,Tienda 1,Producto F,Hogar,4,379.55,227.73,300
+T01880,2024-07-27,2024,07,Tienda 1,Producto B,Indumentaria,7,322.84,177.56,120
+T01881,2024-07-12,2024,07,Tienda 2,Producto H,Indumentaria,5,108.86,63.14,60
+T01882,2024-07-26,2024,07,Tienda 1,Producto E,Indumentaria,4,161.32,83.89,90
+T01883,2024-07-13,2024,07,Tienda 1,Producto G,Electrónica,1,126.75,88.72,200
+T01884,2024-07-23,2024,07,Tienda 2,Producto G,Electrónica,2,248.05,173.64,200
+T01885,2024-07-17,2024,07,Tienda 2,Producto F,Hogar,8,774.99,464.99,300
+T01886,2024-07-03,2024,07,Online,Producto F,Hogar,6,589.78,353.87,300
+T01887,2024-07-17,2024,07,Tienda 1,Producto H,Indumentaria,3,62.15,36.05,60
+T01888,2024-07-28,2024,07,Tienda 2,Producto A,Electrónica,7,616.29,419.07,45
+T01889,2024-07-13,2024,07,Tienda 1,Producto B,Indumentaria,3,143.03,78.67,120
+T01890,2024-07-09,2024,07,Tienda 1,Producto A,Electrónica,2,171.43,116.57,45
+T01891,2024-07-24,2024,07,Tienda 2,Producto C,Hogar,1,67.68,41.96,30
+T01892,2024-07-20,2024,07,Online,Producto C,Hogar,1,71.42,44.28,30
+T01893,2024-07-18,2024,07,Tienda 2,Producto D,Electrónica,5,127.08,82.6,180
+T01894,2024-07-12,2024,07,Tienda 1,Producto G,Electrónica,2,247.77,173.44,200
+T01895,2024-07-13,2024,07,Online,Producto H,Indumentaria,6,127.05,73.69,60
+T01896,2024-07-10,2024,07,Tienda 2,Producto C,Hogar,1,66.74,41.38,30
+T01897,2024-07-04,2024,07,Online,Producto E,Indumentaria,1,40.89,21.26,90
+T01898,2024-07-23,2024,07,Tienda 1,Producto A,Electrónica,3,263.96,179.49,45
+T01899,2024-07-19,2024,07,Tienda 2,Producto C,Hogar,2,137.99,85.55,30
+T01900,2024-07-28,2024,07,Tienda 1,Producto A,Electrónica,6,558.94,380.08,45
+T01901,2024-07-12,2024,07,Online,Producto E,Indumentaria,5,198.67,103.31,90
+T01902,2024-07-17,2024,07,Tienda 1,Producto H,Indumentaria,1,21.04,12.2,60
+T01903,2024-07-05,2024,07,Tienda 2,Producto C,Hogar,3,206.63,128.11,30
+T01904,2024-07-15,2024,07,Online,Producto D,Electrónica,3,77.92,50.65,180
+T01905,2024-07-04,2024,07,Online,Producto E,Indumentaria,5,201.54,104.8,90
+T01906,2024-07-05,2024,07,Tienda 1,Producto D,Electrónica,1,26.72,17.37,180
+T01907,2024-07-11,2024,07,Tienda 2,Producto B,Indumentaria,1,46.12,25.37,120
+T01908,2024-07-20,2024,07,Tienda 2,Producto E,Indumentaria,1,38.86,20.21,90
+T01909,2024-07-06,2024,07,Tienda 2,Producto G,Electrónica,3,387.89,271.52,200
+T01910,2024-07-20,2024,07,Online,Producto H,Indumentaria,1,21.04,12.21,60
+T01911,2024-07-22,2024,07,Tienda 2,Producto F,Hogar,5,500.55,300.33,300
+T01912,2024-07-25,2024,07,Tienda 2,Producto D,Electrónica,3,79.69,51.8,180
+T01913,2024-07-16,2024,07,Tienda 1,Producto B,Indumentaria,2,96.34,52.98,120
+T01914,2024-07-22,2024,07,Tienda 2,Producto E,Indumentaria,5,203.12,105.62,90
+T01915,2024-07-21,2024,07,Tienda 1,Producto H,Indumentaria,2,43.32,25.13,60
+T01916,2024-07-24,2024,07,Tienda 1,Producto D,Electrónica,1,25.9,16.84,180
+T01917,2024-07-25,2024,07,Online,Producto B,Indumentaria,3,147.21,80.97,120
+T01918,2024-07-12,2024,07,Tienda 1,Producto C,Hogar,5,338.69,209.99,30
+T01919,2024-07-21,2024,07,Online,Producto C,Hogar,1,69.51,43.09,30
+T01920,2024-07-27,2024,07,Online,Producto A,Electrónica,3,268.78,182.77,45
+T01921,2024-07-09,2024,07,Tienda 1,Producto B,Indumentaria,2,98.94,54.42,120
+T01922,2024-07-13,2024,07,Online,Producto H,Indumentaria,2,42.55,24.68,60
+T01923,2024-07-28,2024,07,Tienda 1,Producto G,Electrónica,4,505.11,353.58,200
+T01924,2024-07-08,2024,07,Tienda 2,Producto B,Indumentaria,3,144.18,79.3,120
+T01925,2024-07-04,2024,07,Tienda 2,Producto F,Hogar,3,309.62,185.77,300
+T01926,2024-07-04,2024,07,Online,Producto D,Electrónica,1,25.76,16.75,180
+T01927,2024-07-15,2024,07,Tienda 1,Producto F,Hogar,1,99.28,59.57,300
+T01928,2024-07-28,2024,07,Tienda 1,Producto A,Electrónica,7,594.72,404.41,45
+T01929,2024-07-08,2024,07,Online,Producto H,Indumentaria,4,81.54,47.29,60
+T01930,2024-07-03,2024,07,Tienda 2,Producto G,Electrónica,3,383.91,268.74,200
+T01931,2024-07-16,2024,07,Online,Producto A,Electrónica,2,173.86,118.22,45
+T01932,2024-07-21,2024,07,Tienda 2,Producto H,Indumentaria,3,61.26,35.53,60
+T01933,2024-07-14,2024,07,Online,Producto G,Electrónica,1,128.08,89.65,200
+T01934,2024-07-23,2024,07,Online,Producto D,Electrónica,3,78.14,50.79,180
+T01935,2024-07-26,2024,07,Online,Producto H,Indumentaria,1,21.31,12.36,60
+T01936,2024-07-05,2024,07,Online,Producto A,Electrónica,6,542.64,368.99,45
+T01937,2024-07-05,2024,07,Tienda 2,Producto E,Indumentaria,5,189.91,98.75,90
+T01938,2024-07-22,2024,07,Online,Producto B,Indumentaria,1,46.34,25.49,120
+T01939,2024-07-22,2024,07,Tienda 2,Producto B,Indumentaria,7,322.54,177.4,120
+T01940,2024-07-02,2024,07,Tienda 1,Producto A,Electrónica,5,455.39,309.67,45
+T01941,2024-07-26,2024,07,Tienda 1,Producto F,Hogar,2,194.69,116.82,300
+T01942,2024-07-25,2024,07,Tienda 1,Producto F,Hogar,2,191.89,115.14,300
+T01943,2024-07-02,2024,07,Online,Producto G,Electrónica,3,363.99,254.79,200
+T01944,2024-07-08,2024,07,Tienda 1,Producto C,Hogar,3,203.78,126.34,30
+T01945,2024-07-06,2024,07,Tienda 1,Producto C,Hogar,3,197.84,122.66,30
+T01946,2024-07-23,2024,07,Online,Producto E,Indumentaria,3,123.62,64.28,90
+T01947,2024-07-13,2024,07,Tienda 2,Producto H,Indumentaria,2,40.2,23.32,60
+T01948,2024-07-12,2024,07,Tienda 2,Producto D,Electrónica,3,78.56,51.06,180
+T01949,2024-07-05,2024,07,Tienda 2,Producto H,Indumentaria,2,43.72,25.36,60
+T01950,2024-07-18,2024,07,Tienda 2,Producto B,Indumentaria,3,137.48,75.61,120
+T01951,2024-07-12,2024,07,Online,Producto E,Indumentaria,2,79.92,41.56,90
+T01952,2024-07-21,2024,07,Tienda 2,Producto B,Indumentaria,5,247.63,136.2,120
+T01953,2024-07-15,2024,07,Tienda 2,Producto F,Hogar,1,103.35,62.01,300
+T01954,2024-07-10,2024,07,Tienda 1,Producto H,Indumentaria,6,131.95,76.53,60
+T01955,2024-07-05,2024,07,Tienda 1,Producto B,Indumentaria,2,92.09,50.65,120
+T01956,2024-07-18,2024,07,Tienda 2,Producto B,Indumentaria,5,235.58,129.57,120
+T01957,2024-07-04,2024,07,Online,Producto A,Electrónica,2,176.01,119.69,45
+T01958,2024-07-21,2024,07,Tienda 2,Producto D,Electrónica,1,26.72,17.37,180
+T01959,2024-07-06,2024,07,Online,Producto E,Indumentaria,3,122.61,63.76,90
+T01960,2024-07-10,2024,07,Tienda 2,Producto G,Electrónica,1,129.84,90.88,200
+T01961,2024-07-20,2024,07,Tienda 1,Producto B,Indumentaria,1,47.71,26.24,120
+T01962,2024-07-14,2024,07,Online,Producto F,Hogar,3,290.94,174.56,300
+T01963,2024-07-23,2024,07,Tienda 1,Producto A,Electrónica,3,264.81,180.07,45
+T01964,2024-07-06,2024,07,Tienda 2,Producto H,Indumentaria,2,40.5,23.49,60
+T01965,2024-07-28,2024,07,Online,Producto E,Indumentaria,3,120.75,62.79,90
+T01966,2024-07-05,2024,07,Online,Producto F,Hogar,1,102.52,61.51,300
+T01967,2024-07-27,2024,07,Tienda 2,Producto C,Hogar,6,422.83,262.16,30
+T01968,2024-07-11,2024,07,Tienda 1,Producto B,Indumentaria,1,47.61,26.18,120
+T01969,2024-07-12,2024,07,Tienda 2,Producto H,Indumentaria,4,83.84,48.63,60
+T01970,2024-07-26,2024,07,Online,Producto C,Hogar,1,69.78,43.26,30
+T01971,2024-07-01,2024,07,Online,Producto G,Electrónica,2,263.89,184.72,200
+T01972,2024-07-15,2024,07,Tienda 1,Producto C,Hogar,3,201.24,124.77,30
+T01973,2024-07-04,2024,07,Tienda 2,Producto C,Hogar,4,259.85,161.11,30
+T01974,2024-07-02,2024,07,Tienda 1,Producto D,Electrónica,1,25.94,16.86,180
+T01975,2024-07-21,2024,07,Tienda 1,Producto B,Indumentaria,3,147.02,80.86,120
+T01976,2024-07-03,2024,07,Tienda 2,Producto D,Electrónica,2,53.34,34.67,180
+T01977,2024-07-10,2024,07,Tienda 2,Producto C,Hogar,3,198.81,123.26,30
+T01978,2024-08-11,2024,08,Tienda 1,Producto H,Indumentaria,2,41.98,24.35,60
+T01979,2024-08-19,2024,08,Tienda 2,Producto D,Electrónica,1,26.68,17.34,180
+T01980,2024-08-18,2024,08,Tienda 1,Producto H,Indumentaria,3,62.58,36.3,60
+T01981,2024-08-05,2024,08,Online,Producto F,Hogar,1,96.61,57.97,300
+T01982,2024-08-15,2024,08,Tienda 2,Producto D,Electrónica,3,75.98,49.38,180
+T01983,2024-08-17,2024,08,Tienda 1,Producto D,Electrónica,5,133.92,87.05,180
+T01984,2024-08-08,2024,08,Tienda 2,Producto C,Hogar,2,137.74,85.4,30
+T01985,2024-08-06,2024,08,Online,Producto A,Electrónica,4,370.41,251.88,45
+T01986,2024-08-25,2024,08,Tienda 2,Producto E,Indumentaria,3,122.4,63.65,90
+T01987,2024-08-20,2024,08,Tienda 1,Producto H,Indumentaria,1,21.62,12.54,60
+T01988,2024-08-22,2024,08,Online,Producto E,Indumentaria,5,208.2,108.27,90
+T01989,2024-08-03,2024,08,Tienda 1,Producto E,Indumentaria,2,80.22,41.72,90
+T01990,2024-08-11,2024,08,Tienda 2,Producto F,Hogar,8,779.49,467.7,300
+T01991,2024-08-24,2024,08,Tienda 1,Producto F,Hogar,4,392.72,235.63,300
+T01992,2024-08-24,2024,08,Tienda 2,Producto C,Hogar,3,195.67,121.32,30
+T01993,2024-08-04,2024,08,Tienda 2,Producto E,Indumentaria,3,114.51,59.55,90
+T01994,2024-08-19,2024,08,Tienda 1,Producto E,Indumentaria,3,118.85,61.8,90
+T01995,2024-08-03,2024,08,Tienda 1,Producto E,Indumentaria,4,167.13,86.91,90
+T01996,2024-08-01,2024,08,Tienda 2,Producto E,Indumentaria,5,202.77,105.44,90
+T01997,2024-08-25,2024,08,Tienda 2,Producto B,Indumentaria,3,141.58,77.87,120
+T01998,2024-08-06,2024,08,Tienda 2,Producto F,Hogar,4,400.37,240.22,300
+T01999,2024-08-14,2024,08,Online,Producto F,Hogar,4,413.41,248.04,300
+T02000,2024-08-15,2024,08,Tienda 2,Producto E,Indumentaria,5,192.45,100.07,90
+T02001,2024-08-06,2024,08,Tienda 1,Producto A,Electrónica,3,274.2,186.46,45
+T02002,2024-08-19,2024,08,Online,Producto G,Electrónica,1,129.53,90.67,200
+T02003,2024-08-10,2024,08,Online,Producto E,Indumentaria,5,206.94,107.61,90
+T02004,2024-08-28,2024,08,Online,Producto C,Hogar,3,213.6,132.43,30
+T02005,2024-08-27,2024,08,Tienda 2,Producto C,Hogar,4,269.38,167.01,30
+T02006,2024-08-11,2024,08,Tienda 1,Producto C,Hogar,7,492.41,305.29,30
+T02007,2024-08-27,2024,08,Tienda 2,Producto A,Electrónica,4,369.27,251.11,45
+T02008,2024-08-06,2024,08,Online,Producto E,Indumentaria,6,233.22,121.28,90
+T02009,2024-08-12,2024,08,Online,Producto E,Indumentaria,1,40.65,21.14,90
+T02010,2024-08-01,2024,08,Tienda 1,Producto G,Electrónica,1,127.62,89.33,200
+T02011,2024-08-05,2024,08,Tienda 1,Producto C,Hogar,2,137.84,85.46,30
+T02012,2024-08-11,2024,08,Online,Producto F,Hogar,3,309.32,185.59,300
+T02013,2024-08-14,2024,08,Tienda 2,Producto F,Hogar,1,98.94,59.37,300
+T02014,2024-08-11,2024,08,Online,Producto B,Indumentaria,4,194.26,106.84,120
+T02015,2024-08-10,2024,08,Online,Producto H,Indumentaria,5,107.53,62.37,60
+T02016,2024-08-26,2024,08,Online,Producto G,Electrónica,1,125.76,88.03,200
+T02017,2024-08-14,2024,08,Tienda 2,Producto F,Hogar,3,300.37,180.22,300
+T02018,2024-08-22,2024,08,Tienda 1,Producto A,Electrónica,2,183.58,124.83,45
+T02019,2024-08-10,2024,08,Online,Producto B,Indumentaria,1,49.31,27.12,120
+T02020,2024-08-20,2024,08,Tienda 2,Producto C,Hogar,1,69.47,43.07,30
+T02021,2024-08-03,2024,08,Online,Producto E,Indumentaria,2,81.32,42.29,90
+T02022,2024-08-03,2024,08,Tienda 2,Producto E,Indumentaria,6,237.99,123.75,90
+T02023,2024-08-17,2024,08,Tienda 2,Producto D,Electrónica,3,75.06,48.79,180
+T02024,2024-08-06,2024,08,Tienda 1,Producto D,Electrónica,4,104.93,68.21,180
+T02025,2024-08-16,2024,08,Tienda 1,Producto F,Hogar,2,190.97,114.58,300
+T02026,2024-08-08,2024,08,Tienda 1,Producto G,Electrónica,3,367.77,257.44,200
+T02027,2024-08-21,2024,08,Tienda 1,Producto A,Electrónica,2,186.14,126.58,45
+T02028,2024-08-27,2024,08,Online,Producto C,Hogar,3,210.41,130.46,30
+T02029,2024-08-16,2024,08,Tienda 2,Producto H,Indumentaria,2,42.17,24.46,60
+T02030,2024-08-08,2024,08,Tienda 2,Producto H,Indumentaria,7,142.35,82.57,60
+T02031,2024-08-22,2024,08,Tienda 2,Producto E,Indumentaria,2,76.78,39.92,90
+T02032,2024-08-24,2024,08,Online,Producto G,Electrónica,1,119.78,83.85,200
+T02033,2024-08-20,2024,08,Tienda 1,Producto C,Hogar,5,333.15,206.55,30
+T02034,2024-08-19,2024,08,Online,Producto H,Indumentaria,3,63.0,36.54,60
+T02035,2024-08-05,2024,08,Tienda 2,Producto F,Hogar,3,306.34,183.81,300
+T02036,2024-08-20,2024,08,Online,Producto B,Indumentaria,1,49.1,27.0,120
+T02037,2024-08-26,2024,08,Tienda 1,Producto A,Electrónica,1,84.93,57.75,45
+T02038,2024-08-27,2024,08,Online,Producto B,Indumentaria,4,184.99,101.74,120
+T02039,2024-08-07,2024,08,Online,Producto G,Electrónica,1,122.43,85.7,200
+T02040,2024-08-14,2024,08,Online,Producto G,Electrónica,1,130.62,91.44,200
+T02041,2024-08-02,2024,08,Online,Producto B,Indumentaria,1,46.2,25.41,120
+T02042,2024-08-10,2024,08,Online,Producto E,Indumentaria,5,196.38,102.12,90
+T02043,2024-08-01,2024,08,Tienda 2,Producto D,Electrónica,4,100.62,65.4,180
+T02044,2024-08-17,2024,08,Tienda 1,Producto A,Electrónica,1,93.18,63.36,45
+T02045,2024-08-08,2024,08,Tienda 2,Producto C,Hogar,2,135.66,84.11,30
+T02046,2024-08-05,2024,08,Online,Producto A,Electrónica,4,354.01,240.73,45
+T02047,2024-08-19,2024,08,Online,Producto E,Indumentaria,1,39.93,20.76,90
+T02048,2024-08-28,2024,08,Tienda 2,Producto A,Electrónica,2,186.28,126.67,45
+T02049,2024-08-16,2024,08,Tienda 1,Producto F,Hogar,3,303.77,182.26,300
+T02050,2024-08-05,2024,08,Online,Producto E,Indumentaria,1,40.0,20.8,90
+T02051,2024-08-24,2024,08,Tienda 1,Producto F,Hogar,3,309.82,185.89,300
+T02052,2024-08-05,2024,08,Online,Producto B,Indumentaria,2,95.31,52.42,120
+T02053,2024-08-12,2024,08,Online,Producto B,Indumentaria,3,144.29,79.36,120
+T02054,2024-08-01,2024,08,Online,Producto C,Hogar,2,141.44,87.69,30
+T02055,2024-08-13,2024,08,Tienda 2,Producto G,Electrónica,4,506.16,354.31,200
+T02056,2024-08-13,2024,08,Tienda 1,Producto D,Electrónica,3,77.86,50.61,180
+T02057,2024-08-15,2024,08,Online,Producto E,Indumentaria,8,330.86,172.05,90
+T02058,2024-08-04,2024,08,Online,Producto B,Indumentaria,6,282.95,155.62,120
+T02059,2024-08-09,2024,08,Tienda 1,Producto G,Electrónica,5,640.55,448.39,200
+T02060,2024-08-09,2024,08,Tienda 2,Producto E,Indumentaria,5,208.43,108.38,90
+T02061,2024-08-13,2024,08,Online,Producto G,Electrónica,3,386.54,270.58,200
+T02062,2024-08-16,2024,08,Tienda 1,Producto C,Hogar,1,65.2,40.42,30
+T02063,2024-08-22,2024,08,Tienda 2,Producto B,Indumentaria,1,47.4,26.07,120
+T02064,2024-08-22,2024,08,Tienda 2,Producto H,Indumentaria,1,20.4,11.83,60
+T02065,2024-08-04,2024,08,Tienda 2,Producto C,Hogar,3,210.9,130.76,30
+T02066,2024-08-15,2024,08,Tienda 1,Producto G,Electrónica,4,486.0,340.2,200
+T02067,2024-08-20,2024,08,Tienda 2,Producto E,Indumentaria,2,81.48,42.37,90
+T02068,2024-08-19,2024,08,Tienda 2,Producto B,Indumentaria,1,48.18,26.5,120
+T02069,2024-08-17,2024,08,Online,Producto H,Indumentaria,2,42.4,24.59,60
+T02070,2024-08-05,2024,08,Online,Producto F,Hogar,4,397.65,238.59,300
+T02071,2024-08-17,2024,08,Tienda 2,Producto A,Electrónica,4,354.0,240.72,45
+T02072,2024-08-23,2024,08,Online,Producto B,Indumentaria,4,188.49,103.67,120
+T02073,2024-08-22,2024,08,Tienda 2,Producto A,Electrónica,5,439.54,298.89,45
+T02074,2024-08-08,2024,08,Tienda 1,Producto E,Indumentaria,1,41.36,21.51,90
+T02075,2024-08-07,2024,08,Online,Producto C,Hogar,5,340.58,211.16,30
+T02076,2024-08-27,2024,08,Online,Producto F,Hogar,2,207.03,124.22,300
+T02077,2024-08-13,2024,08,Tienda 2,Producto A,Electrónica,7,608.55,413.81,45
+T02078,2024-08-14,2024,08,Tienda 2,Producto F,Hogar,2,205.84,123.5,300
+T02079,2024-08-28,2024,08,Tienda 2,Producto D,Electrónica,2,50.13,32.59,180
+T02080,2024-08-19,2024,08,Online,Producto B,Indumentaria,2,98.07,53.94,120
+T02081,2024-08-05,2024,08,Tienda 1,Producto D,Electrónica,4,101.87,66.22,180
+T02082,2024-08-02,2024,08,Online,Producto B,Indumentaria,5,239.91,131.95,120
+T02083,2024-08-20,2024,08,Online,Producto E,Indumentaria,4,160.78,83.6,90
+T02084,2024-08-05,2024,08,Tienda 1,Producto E,Indumentaria,3,118.02,61.37,90
+T02085,2024-08-04,2024,08,Tienda 1,Producto B,Indumentaria,2,98.66,54.26,120
+T02086,2024-08-19,2024,08,Tienda 2,Producto H,Indumentaria,2,41.55,24.1,60
+T02087,2024-08-06,2024,08,Tienda 2,Producto A,Electrónica,2,173.21,117.78,45
+T02088,2024-08-21,2024,08,Tienda 1,Producto F,Hogar,1,94.99,57.0,300
+T02089,2024-08-20,2024,08,Online,Producto H,Indumentaria,3,62.99,36.53,60
+T02090,2024-08-17,2024,08,Online,Producto C,Hogar,2,130.14,80.69,30
+T02091,2024-08-07,2024,08,Tienda 2,Producto B,Indumentaria,2,92.21,50.72,120
+T02092,2024-08-06,2024,08,Tienda 1,Producto H,Indumentaria,5,107.69,62.46,60
+T02093,2024-08-20,2024,08,Tienda 1,Producto B,Indumentaria,2,96.06,52.83,120
+T02094,2024-09-27,2024,09,Online,Producto C,Hogar,1,69.74,43.24,30
+T02095,2024-09-21,2024,09,Online,Producto D,Electrónica,4,102.24,66.45,180
+T02096,2024-09-19,2024,09,Tienda 2,Producto E,Indumentaria,3,115.24,59.92,90
+T02097,2024-09-17,2024,09,Online,Producto H,Indumentaria,1,21.43,12.43,60
+T02098,2024-09-19,2024,09,Tienda 1,Producto B,Indumentaria,1,49.48,27.21,120
+T02099,2024-09-02,2024,09,Tienda 2,Producto A,Electrónica,5,447.32,304.18,45
+T02100,2024-09-02,2024,09,Online,Producto G,Electrónica,1,121.89,85.33,200
+T02101,2024-09-14,2024,09,Online,Producto H,Indumentaria,6,121.79,70.64,60
+T02102,2024-09-11,2024,09,Tienda 1,Producto C,Hogar,8,532.05,329.87,30
+T02103,2024-09-07,2024,09,Online,Producto F,Hogar,3,289.44,173.66,300
+T02104,2024-09-07,2024,09,Tienda 2,Producto A,Electrónica,1,91.98,62.55,45
+T02105,2024-09-10,2024,09,Tienda 2,Producto A,Electrónica,4,360.1,244.87,45
+T02106,2024-09-07,2024,09,Tienda 2,Producto B,Indumentaria,3,135.13,74.32,120
+T02107,2024-09-12,2024,09,Online,Producto C,Hogar,1,71.44,44.29,30
+T02108,2024-09-26,2024,09,Online,Producto G,Electrónica,8,993.45,695.42,200
+T02109,2024-09-26,2024,09,Tienda 1,Producto F,Hogar,2,191.19,114.71,300
+T02110,2024-09-06,2024,09,Online,Producto D,Electrónica,3,74.93,48.71,180
+T02111,2024-09-21,2024,09,Tienda 2,Producto H,Indumentaria,3,61.08,35.42,60
+T02112,2024-09-07,2024,09,Tienda 1,Producto G,Electrónica,1,123.62,86.53,200
+T02113,2024-09-04,2024,09,Tienda 2,Producto E,Indumentaria,6,242.62,126.16,90
+T02114,2024-09-09,2024,09,Tienda 2,Producto F,Hogar,1,103.48,62.09,300
+T02115,2024-09-18,2024,09,Tienda 2,Producto B,Indumentaria,1,49.46,27.2,120
+T02116,2024-09-16,2024,09,Online,Producto E,Indumentaria,3,115.28,59.95,90
+T02117,2024-09-20,2024,09,Online,Producto B,Indumentaria,2,96.9,53.29,120
+T02118,2024-09-15,2024,09,Tienda 1,Producto B,Indumentaria,2,96.71,53.19,120
+T02119,2024-09-20,2024,09,Tienda 1,Producto D,Electrónica,1,26.04,16.93,180
+T02120,2024-09-03,2024,09,Online,Producto A,Electrónica,2,170.64,116.03,45
+T02121,2024-09-03,2024,09,Online,Producto H,Indumentaria,3,63.96,37.09,60
+T02122,2024-09-20,2024,09,Online,Producto E,Indumentaria,2,78.71,40.93,90
+T02123,2024-09-01,2024,09,Tienda 1,Producto E,Indumentaria,5,194.99,101.39,90
+T02124,2024-09-06,2024,09,Tienda 2,Producto E,Indumentaria,5,190.85,99.24,90
+T02125,2024-09-23,2024,09,Tienda 1,Producto H,Indumentaria,2,41.26,23.93,60
+T02126,2024-09-03,2024,09,Tienda 1,Producto F,Hogar,1,102.51,61.51,300
+T02127,2024-09-28,2024,09,Tienda 1,Producto D,Electrónica,1,25.29,16.44,180
+T02128,2024-09-01,2024,09,Tienda 2,Producto B,Indumentaria,4,180.2,99.11,120
+T02129,2024-09-25,2024,09,Online,Producto E,Indumentaria,2,80.85,42.04,90
+T02130,2024-09-28,2024,09,Online,Producto C,Hogar,8,536.15,332.41,30
+T02131,2024-09-06,2024,09,Tienda 1,Producto D,Electrónica,1,27.19,17.67,180
+T02132,2024-09-12,2024,09,Tienda 1,Producto E,Indumentaria,3,114.78,59.68,90
+T02133,2024-09-22,2024,09,Tienda 1,Producto D,Electrónica,4,103.99,67.59,180
+T02134,2024-09-07,2024,09,Tienda 1,Producto C,Hogar,3,210.02,130.21,30
+T02135,2024-09-15,2024,09,Tienda 1,Producto C,Hogar,4,285.7,177.13,30
+T02136,2024-09-21,2024,09,Tienda 2,Producto D,Electrónica,2,50.36,32.73,180
+T02137,2024-09-23,2024,09,Tienda 1,Producto F,Hogar,5,487.15,292.29,300
+T02138,2024-09-24,2024,09,Tienda 2,Producto G,Electrónica,2,246.53,172.57,200
+T02139,2024-09-16,2024,09,Tienda 2,Producto B,Indumentaria,2,92.93,51.11,120
+T02140,2024-09-21,2024,09,Tienda 2,Producto G,Electrónica,1,129.59,90.72,200
+T02141,2024-09-06,2024,09,Online,Producto C,Hogar,1,67.55,41.88,30
+T02142,2024-09-15,2024,09,Tienda 1,Producto B,Indumentaria,4,197.16,108.44,120
+T02143,2024-09-05,2024,09,Tienda 2,Producto A,Electrónica,2,173.48,117.97,45
+T02144,2024-09-13,2024,09,Online,Producto F,Hogar,3,288.18,172.91,300
+T02145,2024-09-11,2024,09,Online,Producto G,Electrónica,1,123.21,86.25,200
+T02146,2024-09-19,2024,09,Online,Producto G,Electrónica,1,126.18,88.32,200
+T02147,2024-09-22,2024,09,Tienda 2,Producto G,Electrónica,1,120.49,84.34,200
+T02148,2024-09-14,2024,09,Tienda 2,Producto H,Indumentaria,4,80.84,46.88,60
+T02149,2024-09-22,2024,09,Online,Producto H,Indumentaria,3,65.09,37.75,60
+T02150,2024-09-10,2024,09,Tienda 1,Producto D,Electrónica,4,107.81,70.08,180
+T02151,2024-09-23,2024,09,Online,Producto A,Electrónica,3,271.41,184.56,45
+T02152,2024-09-18,2024,09,Tienda 2,Producto G,Electrónica,2,249.85,174.89,200
+T02153,2024-09-19,2024,09,Tienda 1,Producto B,Indumentaria,3,148.38,81.61,120
+T02154,2024-09-09,2024,09,Tienda 2,Producto D,Electrónica,1,25.44,16.54,180
+T02155,2024-09-22,2024,09,Online,Producto E,Indumentaria,3,124.9,64.95,90
+T02156,2024-09-04,2024,09,Tienda 2,Producto F,Hogar,1,104.16,62.5,300
+T02157,2024-09-01,2024,09,Tienda 2,Producto C,Hogar,1,66.53,41.25,30
+T02158,2024-09-20,2024,09,Online,Producto E,Indumentaria,3,121.07,62.95,90
+T02159,2024-09-22,2024,09,Tienda 1,Producto C,Hogar,4,264.48,163.98,30
+T02160,2024-09-19,2024,09,Tienda 2,Producto C,Hogar,1,71.24,44.17,30
+T02161,2024-09-17,2024,09,Tienda 1,Producto E,Indumentaria,5,199.54,103.76,90
+T02162,2024-09-08,2024,09,Tienda 2,Producto C,Hogar,3,197.57,122.49,30
+T02163,2024-09-28,2024,09,Tienda 2,Producto C,Hogar,3,203.63,126.25,30
+T02164,2024-09-11,2024,09,Online,Producto D,Electrónica,3,78.3,50.89,180
+T02165,2024-09-25,2024,09,Tienda 2,Producto F,Hogar,3,290.75,174.45,300
+T02166,2024-09-15,2024,09,Tienda 2,Producto H,Indumentaria,3,65.69,38.1,60
+T02167,2024-09-05,2024,09,Tienda 2,Producto B,Indumentaria,2,96.3,52.97,120
+T02168,2024-09-10,2024,09,Tienda 1,Producto A,Electrónica,3,272.01,184.97,45
+T02169,2024-09-14,2024,09,Online,Producto B,Indumentaria,5,224.69,123.58,120
+T02170,2024-09-05,2024,09,Tienda 2,Producto F,Hogar,2,204.76,122.86,300
+T02171,2024-09-04,2024,09,Tienda 2,Producto G,Electrónica,1,120.61,84.43,200
+T02172,2024-09-17,2024,09,Tienda 2,Producto A,Electrónica,5,430.6,292.81,45
+T02173,2024-09-08,2024,09,Online,Producto B,Indumentaria,4,197.71,108.74,120
+T02174,2024-09-23,2024,09,Tienda 1,Producto B,Indumentaria,1,45.16,24.84,120
+T02175,2024-09-07,2024,09,Online,Producto G,Electrónica,3,392.29,274.6,200
+T02176,2024-09-17,2024,09,Tienda 1,Producto F,Hogar,2,197.71,118.63,300
+T02177,2024-09-21,2024,09,Online,Producto E,Indumentaria,1,40.02,20.81,90
+T02178,2024-09-07,2024,09,Tienda 1,Producto C,Hogar,3,204.26,126.64,30
+T02179,2024-09-25,2024,09,Tienda 1,Producto C,Hogar,3,198.33,122.96,30
+T02180,2024-09-18,2024,09,Tienda 1,Producto E,Indumentaria,3,119.27,62.02,90
+T02181,2024-09-26,2024,09,Online,Producto G,Electrónica,2,247.73,173.41,200
+T02182,2024-09-18,2024,09,Online,Producto D,Electrónica,3,77.52,50.39,180
+T02183,2024-09-06,2024,09,Online,Producto C,Hogar,5,341.96,212.02,30
+T02184,2024-09-16,2024,09,Tienda 2,Producto G,Electrónica,3,395.26,276.68,200
+T02185,2024-09-13,2024,09,Tienda 2,Producto C,Hogar,7,487.96,302.53,30
+T02186,2024-09-06,2024,09,Tienda 1,Producto B,Indumentaria,1,45.18,24.85,120
+T02187,2024-09-28,2024,09,Tienda 1,Producto A,Electrónica,4,351.14,238.77,45
+T02188,2024-09-26,2024,09,Tienda 1,Producto C,Hogar,2,133.38,82.7,30
+T02189,2024-09-11,2024,09,Tienda 2,Producto B,Indumentaria,1,46.7,25.68,120
+T02190,2024-09-25,2024,09,Tienda 1,Producto A,Electrónica,8,734.22,499.27,45
+T02191,2024-09-22,2024,09,Tienda 1,Producto B,Indumentaria,3,146.87,80.78,120
+T02192,2024-09-26,2024,09,Tienda 2,Producto F,Hogar,1,98.78,59.27,300
+T02193,2024-09-19,2024,09,Tienda 2,Producto G,Electrónica,9,1135.29,794.7,200
+T02194,2024-09-15,2024,09,Online,Producto E,Indumentaria,4,160.18,83.3,90
+T02195,2024-09-01,2024,09,Online,Producto D,Electrónica,6,155.22,100.89,180
+T02196,2024-09-12,2024,09,Online,Producto D,Electrónica,1,26.83,17.44,180
+T02197,2024-09-02,2024,09,Tienda 2,Producto H,Indumentaria,1,21.04,12.2,60
+T02198,2024-09-27,2024,09,Tienda 1,Producto B,Indumentaria,1,49.46,27.2,120
+T02199,2024-09-26,2024,09,Tienda 1,Producto C,Hogar,2,139.86,86.71,30
+T02200,2024-09-05,2024,09,Tienda 2,Producto A,Electrónica,1,89.6,60.93,45
+T02201,2024-09-17,2024,09,Online,Producto B,Indumentaria,1,47.94,26.37,120
+T02202,2024-09-24,2024,09,Online,Producto D,Electrónica,2,51.51,33.48,180
+T02203,2024-09-09,2024,09,Tienda 1,Producto D,Electrónica,1,26.09,16.96,180
+T02204,2024-09-20,2024,09,Tienda 2,Producto E,Indumentaria,3,115.99,60.32,90
+T02205,2024-10-05,2024,10,Online,Producto B,Indumentaria,5,230.47,126.76,120
+T02206,2024-10-19,2024,10,Tienda 2,Producto A,Electrónica,1,93.55,63.61,45
+T02207,2024-10-06,2024,10,Tienda 2,Producto E,Indumentaria,5,205.43,106.82,90
+T02208,2024-10-12,2024,10,Online,Producto B,Indumentaria,4,197.32,108.52,120
+T02209,2024-10-20,2024,10,Online,Producto C,Hogar,1,65.25,40.45,30
+T02210,2024-10-25,2024,10,Tienda 1,Producto D,Electrónica,2,54.98,35.74,180
+T02211,2024-10-01,2024,10,Tienda 2,Producto B,Indumentaria,4,185.03,101.77,120
+T02212,2024-10-02,2024,10,Tienda 2,Producto D,Electrónica,2,52.79,34.32,180
+T02213,2024-10-04,2024,10,Online,Producto C,Hogar,1,69.55,43.12,30
+T02214,2024-10-16,2024,10,Tienda 1,Producto D,Electrónica,3,75.18,48.86,180
+T02215,2024-10-02,2024,10,Tienda 1,Producto D,Electrónica,2,54.6,35.49,180
+T02216,2024-10-11,2024,10,Tienda 1,Producto A,Electrónica,2,187.26,127.34,45
+T02217,2024-10-25,2024,10,Online,Producto H,Indumentaria,1,21.6,12.53,60
+T02218,2024-10-08,2024,10,Tienda 2,Producto G,Electrónica,2,254.89,178.42,200
+T02219,2024-10-06,2024,10,Tienda 1,Producto H,Indumentaria,4,83.65,48.52,60
+T02220,2024-10-16,2024,10,Tienda 2,Producto A,Electrónica,4,341.47,232.2,45
+T02221,2024-10-24,2024,10,Tienda 2,Producto E,Indumentaria,1,40.59,21.11,90
+T02222,2024-10-07,2024,10,Tienda 2,Producto G,Electrónica,5,622.96,436.07,200
+T02223,2024-10-22,2024,10,Online,Producto A,Electrónica,3,277.14,188.46,45
+T02224,2024-10-15,2024,10,Tienda 1,Producto H,Indumentaria,1,20.97,12.17,60
+T02225,2024-10-05,2024,10,Tienda 2,Producto F,Hogar,3,313.75,188.25,300
+T02226,2024-10-22,2024,10,Tienda 1,Producto A,Electrónica,3,270.34,183.83,45
+T02227,2024-10-15,2024,10,Tienda 1,Producto D,Electrónica,4,99.94,64.96,180
+T02228,2024-10-17,2024,10,Online,Producto B,Indumentaria,2,96.94,53.32,120
+T02229,2024-10-06,2024,10,Online,Producto E,Indumentaria,5,209.2,108.79,90
+T02230,2024-10-13,2024,10,Tienda 2,Producto H,Indumentaria,3,64.89,37.64,60
+T02231,2024-10-11,2024,10,Tienda 2,Producto B,Indumentaria,2,91.28,50.21,120
+T02232,2024-10-24,2024,10,Tienda 2,Producto E,Indumentaria,6,251.01,130.52,90
+T02233,2024-10-08,2024,10,Online,Producto G,Electrónica,4,525.75,368.03,200
+T02234,2024-10-02,2024,10,Tienda 2,Producto C,Hogar,2,137.82,85.45,30
+T02235,2024-10-18,2024,10,Tienda 1,Producto H,Indumentaria,2,39.98,23.19,60
+T02236,2024-10-24,2024,10,Tienda 1,Producto A,Electrónica,5,442.92,301.18,45
+T02237,2024-10-03,2024,10,Online,Producto H,Indumentaria,1,20.11,11.66,60
+T02238,2024-10-26,2024,10,Online,Producto E,Indumentaria,1,39.72,20.66,90
+T02239,2024-10-20,2024,10,Online,Producto G,Electrónica,2,241.49,169.05,200
+T02240,2024-10-02,2024,10,Tienda 1,Producto F,Hogar,5,492.0,295.2,300
+T02241,2024-10-02,2024,10,Tienda 1,Producto B,Indumentaria,2,98.14,53.98,120
+T02242,2024-10-15,2024,10,Tienda 1,Producto B,Indumentaria,3,145.05,79.78,120
+T02243,2024-10-08,2024,10,Online,Producto A,Electrónica,1,89.87,61.11,45
+T02244,2024-10-23,2024,10,Tienda 1,Producto F,Hogar,5,490.05,294.03,300
+T02245,2024-10-04,2024,10,Online,Producto D,Electrónica,9,233.41,151.72,180
+T02246,2024-10-03,2024,10,Online,Producto C,Hogar,4,263.79,163.55,30
+T02247,2024-10-22,2024,10,Tienda 2,Producto A,Electrónica,4,366.54,249.25,45
+T02248,2024-10-10,2024,10,Online,Producto G,Electrónica,1,122.45,85.71,200
+T02249,2024-10-20,2024,10,Tienda 2,Producto D,Electrónica,2,53.74,34.93,180
+T02250,2024-10-23,2024,10,Tienda 2,Producto D,Electrónica,2,51.27,33.33,180
+T02251,2024-10-14,2024,10,Tienda 2,Producto A,Electrónica,5,423.98,288.3,45
+T02252,2024-10-21,2024,10,Tienda 1,Producto G,Electrónica,5,636.39,445.47,200
+T02253,2024-10-13,2024,10,Online,Producto D,Electrónica,8,220.4,143.26,180
+T02254,2024-10-11,2024,10,Online,Producto G,Electrónica,2,262.02,183.41,200
+T02255,2024-10-14,2024,10,Tienda 1,Producto F,Hogar,1,104.23,62.54,300
+T02256,2024-10-04,2024,10,Online,Producto H,Indumentaria,5,100.22,58.13,60
+T02257,2024-10-13,2024,10,Tienda 2,Producto G,Electrónica,2,262.15,183.5,200
+T02258,2024-10-15,2024,10,Online,Producto F,Hogar,3,289.1,173.46,300
+T02259,2024-10-24,2024,10,Tienda 1,Producto B,Indumentaria,3,142.27,78.25,120
+T02260,2024-10-03,2024,10,Tienda 1,Producto G,Electrónica,2,244.76,171.33,200
+T02261,2024-10-22,2024,10,Tienda 1,Producto F,Hogar,4,404.31,242.59,300
+T02262,2024-10-25,2024,10,Tienda 1,Producto D,Electrónica,4,109.74,71.33,180
+T02263,2024-10-17,2024,10,Tienda 2,Producto D,Electrónica,2,50.96,33.12,180
+T02264,2024-10-27,2024,10,Tienda 1,Producto D,Electrónica,1,27.37,17.79,180
+T02265,2024-10-28,2024,10,Tienda 1,Producto H,Indumentaria,2,44.03,25.54,60
+T02266,2024-10-24,2024,10,Tienda 1,Producto G,Electrónica,1,127.5,89.25,200
+T02267,2024-10-17,2024,10,Online,Producto C,Hogar,2,134.64,83.48,30
+T02268,2024-10-09,2024,10,Tienda 1,Producto D,Electrónica,1,26.42,17.18,180
+T02269,2024-10-01,2024,10,Tienda 2,Producto E,Indumentaria,5,205.08,106.64,90
+T02270,2024-10-24,2024,10,Tienda 2,Producto G,Electrónica,1,128.67,90.07,200
+T02271,2024-10-24,2024,10,Online,Producto B,Indumentaria,1,47.93,26.36,120
+T02272,2024-10-01,2024,10,Online,Producto F,Hogar,1,96.66,58.0,300
+T02273,2024-10-15,2024,10,Tienda 1,Producto G,Electrónica,3,396.52,277.57,200
+T02274,2024-10-16,2024,10,Tienda 2,Producto E,Indumentaria,1,40.05,20.83,90
+T02275,2024-10-17,2024,10,Tienda 1,Producto D,Electrónica,2,54.08,35.15,180
+T02276,2024-10-01,2024,10,Tienda 2,Producto B,Indumentaria,3,135.71,74.64,120
+T02277,2024-10-19,2024,10,Online,Producto B,Indumentaria,1,48.35,26.59,120
+T02278,2024-10-08,2024,10,Tienda 2,Producto F,Hogar,3,295.92,177.55,300
+T02279,2024-10-27,2024,10,Tienda 1,Producto G,Electrónica,9,1185.71,830.0,200
+T02280,2024-10-22,2024,10,Tienda 1,Producto G,Electrónica,2,248.86,174.2,200
+T02281,2024-10-15,2024,10,Tienda 2,Producto A,Electrónica,2,169.87,115.51,45
+T02282,2024-10-25,2024,10,Online,Producto B,Indumentaria,2,90.05,49.53,120
+T02283,2024-10-21,2024,10,Tienda 1,Producto B,Indumentaria,1,46.31,25.47,120
+T02284,2024-10-27,2024,10,Tienda 1,Producto D,Electrónica,2,53.37,34.69,180
+T02285,2024-10-23,2024,10,Tienda 2,Producto E,Indumentaria,3,119.47,62.13,90
+T02286,2024-10-15,2024,10,Online,Producto B,Indumentaria,4,185.8,102.19,120
+T02287,2024-10-03,2024,10,Tienda 1,Producto F,Hogar,4,401.63,240.98,300
+T02288,2024-10-12,2024,10,Online,Producto E,Indumentaria,6,240.62,125.12,90
+T02289,2024-10-06,2024,10,Tienda 1,Producto G,Electrónica,2,242.57,169.8,200
+T02290,2024-10-27,2024,10,Online,Producto H,Indumentaria,2,42.67,24.75,60
+T02291,2024-10-24,2024,10,Tienda 1,Producto C,Hogar,2,137.0,84.94,30
+T02292,2024-10-12,2024,10,Tienda 2,Producto D,Electrónica,1,26.58,17.27,180
+T02293,2024-10-10,2024,10,Tienda 1,Producto B,Indumentaria,5,229.96,126.48,120
+T02294,2024-10-01,2024,10,Tienda 1,Producto D,Electrónica,2,54.37,35.34,180
+T02295,2024-10-13,2024,10,Tienda 2,Producto B,Indumentaria,2,94.05,51.73,120
+T02296,2024-10-07,2024,10,Tienda 2,Producto B,Indumentaria,5,231.21,127.17,120
+T02297,2024-10-18,2024,10,Tienda 1,Producto E,Indumentaria,4,152.02,79.05,90
+T02298,2024-10-15,2024,10,Tienda 1,Producto D,Electrónica,1,27.19,17.67,180
+T02299,2024-10-10,2024,10,Online,Producto E,Indumentaria,2,80.28,41.75,90
+T02300,2024-10-04,2024,10,Tienda 2,Producto C,Hogar,3,197.68,122.56,30
+T02301,2024-10-04,2024,10,Tienda 2,Producto G,Electrónica,4,483.29,338.3,200
+T02302,2024-10-19,2024,10,Tienda 2,Producto A,Electrónica,3,278.32,189.26,45
+T02303,2024-10-07,2024,10,Tienda 1,Producto F,Hogar,1,95.29,57.18,300
+T02304,2024-10-24,2024,10,Tienda 2,Producto B,Indumentaria,2,98.84,54.36,120
+T02305,2024-10-10,2024,10,Tienda 2,Producto E,Indumentaria,5,203.2,105.66,90
+T02306,2024-10-05,2024,10,Tienda 1,Producto B,Indumentaria,2,93.56,51.46,120
+T02307,2024-10-05,2024,10,Online,Producto D,Electrónica,1,25.42,16.52,180
+T02308,2024-10-22,2024,10,Tienda 2,Producto G,Electrónica,2,259.52,181.66,200
+T02309,2024-11-11,2024,11,Tienda 1,Producto F,Hogar,3,300.02,180.01,300
+T02310,2024-11-19,2024,11,Tienda 2,Producto A,Electrónica,3,272.53,185.32,45
+T02311,2024-11-25,2024,11,Online,Producto C,Hogar,2,131.94,81.81,30
+T02312,2024-11-03,2024,11,Tienda 2,Producto C,Hogar,3,195.18,121.01,30
+T02313,2024-11-14,2024,11,Tienda 1,Producto F,Hogar,1,101.9,61.14,300
+T02314,2024-11-26,2024,11,Tienda 2,Producto F,Hogar,2,193.23,115.94,300
+T02315,2024-11-13,2024,11,Online,Producto H,Indumentaria,8,163.74,94.97,60
+T02316,2024-11-18,2024,11,Online,Producto D,Electrónica,3,78.95,51.32,180
+T02317,2024-11-27,2024,11,Online,Producto D,Electrónica,5,125.85,81.8,180
+T02318,2024-11-11,2024,11,Online,Producto E,Indumentaria,1,38.09,19.81,90
+T02319,2024-11-11,2024,11,Tienda 1,Producto G,Electrónica,6,761.53,533.07,200
+T02320,2024-11-16,2024,11,Online,Producto A,Electrónica,2,186.54,126.84,45
+T02321,2024-11-04,2024,11,Online,Producto H,Indumentaria,9,193.39,112.17,60
+T02322,2024-11-16,2024,11,Online,Producto F,Hogar,1,94.92,56.95,300
+T02323,2024-11-19,2024,11,Tienda 1,Producto H,Indumentaria,1,22.05,12.79,60
+T02324,2024-11-16,2024,11,Tienda 2,Producto F,Hogar,2,191.72,115.03,300
+T02325,2024-11-03,2024,11,Tienda 2,Producto D,Electrónica,5,126.65,82.32,180
+T02326,2024-11-07,2024,11,Online,Producto A,Electrónica,1,87.5,59.5,45
+T02327,2024-11-02,2024,11,Tienda 1,Producto A,Electrónica,1,87.67,59.62,45
+T02328,2024-11-26,2024,11,Tienda 2,Producto C,Hogar,4,267.36,165.76,30
+T02329,2024-11-28,2024,11,Tienda 1,Producto C,Hogar,2,136.38,84.55,30
+T02330,2024-11-24,2024,11,Tienda 2,Producto B,Indumentaria,3,139.97,76.98,120
+T02331,2024-11-16,2024,11,Tienda 1,Producto C,Hogar,4,269.43,167.05,30
+T02332,2024-11-20,2024,11,Tienda 2,Producto B,Indumentaria,4,183.45,100.9,120
+T02333,2024-11-27,2024,11,Online,Producto A,Electrónica,4,340.7,231.67,45
+T02334,2024-11-08,2024,11,Tienda 1,Producto B,Indumentaria,2,97.03,53.37,120
+T02335,2024-11-05,2024,11,Online,Producto A,Electrónica,1,86.67,58.94,45
+T02336,2024-11-28,2024,11,Tienda 2,Producto G,Electrónica,7,908.17,635.72,200
+T02337,2024-11-26,2024,11,Online,Producto E,Indumentaria,5,200.2,104.1,90
+T02338,2024-11-25,2024,11,Tienda 2,Producto A,Electrónica,7,644.35,438.16,45
+T02339,2024-11-19,2024,11,Online,Producto G,Electrónica,1,122.75,85.93,200
+T02340,2024-11-26,2024,11,Tienda 2,Producto H,Indumentaria,1,20.64,11.97,60
+T02341,2024-11-16,2024,11,Tienda 1,Producto B,Indumentaria,2,97.2,53.46,120
+T02342,2024-11-25,2024,11,Tienda 2,Producto H,Indumentaria,1,21.43,12.43,60
+T02343,2024-11-02,2024,11,Tienda 1,Producto E,Indumentaria,1,38.88,20.22,90
+T02344,2024-11-11,2024,11,Tienda 1,Producto D,Electrónica,2,52.01,33.8,180
+T02345,2024-11-01,2024,11,Tienda 2,Producto E,Indumentaria,3,121.58,63.22,90
+T02346,2024-11-02,2024,11,Tienda 2,Producto B,Indumentaria,1,48.04,26.42,120
+T02347,2024-11-20,2024,11,Tienda 2,Producto B,Indumentaria,1,45.63,25.1,120
+T02348,2024-11-03,2024,11,Tienda 2,Producto E,Indumentaria,2,77.25,40.17,90
+T02349,2024-11-18,2024,11,Online,Producto H,Indumentaria,2,44.01,25.53,60
+T02350,2024-11-28,2024,11,Online,Producto E,Indumentaria,6,227.58,118.34,90
+T02351,2024-11-02,2024,11,Online,Producto G,Electrónica,3,385.28,269.69,200
+T02352,2024-11-07,2024,11,Tienda 2,Producto G,Electrónica,3,396.47,277.53,200
+T02353,2024-11-06,2024,11,Tienda 1,Producto D,Electrónica,1,25.6,16.64,180
+T02354,2024-11-23,2024,11,Tienda 2,Producto D,Electrónica,4,108.19,70.32,180
+T02355,2024-11-09,2024,11,Tienda 1,Producto F,Hogar,3,296.33,177.8,300
+T02356,2024-11-10,2024,11,Tienda 2,Producto A,Electrónica,3,266.62,181.3,45
+T02357,2024-11-20,2024,11,Tienda 2,Producto E,Indumentaria,5,193.9,100.83,90
+T02358,2024-11-12,2024,11,Tienda 1,Producto E,Indumentaria,2,83.63,43.49,90
+T02359,2024-11-02,2024,11,Tienda 2,Producto D,Electrónica,3,76.26,49.57,180
+T02360,2024-11-21,2024,11,Online,Producto G,Electrónica,5,631.57,442.1,200
+T02361,2024-11-16,2024,11,Online,Producto D,Electrónica,5,127.82,83.08,180
+T02362,2024-11-23,2024,11,Online,Producto E,Indumentaria,3,114.89,59.74,90
+T02363,2024-11-12,2024,11,Tienda 2,Producto B,Indumentaria,2,98.25,54.04,120
+T02364,2024-11-02,2024,11,Tienda 2,Producto C,Hogar,1,67.98,42.14,30
+T02365,2024-11-02,2024,11,Tienda 1,Producto E,Indumentaria,2,80.19,41.7,90
+T02366,2024-11-16,2024,11,Tienda 1,Producto A,Electrónica,1,85.4,58.07,45
+T02367,2024-11-26,2024,11,Online,Producto A,Electrónica,2,178.44,121.34,45
+T02368,2024-11-23,2024,11,Tienda 2,Producto C,Hogar,2,135.42,83.96,30
+T02369,2024-11-28,2024,11,Online,Producto F,Hogar,1,99.76,59.85,300
+T02370,2024-11-12,2024,11,Online,Producto B,Indumentaria,1,45.61,25.09,120
+T02371,2024-11-19,2024,11,Tienda 2,Producto E,Indumentaria,3,116.19,60.42,90
+T02372,2024-11-20,2024,11,Tienda 2,Producto F,Hogar,1,103.73,62.24,300
+T02373,2024-11-06,2024,11,Online,Producto G,Electrónica,2,250.84,175.59,200
+T02374,2024-11-12,2024,11,Online,Producto G,Electrónica,1,131.12,91.78,200
+T02375,2024-11-18,2024,11,Online,Producto B,Indumentaria,3,135.86,74.73,120
+T02376,2024-11-25,2024,11,Tienda 1,Producto C,Hogar,3,197.52,122.47,30
+T02377,2024-11-28,2024,11,Tienda 1,Producto H,Indumentaria,5,102.82,59.63,60
+T02378,2024-11-16,2024,11,Tienda 2,Producto A,Electrónica,4,360.45,245.1,45
+T02379,2024-11-02,2024,11,Online,Producto F,Hogar,4,381.25,228.75,300
+T02380,2024-11-28,2024,11,Online,Producto E,Indumentaria,2,76.13,39.59,90
+T02381,2024-11-28,2024,11,Tienda 1,Producto H,Indumentaria,6,129.78,75.27,60
+T02382,2024-11-09,2024,11,Online,Producto E,Indumentaria,3,122.47,63.69,90
+T02383,2024-11-14,2024,11,Tienda 2,Producto F,Hogar,4,381.73,229.04,300
+T02384,2024-11-06,2024,11,Tienda 1,Producto H,Indumentaria,3,61.26,35.53,60
+T02385,2024-11-08,2024,11,Tienda 2,Producto H,Indumentaria,4,87.25,50.61,60
+T02386,2024-11-11,2024,11,Tienda 2,Producto E,Indumentaria,1,40.8,21.22,90
+T02387,2024-11-11,2024,11,Online,Producto C,Hogar,1,69.15,42.87,30
+T02388,2024-11-08,2024,11,Tienda 2,Producto H,Indumentaria,5,104.52,60.62,60
+T02389,2024-11-11,2024,11,Tienda 1,Producto H,Indumentaria,6,121.93,70.72,60
+T02390,2024-11-12,2024,11,Tienda 1,Producto D,Electrónica,2,50.26,32.67,180
+T02391,2024-11-07,2024,11,Tienda 2,Producto G,Electrónica,1,130.2,91.14,200
+T02392,2024-11-20,2024,11,Online,Producto H,Indumentaria,4,84.1,48.78,60
+T02393,2024-11-27,2024,11,Online,Producto C,Hogar,3,211.44,131.09,30
+T02394,2024-11-05,2024,11,Tienda 1,Producto A,Electrónica,1,89.17,60.64,45
+T02395,2024-11-20,2024,11,Tienda 2,Producto D,Electrónica,2,53.16,34.56,180
+T02396,2024-11-19,2024,11,Online,Producto H,Indumentaria,5,104.27,60.47,60
+T02397,2024-11-01,2024,11,Tienda 2,Producto D,Electrónica,3,76.77,49.9,180
+T02398,2024-11-20,2024,11,Tienda 2,Producto H,Indumentaria,2,43.82,25.41,60
+T02399,2024-11-02,2024,11,Tienda 2,Producto B,Indumentaria,2,98.55,54.2,120
+T02400,2024-11-03,2024,11,Online,Producto B,Indumentaria,4,197.07,108.39,120
+T02401,2024-11-14,2024,11,Online,Producto E,Indumentaria,3,114.14,59.35,90
+T02402,2024-11-19,2024,11,Online,Producto C,Hogar,1,70.3,43.59,30
+T02403,2024-11-26,2024,11,Online,Producto A,Electrónica,3,275.76,187.52,45
+T02404,2024-11-06,2024,11,Tienda 1,Producto F,Hogar,1,98.03,58.82,300
+T02405,2024-11-09,2024,11,Online,Producto C,Hogar,1,66.08,40.97,30
+T02406,2024-11-10,2024,11,Tienda 1,Producto F,Hogar,1,104.09,62.45,300
+T02407,2024-11-07,2024,11,Tienda 1,Producto H,Indumentaria,6,123.35,71.54,60
+T02408,2024-11-14,2024,11,Tienda 1,Producto F,Hogar,6,587.77,352.66,300
+T02409,2024-11-12,2024,11,Tienda 1,Producto C,Hogar,2,139.02,86.19,30
+T02410,2024-11-22,2024,11,Online,Producto H,Indumentaria,2,42.46,24.63,60
+T02411,2024-11-20,2024,11,Tienda 1,Producto G,Electrónica,1,125.21,87.64,200
+T02412,2024-11-02,2024,11,Tienda 2,Producto D,Electrónica,2,50.87,33.06,180
+T02413,2024-11-25,2024,11,Tienda 1,Producto F,Hogar,5,500.65,300.39,300
+T02414,2024-11-14,2024,11,Online,Producto F,Hogar,1,95.4,57.24,300
+T02415,2024-11-19,2024,11,Tienda 1,Producto H,Indumentaria,1,22.01,12.77,60
+T02416,2024-11-11,2024,11,Tienda 2,Producto E,Indumentaria,2,76.76,39.91,90
+T02417,2024-11-21,2024,11,Tienda 1,Producto E,Indumentaria,1,38.09,19.81,90
+T02418,2024-11-28,2024,11,Online,Producto B,Indumentaria,2,94.3,51.86,120
+T02419,2024-11-27,2024,11,Online,Producto E,Indumentaria,1,40.82,21.23,90
+T02420,2024-11-13,2024,11,Tienda 2,Producto B,Indumentaria,5,226.02,124.31,120
+T02421,2024-11-19,2024,11,Online,Producto G,Electrónica,1,124.92,87.44,200
+T02422,2024-11-24,2024,11,Tienda 2,Producto C,Hogar,1,67.78,42.02,30
+T02423,2024-12-23,2024,12,Online,Producto B,Indumentaria,1,47.49,26.12,120
+T02424,2024-12-10,2024,12,Tienda 2,Producto E,Indumentaria,3,125.0,65.0,90
+T02425,2024-12-18,2024,12,Tienda 2,Producto A,Electrónica,3,278.35,189.28,45
+T02426,2024-12-22,2024,12,Tienda 1,Producto E,Indumentaria,4,161.97,84.22,90
+T02427,2024-12-15,2024,12,Online,Producto A,Electrónica,1,84.8,57.66,45
+T02428,2024-12-04,2024,12,Tienda 1,Producto H,Indumentaria,5,101.83,59.06,60
+T02429,2024-12-03,2024,12,Tienda 1,Producto G,Electrónica,1,119.9,83.93,200
+T02430,2024-12-11,2024,12,Online,Producto B,Indumentaria,7,314.37,172.91,120
+T02431,2024-12-14,2024,12,Tienda 2,Producto C,Hogar,2,137.51,85.26,30
+T02432,2024-12-18,2024,12,Tienda 1,Producto A,Electrónica,1,92.54,62.93,45
+T02433,2024-12-01,2024,12,Online,Producto B,Indumentaria,9,404.94,222.72,120
+T02434,2024-12-04,2024,12,Tienda 2,Producto H,Indumentaria,1,20.26,11.75,60
+T02435,2024-12-02,2024,12,Tienda 2,Producto D,Electrónica,4,103.71,67.41,180
+T02436,2024-12-11,2024,12,Online,Producto G,Electrónica,3,392.25,274.57,200
+T02437,2024-12-10,2024,12,Tienda 1,Producto G,Electrónica,3,370.89,259.62,200
+T02438,2024-12-19,2024,12,Tienda 1,Producto D,Electrónica,5,133.55,86.81,180
+T02439,2024-12-06,2024,12,Online,Producto B,Indumentaria,1,48.45,26.65,120
+T02440,2024-12-11,2024,12,Tienda 2,Producto G,Electrónica,4,508.45,355.92,200
+T02441,2024-12-06,2024,12,Tienda 2,Producto E,Indumentaria,2,80.24,41.73,90
+T02442,2024-12-19,2024,12,Tienda 1,Producto H,Indumentaria,2,43.51,25.24,60
+T02443,2024-12-26,2024,12,Tienda 1,Producto C,Hogar,2,134.89,83.63,30
+T02444,2024-12-12,2024,12,Online,Producto H,Indumentaria,2,40.76,23.64,60
+T02445,2024-12-24,2024,12,Tienda 1,Producto E,Indumentaria,3,119.27,62.02,90
+T02446,2024-12-09,2024,12,Tienda 2,Producto C,Hogar,6,395.6,245.27,30
+T02447,2024-12-12,2024,12,Tienda 2,Producto A,Electrónica,2,174.3,118.52,45
+T02448,2024-12-24,2024,12,Tienda 1,Producto C,Hogar,1,65.75,40.76,30
+T02449,2024-12-26,2024,12,Tienda 1,Producto H,Indumentaria,3,61.02,35.39,60
+T02450,2024-12-24,2024,12,Online,Producto D,Electrónica,5,132.45,86.09,180
+T02451,2024-12-09,2024,12,Tienda 1,Producto D,Electrónica,3,77.83,50.59,180
+T02452,2024-12-05,2024,12,Tienda 1,Producto B,Indumentaria,3,138.04,75.92,120
+T02453,2024-12-01,2024,12,Tienda 1,Producto F,Hogar,4,390.65,234.39,300
+T02454,2024-12-14,2024,12,Tienda 2,Producto D,Electrónica,2,53.6,34.84,180
+T02455,2024-12-15,2024,12,Tienda 2,Producto A,Electrónica,1,85.28,57.99,45
+T02456,2024-12-01,2024,12,Online,Producto D,Electrónica,1,25.98,16.89,180
+T02457,2024-12-28,2024,12,Tienda 1,Producto F,Hogar,1,99.39,59.63,300
+T02458,2024-12-18,2024,12,Tienda 1,Producto G,Electrónica,8,1003.77,702.64,200
+T02459,2024-12-13,2024,12,Online,Producto G,Electrónica,1,126.2,88.34,200
+T02460,2024-12-05,2024,12,Online,Producto F,Hogar,5,513.91,308.35,300
+T02461,2024-12-13,2024,12,Tienda 1,Producto A,Electrónica,4,344.19,234.05,45
+T02462,2024-12-15,2024,12,Tienda 2,Producto D,Electrónica,5,130.21,84.64,180
+T02463,2024-12-02,2024,12,Tienda 2,Producto H,Indumentaria,3,60.14,34.88,60
+T02464,2024-12-02,2024,12,Tienda 1,Producto A,Electrónica,1,87.0,59.16,45
+T02465,2024-12-26,2024,12,Tienda 2,Producto F,Hogar,4,400.18,240.11,300
+T02466,2024-12-19,2024,12,Online,Producto F,Hogar,2,194.97,116.98,300
+T02467,2024-12-24,2024,12,Online,Producto F,Hogar,2,193.4,116.04,300
+T02468,2024-12-17,2024,12,Online,Producto A,Electrónica,4,358.79,243.98,45
+T02469,2024-12-14,2024,12,Tienda 1,Producto E,Indumentaria,3,123.26,64.1,90
+T02470,2024-12-15,2024,12,Tienda 1,Producto A,Electrónica,5,468.19,318.37,45
+T02471,2024-12-01,2024,12,Tienda 2,Producto E,Indumentaria,3,125.03,65.01,90
+T02472,2024-12-14,2024,12,Tienda 2,Producto G,Electrónica,1,130.32,91.22,200
+T02473,2024-12-22,2024,12,Tienda 2,Producto G,Electrónica,1,127.4,89.18,200
+T02474,2024-12-28,2024,12,Tienda 2,Producto H,Indumentaria,4,87.64,50.83,60
+T02475,2024-12-27,2024,12,Tienda 1,Producto D,Electrónica,2,52.48,34.11,180
+T02476,2024-12-24,2024,12,Tienda 2,Producto E,Indumentaria,4,160.22,83.31,90
+T02477,2024-12-20,2024,12,Tienda 1,Producto H,Indumentaria,3,65.27,37.85,60
+T02478,2024-12-10,2024,12,Tienda 1,Producto A,Electrónica,2,170.26,115.78,45
+T02479,2024-12-12,2024,12,Tienda 1,Producto D,Electrónica,4,106.69,69.35,180
+T02480,2024-12-06,2024,12,Tienda 1,Producto C,Hogar,2,135.29,83.88,30
+T02481,2024-12-28,2024,12,Online,Producto A,Electrónica,4,360.59,245.2,45
+T02482,2024-12-02,2024,12,Tienda 2,Producto C,Hogar,1,64.99,40.3,30
+T02483,2024-12-16,2024,12,Tienda 2,Producto A,Electrónica,1,93.11,63.31,45
+T02484,2024-12-08,2024,12,Tienda 1,Producto G,Electrónica,5,629.51,440.66,200
+T02485,2024-12-07,2024,12,Online,Producto D,Electrónica,2,49.95,32.47,180
+T02486,2024-12-17,2024,12,Tienda 1,Producto G,Electrónica,2,242.72,169.91,200
+T02487,2024-12-19,2024,12,Tienda 1,Producto F,Hogar,1,96.42,57.85,300
+T02488,2024-12-08,2024,12,Online,Producto E,Indumentaria,5,206.05,107.15,90
+T02489,2024-12-24,2024,12,Online,Producto A,Electrónica,3,279.66,190.17,45
+T02490,2024-12-24,2024,12,Tienda 1,Producto H,Indumentaria,5,102.64,59.53,60
+T02491,2024-12-19,2024,12,Online,Producto B,Indumentaria,5,228.17,125.5,120
+T02492,2024-12-10,2024,12,Tienda 2,Producto H,Indumentaria,2,43.15,25.03,60
+T02493,2024-12-25,2024,12,Tienda 1,Producto C,Hogar,2,143.04,88.69,30
+T02494,2024-12-26,2024,12,Tienda 1,Producto C,Hogar,2,137.3,85.13,30
+T02495,2024-12-28,2024,12,Tienda 2,Producto A,Electrónica,1,92.98,63.23,45
+T02496,2024-12-27,2024,12,Online,Producto A,Electrónica,5,455.66,309.85,45
+T02497,2024-12-16,2024,12,Online,Producto F,Hogar,1,95.0,57.0,300
+T02498,2024-12-25,2024,12,Tienda 2,Producto F,Hogar,1,103.34,62.01,300
+T02499,2024-12-05,2024,12,Online,Producto A,Electrónica,1,89.58,60.91,45
+T02500,2024-12-19,2024,12,Online,Producto C,Hogar,1,68.5,42.47,30
+T02501,2024-12-11,2024,12,Online,Producto G,Electrónica,3,392.53,274.77,200
+T02502,2024-12-20,2024,12,Online,Producto D,Electrónica,6,159.96,103.97,180
+T02503,2024-12-21,2024,12,Tienda 2,Producto H,Indumentaria,2,43.29,25.11,60
+T02504,2024-12-24,2024,12,Tienda 2,Producto D,Electrónica,2,52.51,34.13,180
+T02505,2024-12-27,2024,12,Tienda 1,Producto G,Electrónica,2,244.82,171.38,200
+T02506,2024-12-18,2024,12,Online,Producto F,Hogar,2,192.69,115.61,300
+T02507,2024-12-15,2024,12,Online,Producto D,Electrónica,2,53.25,34.62,180
+T02508,2024-12-07,2024,12,Tienda 2,Producto H,Indumentaria,2,40.75,23.64,60
+T02509,2024-12-11,2024,12,Online,Producto D,Electrónica,2,50.06,32.54,180
+T02510,2024-12-14,2024,12,Tienda 2,Producto C,Hogar,3,213.46,132.34,30
+T02511,2024-12-21,2024,12,Tienda 1,Producto A,Electrónica,1,93.07,63.29,45
+T02512,2024-12-21,2024,12,Online,Producto H,Indumentaria,3,61.72,35.8,60
+T02513,2024-12-24,2024,12,Online,Producto G,Electrónica,2,239.54,167.67,200
+T02514,2024-12-27,2024,12,Online,Producto B,Indumentaria,2,91.23,50.18,120
+T02515,2024-12-07,2024,12,Tienda 2,Producto G,Electrónica,1,124.17,86.92,200
+T02516,2024-12-09,2024,12,Tienda 2,Producto D,Electrónica,1,27.52,17.89,180
+T02517,2024-12-10,2024,12,Online,Producto A,Electrónica,2,179.26,121.9,45
+T02518,2024-12-07,2024,12,Tienda 2,Producto F,Hogar,4,406.86,244.12,300
+T02519,2024-12-25,2024,12,Tienda 1,Producto G,Electrónica,5,614.36,430.05,200
+T02520,2024-12-07,2024,12,Online,Producto B,Indumentaria,1,48.62,26.74,120
+T02521,2024-12-23,2024,12,Online,Producto B,Indumentaria,3,146.88,80.79,120
+T02522,2024-12-01,2024,12,Tienda 2,Producto A,Electrónica,2,176.78,120.21,45
+T02523,2024-12-11,2024,12,Tienda 1,Producto D,Electrónica,1,25.07,16.29,180
+T02524,2024-12-06,2024,12,Tienda 2,Producto D,Electrónica,4,107.97,70.18,180
+T02525,2024-12-28,2024,12,Online,Producto G,Electrónica,5,650.7,455.49,200
+T02526,2024-12-04,2024,12,Tienda 2,Producto G,Electrónica,3,393.99,275.8,200
+T02527,2024-12-23,2024,12,Online,Producto F,Hogar,1,103.13,61.88,300
+T02528,2024-12-24,2024,12,Tienda 2,Producto F,Hogar,3,314.19,188.51,300
+T02529,2024-12-20,2024,12,Tienda 1,Producto D,Electrónica,3,81.42,52.92,180
