@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Loma</title>
+<style>
+
+* { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; }
+body {
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background: #f3f2f1;
+  font-family: "Segoe UI", "Helvetica Neue", sans-serif;
+  color: #252423;
+}
+.cabezal { position: relative; z-index: 2; flex: 0 0 auto; padding: 12px 16px 10px; }
+.cabezal h1 { margin: 0; font-size: 22px; font-weight: 600; letter-spacing: 0; }
+.escena { flex: 1 1 auto; min-height: 0; display: flex; }
+.costado {
+  flex: 0 0 212px;
+  min-height: 0;
+  position: relative;
+  z-index: 4;
+  background: #fff;
+  border-right: 1px solid #edebe9;
+  padding: 14px 12px;
+}
+.barra { display: flex; flex-wrap: wrap; gap: 10px 28px; padding-bottom: 8px; }
+.costado .barra { flex-direction: column; align-items: stretch; gap: 16px; padding: 0; }
+.slicer { display: flex; align-items: center; gap: 8px; }
+.costado .slicer { flex-direction: column; align-items: stretch; gap: 6px; }
+.costado .disparador { width: 100%; min-width: 0; }
+.slicer .nombre { font-size: 12px; font-weight: 600; color: #605e5c; }
+.caja { position: relative; }
+.disparador {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  min-width: 168px;
+  font: 13px/1.2 "Segoe UI", sans-serif;
+  color: #252423;
+  background: #fff;
+  border: 1px solid #c8c6c4;
+  border-radius: 2px;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+.disparador .elegido { flex: 1 1 auto; text-align: left; }
+.flecha {
+  flex: 0 0 auto;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 5px solid #605e5c;
+}
+.disparador[aria-expanded="true"] > .flecha {
+  border-top: 0;
+  border-bottom: 5px solid #605e5c;
+}
+.panel {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  z-index: 3;
+  min-width: 220px;
+  max-height: 320px;
+  overflow: auto;
+  background: #fff;
+  border: 1px solid #c8c6c4;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  padding: 4px 0;
+}
+.panel[hidden] { display: none; }
+.opcion {
+  display: block;
+  width: 100%;
+  font: 13px/1.3 "Segoe UI", sans-serif;
+  color: #252423;
+  text-align: left;
+  background: transparent;
+  border: 0;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+.nodo { display: flex; flex-wrap: wrap; align-items: center; }
+.nodo > .opcion { width: auto; flex: 1 1 auto; }
+.abrir, .vacio { flex: 0 0 22px; width: 22px; height: 22px; padding: 0; border: 0; background: transparent; cursor: pointer; }
+.vacio { cursor: default; }
+.abrir .flecha {
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  border-left: 5px solid #605e5c;
+  border-right: 0;
+}
+.abrir[aria-expanded="true"] .flecha {
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 5px solid #605e5c;
+  border-bottom: 0;
+}
+.hijos { flex: 1 0 100%; padding-left: 16px; }
+.hijos[hidden] { display: none; }
+.opcion[aria-pressed="true"] { background: #deecf9; color: #0b5cab; }
+.hallazgos {
+  flex: 0 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 12px;
+  padding: 0 12px;
+}
+.hallazgo {
+  min-width: 0;
+  background: #fff;
+  border-radius: 2px;
+  box-shadow: 0 1.6px 3.6px rgba(0, 0, 0, 0.13), 0 0.3px 0.9px rgba(0, 0, 0, 0.11);
+  padding: 10px 14px 12px;
+}
+.hallazgo .rotulo { margin: 0; font-size: 12px; font-weight: 600; color: #605e5c; }
+.hallazgo .cifra {
+  margin: 2px 0 0;
+  font-size: 26px;
+  font-weight: 650;
+  line-height: 1.15;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.02em;
+}
+.hallazgo.baja .cifra { color: #a4262c; }
+.hallazgo.sube .cifra { color: #0b6a0b; }
+.hallazgo .pista { margin: 4px 0 0; font-size: 12px; color: #605e5c; }
+.hallazgo.contando { outline: 2px solid #118dff; outline-offset: -2px; }
+.glosario, .informe {
+  display: none;
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow: auto;
+  margin: 0 12px 12px;
+  padding: 8px 20px 28px;
+  background: #fff;
+  box-shadow: 0 1.6px 3.6px rgba(0, 0, 0, 0.13), 0 0.3px 0.9px rgba(0, 0, 0, 0.11);
+}
+body.en-glosario .escena,
+body.en-informe .escena { display: none; }
+body.en-glosario .glosario,
+body.en-informe .informe { display: block; flex: 1 1 auto; min-height: 0; }
+.glosario h2, .informe h2 { margin: 14px 0 8px; font-size: 22px; font-weight: 600; }
+.glosario h3 {
+  margin: 18px 0 10px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #605e5c;
+}
+.glosario article { margin: 0 0 16px; max-width: 760px; }
+.glosario h4 { margin: 0 0 4px; font-size: 16px; font-weight: 650; }
+.glosario p { margin: 0; font-size: 15px; line-height: 1.45; }
+.informe article h3 {
+  margin: 22px 0 8px;
+  font-size: 18px;
+  font-weight: 650;
+  letter-spacing: 0;
+  text-transform: none;
+  color: #252423;
+}
+.informe p { margin: 0 0 10px; max-width: 720px; font-size: 16px; line-height: 1.5; }
+.informe .lead { max-width: 720px; margin: 0 0 8px; font-size: 15px; line-height: 1.45; color: #605e5c; }
+#volver {
+  font: 13px/1 "Segoe UI", sans-serif;
+  color: #252423;
+  background: #fff;
+  border: 1px solid #c8c6c4;
+  border-radius: 2px;
+  padding: 8px 14px;
+  cursor: pointer;
+}
+.visual.contando { outline: 2px solid #118dff; outline-offset: -2px; }
+.visual [data-marca] { transition: opacity 0.35s ease; }
+.reporte {
+  flex: 1 1 auto;
+  min-height: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: minmax(0, 1.15fr) minmax(0, 1fr);
+  gap: 12px;
+  padding: 8px 12px 12px;
+}
+.visual.ancho { grid-column: 1 / -1; }
+.visual {
+  min-width: 0;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 2px;
+  box-shadow: 0 1.6px 3.6px rgba(0, 0, 0, 0.13), 0 0.3px 0.9px rgba(0, 0, 0, 0.11);
+  padding: 8px 12px 10px;
+}
+.visual h2 { margin: 0 0 8px; font-size: 14px; font-weight: 600; }
+.filtros { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 8px; }
+.filtros button {
+  font: 12px/1 "Segoe UI", sans-serif;
+  color: #252423;
+  background: #fff;
+  border: 1px solid #c8c6c4;
+  border-radius: 2px;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+.filtros button[aria-pressed="true"] {
+  background: #deecf9;
+  border-color: #118dff;
+  color: #0b5cab;
+}
+.visual figure.tarjeta {
+  flex: 1 1 auto;
+  min-height: 0;
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  background: transparent;
+  padding: 0;
+}
+.visual [data-vista] { flex: 1 1 auto; min-height: 0; display: flex; }
+.visual [data-vista][hidden] { display: none; }
+section { display: none; }
+section.activa {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  padding: 14px 20px 8px;
+  gap: 8px;
+}
+.cabeza { flex: 0 0 auto; display: flex; flex-direction: column; gap: 3px; }
+.kicker {
+  margin: 0;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #8a8175;
+}
+h1 {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 650;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+.respuesta {
+  margin: 2px 0 0;
+  max-width: 1100px;
+  font-size: 16px;
+  font-weight: 650;
+  line-height: 1.35;
+}
+.limpieza { margin: 0; font-size: 13px; color: #3f3830; }
+.procedencia { margin: 0; font-size: 12.5px; line-height: 1.4; color: #6b645c; }
+.cuerpo-hoja {
+  flex: 1 1 auto;
+  min-height: 0;
+  display: flex;
+  gap: 18px;
+  align-items: stretch;
+}
+.lienzo {
+  flex: 1 1 auto;
+  min-width: 0;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+.lectura {
+  flex: 0 1 360px;
+  min-width: 280px;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.lectura p { margin: 0; }
+.pregunta { font-size: 15px; font-weight: 650; line-height: 1.35; }
+.base, .nivel, .neto, .extra { font-size: 13.5px; line-height: 1.4; color: #3a342c; }
+.cuenta {
+  font-size: 13.5px;
+  line-height: 1.4;
+  font-variant-numeric: tabular-nums;
+  background: #fffcf7;
+  border: 1px solid #e4dccf;
+  border-radius: 8px;
+  padding: 8px 10px;
+}
+.limite {
+  margin-top: auto;
+  padding-top: 8px;
+  border-top: 1px solid #e0d9cc;
+  font-size: 12.5px;
+  line-height: 1.4;
+  color: #6b645c;
+}
+figure.tarjeta {
+  flex: 0 0 auto;
+  margin: 0;
+  background: #fffcf7;
+  border: 1px solid #e4dccf;
+  border-radius: 14px;
+  padding: 6px 10px 4px;
+  display: flex;
+  flex-direction: column;
+}
+.visual figure.tarjeta svg {
+  width: 100%;
+  height: 100%;
+  max-height: none;
+  aspect-ratio: auto;
+}
+.visual figcaption.eje { flex: 0 0 auto; margin: 4px 0 0; font-size: 13px; color: #605e5c; }
+.lienzo [data-vista] {
+  flex: 1 1 auto;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+.lienzo [data-vista][hidden] { display: none; }
+.vacia {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  background: #fffcf7;
+  border: 1px solid #e4dccf;
+  border-radius: 14px;
+  padding: 28px 32px;
+}
+.vacia p { margin: 0; max-width: 680px; font-size: 20px; font-weight: 650; line-height: 1.45; }
+.filtro { flex: 0 0 auto; display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 8px; }
+.filtro button {
+  font: 13px/1 "Segoe UI", sans-serif;
+  color: #1c1917;
+  background: #fffcf7;
+  border: 1px solid #d9d0c3;
+  border-radius: 999px;
+  padding: 7px 12px;
+  cursor: pointer;
+}
+.filtro button[aria-pressed="true"] {
+  background: #1c1917;
+  color: #fffcf7;
+  border-color: #1c1917;
+}
+nav {
+  flex: 0 0 56px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0 12px;
+  background: #1c1917;
+  overflow: hidden;
+}
+nav button {
+  flex: 0 0 auto;
+  font: 13px/1 "Segoe UI", sans-serif;
+  color: #f3efe6;
+  background: transparent;
+  border: 0;
+  border-radius: 999px;
+  padding: 8px 12px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+nav button[aria-current="true"] { background: #f3efe6; color: #1c1917; }
+.piramide {
+  flex: 1 1 auto;
+  min-height: 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  overflow: hidden;
+}
+.columna {
+  flex: 1 1 42%;
+  min-width: 0;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.piramide article {
+  background: #fffcf7;
+  border: 1px solid #e4dccf;
+  border-radius: 12px;
+  padding: 8px 12px;
+  min-height: 0;
+}
+.piramide article.evidencia {
+  flex: 1 1 58%;
+  align-self: flex-start;
+  overflow: hidden;
+}
+.piramide h2 {
+  margin: 0 0 4px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #8a8175;
+}
+.piramide p { margin: 0; font-size: 13px; line-height: 1.35; white-space: pre-wrap; }
+nav.pie {
+  flex: 0 0 52px;
+  background: #fff;
+  border-top: 1px solid #edebe9;
+  padding: 0 12px;
+  gap: 4px;
+  z-index: 5;
+}
+nav.pie button {
+  color: #605e5c;
+  background: transparent;
+  border-radius: 2px;
+  font-weight: 600;
+}
+nav.pie button[aria-current="page"] { background: #deecf9; color: #0b5cab; }
+nav.pie .frase {
+  flex: 1 1 auto;
+  min-width: 0;
+  margin: 0 8px;
+  font-size: 13px;
+  line-height: 1.3;
+  color: #252423;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+nav.pie #reproducir {
+  margin-left: auto;
+  color: #fff;
+  background: #118dff;
+  border-radius: 2px;
+}
+
+</style>
+</head>
+<body>
+<header class="cabezal"><h1>Loma</h1></header>
+<div class="escena"><aside class="costado"><div class="barra"><div class="slicer" data-filtro="fecha"><span class="nombre">Fecha</span><div class="caja"><button type="button" class="disparador" aria-expanded="false"><span class="elegido">Todos</span><span class="flecha" aria-hidden="true"></span></button><div class="panel" hidden><button type="button" class="opcion" data-valor="*" data-rotulo="Todos" aria-pressed="true">Todos</button><div class="nodo"><button type="button" class="abrir" aria-expanded="false" aria-label="Abrir"><span class="flecha" aria-hidden="true"></span></button><button type="button" class="opcion" data-valor="2025" data-anio="2025" data-rotulo="2025" aria-pressed="false">2025</button><div class="hijos" hidden><div class="nodo"><button type="button" class="abrir" aria-expanded="false" aria-label="Abrir"><span class="flecha" aria-hidden="true"></span></button><button type="button" class="opcion" data-valor="septiembre 2025" data-anio="2025" data-mes="9" data-rotulo="septiembre 2025" aria-pressed="false">septiembre</button><div class="hijos" hidden><button type="button" class="opcion" data-valor="1 septiembre 2025" data-anio="2025" data-mes="9" data-dia="1" data-rotulo="1 septiembre 2025" aria-pressed="false">1</button><button type="button" class="opcion" data-valor="2 septiembre 2025" data-anio="2025" data-mes="9" data-dia="2" data-rotulo="2 septiembre 2025" aria-pressed="false">2</button><button type="button" class="opcion" data-valor="3 septiembre 2025" data-anio="2025" data-mes="9" data-dia="3" data-rotulo="3 septiembre 2025" aria-pressed="false">3</button><button type="button" class="opcion" data-valor="4 septiembre 2025" data-anio="2025" data-mes="9" data-dia="4" data-rotulo="4 septiembre 2025" aria-pressed="false">4</button><button type="button" class="opcion" data-valor="5 septiembre 2025" data-anio="2025" data-mes="9" data-dia="5" data-rotulo="5 septiembre 2025" aria-pressed="false">5</button><button type="button" class="opcion" data-valor="6 septiembre 2025" data-anio="2025" data-mes="9" data-dia="6" data-rotulo="6 septiembre 2025" aria-pressed="false">6</button><button type="button" class="opcion" data-valor="8 septiembre 2025" data-anio="2025" data-mes="9" data-dia="8" data-rotulo="8 septiembre 2025" aria-pressed="false">8</button><button type="button" class="opcion" data-valor="9 septiembre 2025" data-anio="2025" data-mes="9" data-dia="9" data-rotulo="9 septiembre 2025" aria-pressed="false">9</button><button type="button" class="opcion" data-valor="10 septiembre 2025" data-anio="2025" data-mes="9" data-dia="10" data-rotulo="10 septiembre 2025" aria-pressed="false">10</button><button type="button" class="opcion" data-valor="11 septiembre 2025" data-anio="2025" data-mes="9" data-dia="11" data-rotulo="11 septiembre 2025" aria-pressed="false">11</button><button type="button" class="opcion" data-valor="12 septiembre 2025" data-anio="2025" data-mes="9" data-dia="12" data-rotulo="12 septiembre 2025" aria-pressed="false">12</button><button type="button" class="opcion" data-valor="13 septiembre 2025" data-anio="2025" data-mes="9" data-dia="13" data-rotulo="13 septiembre 2025" aria-pressed="false">13</button><button type="button" class="opcion" data-valor="15 septiembre 2025" data-anio="2025" data-mes="9" data-dia="15" data-rotulo="15 septiembre 2025" aria-pressed="false">15</button><button type="button" class="opcion" data-valor="16 septiembre 2025" data-anio="2025" data-mes="9" data-dia="16" data-rotulo="16 septiembre 2025" aria-pressed="false">16</button><button type="button" class="opcion" data-valor="17 septiembre 2025" data-anio="2025" data-mes="9" data-dia="17" data-rotulo="17 septiembre 2025" aria-pressed="false">17</button><button type="button" class="opcion" data-valor="18 septiembre 2025" data-anio="2025" data-mes="9" data-dia="18" data-rotulo="18 septiembre 2025" aria-pressed="false">18</button><button type="button" class="opcion" data-valor="19 septiembre 2025" data-anio="2025" data-mes="9" data-dia="19" data-rotulo="19 septiembre 2025" aria-pressed="false">19</button><button type="button" class="opcion" data-valor="20 septiembre 2025" data-anio="2025" data-mes="9" data-dia="20" data-rotulo="20 septiembre 2025" aria-pressed="false">20</button><button type="button" class="opcion" data-valor="22 septiembre 2025" data-anio="2025" data-mes="9" data-dia="22" data-rotulo="22 septiembre 2025" aria-pressed="false">22</button><button type="button" class="opcion" data-valor="23 septiembre 2025" data-anio="2025" data-mes="9" data-dia="23" data-rotulo="23 septiembre 2025" aria-pressed="false">23</button><button type="button" class="opcion" data-valor="24 septiembre 2025" data-anio="2025" data-mes="9" data-dia="24" data-rotulo="24 septiembre 2025" aria-pressed="false">24</button><button type="button" class="opcion" data-valor="25 septiembre 2025" data-anio="2025" data-mes="9" data-dia="25" data-rotulo="25 septiembre 2025" aria-pressed="false">25</button><button type="button" class="opcion" data-valor="26 septiembre 2025" data-anio="2025" data-mes="9" data-dia="26" data-rotulo="26 septiembre 2025" aria-pressed="false">26</button><button type="button" class="opcion" data-valor="27 septiembre 2025" data-anio="2025" data-mes="9" data-dia="27" data-rotulo="27 septiembre 2025" aria-pressed="false">27</button><button type="button" class="opcion" data-valor="29 septiembre 2025" data-anio="2025" data-mes="9" data-dia="29" data-rotulo="29 septiembre 2025" aria-pressed="false">29</button><button type="button" class="opcion" data-valor="30 septiembre 2025" data-anio="2025" data-mes="9" data-dia="30" data-rotulo="30 septiembre 2025" aria-pressed="false">30</button></div></div></div></div><div class="nodo"><button type="button" class="abrir" aria-expanded="false" aria-label="Abrir"><span class="flecha" aria-hidden="true"></span></button><button type="button" class="opcion" data-valor="2026" data-anio="2026" data-rotulo="2026" aria-pressed="false">2026</button><div class="hijos" hidden><div class="nodo"><button type="button" class="abrir" aria-expanded="false" aria-label="Abrir"><span class="flecha" aria-hidden="true"></span></button><button type="button" class="opcion" data-valor="agosto 2026" data-anio="2026" data-mes="8" data-rotulo="agosto 2026" aria-pressed="false">agosto</button><div class="hijos" hidden><button type="button" class="opcion" data-valor="1 agosto 2026" data-anio="2026" data-mes="8" data-dia="1" data-rotulo="1 agosto 2026" aria-pressed="false">1</button><button type="button" class="opcion" data-valor="3 agosto 2026" data-anio="2026" data-mes="8" data-dia="3" data-rotulo="3 agosto 2026" aria-pressed="false">3</button><button type="button" class="opcion" data-valor="4 agosto 2026" data-anio="2026" data-mes="8" data-dia="4" data-rotulo="4 agosto 2026" aria-pressed="false">4</button><button type="button" class="opcion" data-valor="5 agosto 2026" data-anio="2026" data-mes="8" data-dia="5" data-rotulo="5 agosto 2026" aria-pressed="false">5</button><button type="button" class="opcion" data-valor="6 agosto 2026" data-anio="2026" data-mes="8" data-dia="6" data-rotulo="6 agosto 2026" aria-pressed="false">6</button><button type="button" class="opcion" data-valor="7 agosto 2026" data-anio="2026" data-mes="8" data-dia="7" data-rotulo="7 agosto 2026" aria-pressed="false">7</button><button type="button" class="opcion" data-valor="8 agosto 2026" data-anio="2026" data-mes="8" data-dia="8" data-rotulo="8 agosto 2026" aria-pressed="false">8</button><button type="button" class="opcion" data-valor="10 agosto 2026" data-anio="2026" data-mes="8" data-dia="10" data-rotulo="10 agosto 2026" aria-pressed="false">10</button><button type="button" class="opcion" data-valor="11 agosto 2026" data-anio="2026" data-mes="8" data-dia="11" data-rotulo="11 agosto 2026" aria-pressed="false">11</button><button type="button" class="opcion" data-valor="12 agosto 2026" data-anio="2026" data-mes="8" data-dia="12" data-rotulo="12 agosto 2026" aria-pressed="false">12</button><button type="button" class="opcion" data-valor="13 agosto 2026" data-anio="2026" data-mes="8" data-dia="13" data-rotulo="13 agosto 2026" aria-pressed="false">13</button><button type="button" class="opcion" data-valor="14 agosto 2026" data-anio="2026" data-mes="8" data-dia="14" data-rotulo="14 agosto 2026" aria-pressed="false">14</button><button type="button" class="opcion" data-valor="15 agosto 2026" data-anio="2026" data-mes="8" data-dia="15" data-rotulo="15 agosto 2026" aria-pressed="false">15</button><button type="button" class="opcion" data-valor="18 agosto 2026" data-anio="2026" data-mes="8" data-dia="18" data-rotulo="18 agosto 2026" aria-pressed="false">18</button><button type="button" class="opcion" data-valor="19 agosto 2026" data-anio="2026" data-mes="8" data-dia="19" data-rotulo="19 agosto 2026" aria-pressed="false">19</button><button type="button" class="opcion" data-valor="20 agosto 2026" data-anio="2026" data-mes="8" data-dia="20" data-rotulo="20 agosto 2026" aria-pressed="false">20</button><button type="button" class="opcion" data-valor="21 agosto 2026" data-anio="2026" data-mes="8" data-dia="21" data-rotulo="21 agosto 2026" aria-pressed="false">21</button><button type="button" class="opcion" data-valor="22 agosto 2026" data-anio="2026" data-mes="8" data-dia="22" data-rotulo="22 agosto 2026" aria-pressed="false">22</button><button type="button" class="opcion" data-valor="24 agosto 2026" data-anio="2026" data-mes="8" data-dia="24" data-rotulo="24 agosto 2026" aria-pressed="false">24</button><button type="button" class="opcion" data-valor="25 agosto 2026" data-anio="2026" data-mes="8" data-dia="25" data-rotulo="25 agosto 2026" aria-pressed="false">25</button><button type="button" class="opcion" data-valor="26 agosto 2026" data-anio="2026" data-mes="8" data-dia="26" data-rotulo="26 agosto 2026" aria-pressed="false">26</button><button type="button" class="opcion" data-valor="27 agosto 2026" data-anio="2026" data-mes="8" data-dia="27" data-rotulo="27 agosto 2026" aria-pressed="false">27</button><button type="button" class="opcion" data-valor="28 agosto 2026" data-anio="2026" data-mes="8" data-dia="28" data-rotulo="28 agosto 2026" aria-pressed="false">28</button><button type="button" class="opcion" data-valor="29 agosto 2026" data-anio="2026" data-mes="8" data-dia="29" data-rotulo="29 agosto 2026" aria-pressed="false">29</button><button type="button" class="opcion" data-valor="31 agosto 2026" data-anio="2026" data-mes="8" data-dia="31" data-rotulo="31 agosto 2026" aria-pressed="false">31</button></div></div><div class="nodo"><button type="button" class="abrir" aria-expanded="false" aria-label="Abrir"><span class="flecha" aria-hidden="true"></span></button><button type="button" class="opcion" data-valor="septiembre 2026" data-anio="2026" data-mes="9" data-rotulo="septiembre 2026" aria-pressed="false">septiembre</button><div class="hijos" hidden><button type="button" class="opcion" data-valor="1 septiembre 2026" data-anio="2026" data-mes="9" data-dia="1" data-rotulo="1 septiembre 2026" aria-pressed="false">1</button><button type="button" class="opcion" data-valor="2 septiembre 2026" data-anio="2026" data-mes="9" data-dia="2" data-rotulo="2 septiembre 2026" aria-pressed="false">2</button><button type="button" class="opcion" data-valor="3 septiembre 2026" data-anio="2026" data-mes="9" data-dia="3" data-rotulo="3 septiembre 2026" aria-pressed="false">3</button><button type="button" class="opcion" data-valor="4 septiembre 2026" data-anio="2026" data-mes="9" data-dia="4" data-rotulo="4 septiembre 2026" aria-pressed="false">4</button><button type="button" class="opcion" data-valor="5 septiembre 2026" data-anio="2026" data-mes="9" data-dia="5" data-rotulo="5 septiembre 2026" aria-pressed="false">5</button><button type="button" class="opcion" data-valor="7 septiembre 2026" data-anio="2026" data-mes="9" data-dia="7" data-rotulo="7 septiembre 2026" aria-pressed="false">7</button><button type="button" class="opcion" data-valor="8 septiembre 2026" data-anio="2026" data-mes="9" data-dia="8" data-rotulo="8 septiembre 2026" aria-pressed="false">8</button><button type="button" class="opcion" data-valor="9 septiembre 2026" data-anio="2026" data-mes="9" data-dia="9" data-rotulo="9 septiembre 2026" aria-pressed="false">9</button><button type="button" class="opcion" data-valor="10 septiembre 2026" data-anio="2026" data-mes="9" data-dia="10" data-rotulo="10 septiembre 2026" aria-pressed="false">10</button><button type="button" class="opcion" data-valor="11 septiembre 2026" data-anio="2026" data-mes="9" data-dia="11" data-rotulo="11 septiembre 2026" aria-pressed="false">11</button><button type="button" class="opcion" data-valor="12 septiembre 2026" data-anio="2026" data-mes="9" data-dia="12" data-rotulo="12 septiembre 2026" aria-pressed="false">12</button><button type="button" class="opcion" data-valor="14 septiembre 2026" data-anio="2026" data-mes="9" data-dia="14" data-rotulo="14 septiembre 2026" aria-pressed="false">14</button><button type="button" class="opcion" data-valor="15 septiembre 2026" data-anio="2026" data-mes="9" data-dia="15" data-rotulo="15 septiembre 2026" aria-pressed="false">15</button><button type="button" class="opcion" data-valor="16 septiembre 2026" data-anio="2026" data-mes="9" data-dia="16" data-rotulo="16 septiembre 2026" aria-pressed="false">16</button><button type="button" class="opcion" data-valor="17 septiembre 2026" data-anio="2026" data-mes="9" data-dia="17" data-rotulo="17 septiembre 2026" aria-pressed="false">17</button><button type="button" class="opcion" data-valor="18 septiembre 2026" data-anio="2026" data-mes="9" data-dia="18" data-rotulo="18 septiembre 2026" aria-pressed="false">18</button><button type="button" class="opcion" data-valor="19 septiembre 2026" data-anio="2026" data-mes="9" data-dia="19" data-rotulo="19 septiembre 2026" aria-pressed="false">19</button><button type="button" class="opcion" data-valor="21 septiembre 2026" data-anio="2026" data-mes="9" data-dia="21" data-rotulo="21 septiembre 2026" aria-pressed="false">21</button><button type="button" class="opcion" data-valor="22 septiembre 2026" data-anio="2026" data-mes="9" data-dia="22" data-rotulo="22 septiembre 2026" aria-pressed="false">22</button><button type="button" class="opcion" data-valor="23 septiembre 2026" data-anio="2026" data-mes="9" data-dia="23" data-rotulo="23 septiembre 2026" aria-pressed="false">23</button><button type="button" class="opcion" data-valor="24 septiembre 2026" data-anio="2026" data-mes="9" data-dia="24" data-rotulo="24 septiembre 2026" aria-pressed="false">24</button><button type="button" class="opcion" data-valor="25 septiembre 2026" data-anio="2026" data-mes="9" data-dia="25" data-rotulo="25 septiembre 2026" aria-pressed="false">25</button><button type="button" class="opcion" data-valor="26 septiembre 2026" data-anio="2026" data-mes="9" data-dia="26" data-rotulo="26 septiembre 2026" aria-pressed="false">26</button><button type="button" class="opcion" data-valor="28 septiembre 2026" data-anio="2026" data-mes="9" data-dia="28" data-rotulo="28 septiembre 2026" aria-pressed="false">28</button><button type="button" class="opcion" data-valor="29 septiembre 2026" data-anio="2026" data-mes="9" data-dia="29" data-rotulo="29 septiembre 2026" aria-pressed="false">29</button><button type="button" class="opcion" data-valor="30 septiembre 2026" data-anio="2026" data-mes="9" data-dia="30" data-rotulo="30 septiembre 2026" aria-pressed="false">30</button></div></div></div></div></div></div></div><div class="slicer" data-filtro="producto"><span class="nombre">Producto</span><div class="caja"><button type="button" class="disparador" aria-expanded="false"><span class="elegido">Todos</span><span class="flecha" aria-hidden="true"></span></button><div class="panel" hidden><button type="button" class="opcion" data-valor="*" data-rotulo="Todos" aria-pressed="true">Todos</button><button type="button" class="opcion" data-valor="Cordel" data-rotulo="Cordel" aria-pressed="false">Cordel</button><button type="button" class="opcion" data-valor="Soga" data-rotulo="Soga" aria-pressed="false">Soga</button><button type="button" class="opcion" data-valor="Maroma" data-rotulo="Maroma" aria-pressed="false">Maroma</button></div></div></div></div></aside><div class="lienzo"><div class="hallazgos"><article class="hallazgo nivel" data-hallazgo="total"><p class="rotulo">Septiembre 2026</p><p class="cifra">1.144.000</p><p class="pista">Facturó</p></article><article class="hallazgo baja" data-hallazgo="mes"><p class="rotulo">Contra Agosto 2026</p><p class="cifra">1.756.000 abajo</p><p class="pista">Agosto 2026 facturó 2.900.000</p></article><article class="hallazgo sube" data-hallazgo="anio"><p class="rotulo">Contra Septiembre 2025</p><p class="cifra">156.000 arriba</p><p class="pista">Septiembre 2025 facturó 988.000</p></article></div><main class="reporte">
+<article class="visual ancho" data-grafico="evolucion" data-diferencia="-1756000"><h2>Evolución</h2><figure class="tarjeta"><svg viewBox="0 0 1280 280" role="img" data-eje="cero" preserveAspectRatio="xMidYMid meet"><line x1="36" y1="204" x2="1244" y2="204" stroke="#d5cdc0"/><text x="40" y="196" fill="#8a8175" font-size="24" font-family="Segoe UI, sans-serif">0</text><g data-marca="fecha" data-valor="septiembre 2025" data-anio="2025" data-mes="9"><rect x="117.3" y="151.2" width="240.0" height="52.8" rx="5" fill="#118dff"/><text x="237.3" y="143.4" text-anchor="middle" fill="#1c1917" font-size="28" font-weight="650" font-family="Segoe UI, sans-serif">988.000</text><text class="categoria" x="237.3" y="270" text-anchor="middle" fill="#252423" font-size="36" font-family="Segoe UI, sans-serif">septiembre 2025</text></g><g data-marca="fecha" data-valor="agosto 2026" data-anio="2026" data-mes="8"><rect x="520.0" y="49.0" width="240.0" height="155.0" rx="5" fill="#118dff"/><text x="640.0" y="41.2" text-anchor="middle" fill="#1c1917" font-size="28" font-weight="650" font-family="Segoe UI, sans-serif">2.900.000</text><text class="categoria" x="640.0" y="270" text-anchor="middle" fill="#252423" font-size="36" font-family="Segoe UI, sans-serif">agosto 2026</text></g><g data-marca="fecha" data-valor="septiembre 2026" data-anio="2026" data-mes="9"><rect x="922.7" y="142.9" width="240.0" height="61.1" rx="5" fill="#118dff"/><text x="1042.7" y="135.0" text-anchor="middle" fill="#1c1917" font-size="28" font-weight="650" font-family="Segoe UI, sans-serif">1.144.000</text><text class="categoria" x="1042.7" y="270" text-anchor="middle" fill="#252423" font-size="36" font-family="Segoe UI, sans-serif">septiembre 2026</text></g></svg><figcaption class="eje">El eje arranca en cero.</figcaption></figure></article>
+<article class="visual" data-grafico="piezas"><h2>Piezas</h2><figure class="tarjeta"><svg viewBox="0 0 680 300" role="img" data-eje="cero" preserveAspectRatio="xMidYMid meet"><line x1="36" y1="134.0" x2="644" y2="134.0" stroke="#d5cdc0"/><text x="40" y="126.0" fill="#8a8175" font-size="20" font-family="Segoe UI, sans-serif">0</text><g data-marca="pieza" data-valor="Cantidad"><rect x="54.2" y="128.4" width="166.2" height="5.6" rx="5" fill="#118dff"/><text x="137.3" y="121.7" text-anchor="middle" fill="#1c1917" font-size="24" font-weight="650" font-family="Segoe UI, sans-serif">116.000</text><text class="categoria" x="137.3" y="290" text-anchor="middle" fill="#252423" font-size="36" font-family="Segoe UI, sans-serif">Cantidad</text></g><g data-marca="pieza" data-valor="Mezcla"><rect x="256.9" y="134.0" width="166.2" height="90.0" rx="5" fill="#d13438"/><text x="340.0" y="186.7" text-anchor="middle" fill="#fffcf7" font-size="24" font-weight="650" font-family="Segoe UI, sans-serif">−1.872.000</text><text class="categoria" x="340.0" y="290" text-anchor="middle" fill="#252423" font-size="36" font-family="Segoe UI, sans-serif">Mezcla</text></g><g data-marca="pieza" data-valor="Precio"><rect x="459.6" y="134.0" width="166.2" height="0.0" rx="5" fill="#118dff"/><text x="542.7" y="127.3" text-anchor="middle" fill="#1c1917" font-size="24" font-weight="650" font-family="Segoe UI, sans-serif">0</text><text class="categoria" x="542.7" y="290" text-anchor="middle" fill="#252423" font-size="36" font-family="Segoe UI, sans-serif">Precio</text></g></svg><figcaption class="eje">El eje arranca en cero.</figcaption></figure></article>
+<article class="visual" data-grafico="atributo"><h2>Ventas por atributo</h2><figure class="tarjeta"><svg viewBox="0 0 680 300" role="img" data-eje="cero" preserveAspectRatio="xMidYMid meet"><line x1="36" y1="224" x2="644" y2="224" stroke="#d5cdc0"/><text x="40" y="216" fill="#8a8175" font-size="24" font-family="Segoe UI, sans-serif">0</text><g data-marca="producto" data-valor="Cordel"><rect x="54.2" y="49.0" width="166.2" height="175.0" rx="5" fill="#118dff"/><text x="137.3" y="41.2" text-anchor="middle" fill="#1c1917" font-size="28" font-weight="650" font-family="Segoe UI, sans-serif">624.000</text><text class="categoria" x="137.3" y="290" text-anchor="middle" fill="#252423" font-size="36" font-family="Segoe UI, sans-serif">Cordel</text></g><g data-marca="producto" data-valor="Soga"><rect x="256.9" y="78.2" width="166.2" height="145.8" rx="5" fill="#118dff"/><text x="340.0" y="70.3" text-anchor="middle" fill="#1c1917" font-size="28" font-weight="650" font-family="Segoe UI, sans-serif">520.000</text><text class="categoria" x="340.0" y="290" text-anchor="middle" fill="#252423" font-size="36" font-family="Segoe UI, sans-serif">Soga</text></g><g data-marca="producto" data-valor="Maroma"><rect x="459.6" y="224.0" width="166.2" height="0.0" rx="5" fill="#118dff"/><text x="542.7" y="216.2" text-anchor="middle" fill="#1c1917" font-size="28" font-weight="650" font-family="Segoe UI, sans-serif">0</text><text class="categoria" x="542.7" y="290" text-anchor="middle" fill="#252423" font-size="36" font-family="Segoe UI, sans-serif">Maroma</text></g></svg><figcaption class="eje">El eje arranca en cero.</figcaption></figure></article>
+</main></div></div>
+<section class="glosario"><button type="button" class="cerrar" id="volver">Volver</button><h2>Glosario</h2><h3>Métricas</h3><article><h4>Importe</h4><p>El importe de una fila es unidades por precio. Las métricas suman ese importe.</p></article><article><h4>Evolución</h4><p>Cada barra es la suma del importe de las filas de ese mes: septiembre 2025, agosto 2026, septiembre 2026. La diferencia contra el mes de al lado es septiembre 2026 menos agosto 2026. La diferencia contra el año pasado es septiembre 2026 menos septiembre 2025. El eje arranca en cero.</p></article><article><h4>Cantidad</h4><p>El camino escrito es cantidad, mezcla, precio. Se mueve una pieza por vez. La cantidad estira las unidades de agosto 2026 con la mezcla y los precios de agosto 2026. El tramo es esa cuenta menos el importe de agosto 2026.</p></article><article><h4>Mezcla</h4><p>La mezcla toma las unidades de septiembre 2026 y les pone el precio de agosto 2026. En cada grupo, ese precio es el importe de agosto 2026 dividido sus unidades. El tramo es esa cuenta menos la de la cantidad.</p></article><article><h4>Precio</h4><p>El precio usa el importe de septiembre 2026. El tramo es ese importe menos la cuenta de la mezcla.</p></article><article><h4>Neto</h4><p>El neto es el importe de septiembre 2026 menos el importe de agosto 2026. Las tres piezas suman ese neto. Una pieza no es una causa.</p></article><article><h4>Ventas por atributo</h4><p>El corte se eligió antes de mirar: producto. Cada barra es la suma del importe de ese producto en septiembre 2026. No es la resta contra agosto 2026.</p></article><h3>Atributos</h3><article><h4>Fecha</h4><p>Se abre por año, después por mes, después por día. El día es un día de apertura. Día de apertura es lunes a sábado, el sábado pesa como un día de semana, el domingo cierra, y el feriado del 17 de agosto sacó un lunes. Elegir un año, un mes o un día deja brillando las barras de ese recorte. No vuelve a sumar.</p></article><article><h4>Producto</h4><p>Lista los valores de producto. Elegir uno deja brillando esa barra. Las otras siguen en el gráfico, más tenues. No vuelve a sumar.</p></article></section>
+<section class="informe"><button type="button" class="cerrar">Volver</button><h2>Informe</h2><p class="lead">Cada hallazgo dice tres cosas: el número, de dónde sale y qué no dice. Los números son los de las cuentas ya cerradas. Este texto no vuelve a sumar.</p><article><h3>Septiembre 2026 / Agosto 2026</h3><p>Septiembre 2026 facturó 1.144.000. Agosto 2026 facturó 2.900.000. Septiembre 2026 está 1.756.000 abajo de agosto 2026.</p><p>Eso sale de restar los dos importes. Es la comparación contra el mes de al lado. No dice la causa.</p></article><article><h3>Septiembre 2026 / Septiembre 2025</h3><p>Septiembre 2025 facturó 988.000. Septiembre 2026 está 156.000 arriba de septiembre 2025.</p><p>Las dos comparaciones se leen juntas. Septiembre 2026 está 1.756.000 abajo de agosto 2026 y 156.000 arriba de septiembre 2025. Con una sola no se puede decir que el mes fue malo, ni que fue bueno.</p></article><article><h3>De dónde sale la diferencia contra agosto 2026</h3><p>Esa diferencia, 1.756.000 abajo, se parte en tres piezas. El camino escrito es cantidad, mezcla, precio. Se mueve una pieza por vez.</p><p>La cantidad se lleva 116.000 arriba. Son las unidades de septiembre 2026, medidas con la mezcla y los precios de agosto 2026.</p><p>La mezcla se lleva 1.872.000 abajo. Cambió el peso de cada grupo. El precio de cada grupo se deja en el de agosto 2026.</p><p>El precio queda en 0. El precio de septiembre 2026 no mueve esta diferencia.</p><p>La pieza grande es Mezcla, con 1.872.000 abajo. No es la causa. Otro camino les cambiaría el tamaño a las piezas. Las tres juntas siguen sumando la diferencia.</p></article><article><h3>Ventas por atributo</h3><p>En el gráfico, cada barra es lo facturado en septiembre 2026, no la baja: Cordel 624.000, Soga 520.000 y Maroma 0.</p><p>La resta de cada producto contra agosto 2026 es otra cuenta: Maroma 2.000.000 abajo, Cordel 224.000 arriba y Soga 20.000 arriba.</p><p>Maroma se lleva 2.000.000 abajo. El resto, junto, se lleva 244.000 arriba. El corte producto se eligió antes de mirar. Que Maroma se lleve esa resta no quiere decir que sea la causa.</p></article><article><h3>El día marcado</h3><p>La marca es 116.000: un día al ritmo de agosto 2026. Esos días de agosto 2026 facturaron 2.900.000. El día marcado: 17 de agosto de 2026, feriado, sin fila.</p><p>El día queda marcado al lado del total. No es la causa del mes. La marca es 116.000 y la diferencia contra agosto 2026 es 1.756.000 abajo. La marca no es esa diferencia.</p></article><article><h3>Lo que queda después del costo</h3><p>Después del costo que viaja con la venta, septiembre 2026 deja 624.000 y agosto 2026 deja 1.300.000.</p><p>Septiembre 2026 deja menos que agosto 2026.</p><p>Esa cuenta solo resta el costo que está en la fila. No es el margen del negocio si faltan costos que no viajan con la venta.</p></article><article><h3>Conclusión</h3><p>Septiembre 2026 está 1.756.000 abajo de agosto 2026 y 156.000 arriba de septiembre 2025. Esas dos frases van juntas.</p><p>La diferencia contra agosto 2026 aparece sobre todo en Mezcla y, en el corte producto, en Maroma. Eso describe el mes.</p><p>La tabla no separa la causa. Describe el mes contra agosto 2026 y contra septiembre 2025.</p><p>Este archivo no alcanza para firmar una compra.</p></article></section>
+<nav class="pie"><button type="button" id="abrir-tablero" data-vista="tablero" aria-current="page">Tablero</button><button type="button" id="abrir-informe" data-vista="informe">Informe</button><button type="button" id="abrir-glosario" data-vista="glosario">Glosario</button><p class="frase"></p><button type="button" id="reproducir" data-reproducir="Reproducir" data-pausa="Pausa" data-seguir="Seguir">Reproducir</button></nav><script type="application/json" id="historia">[{"frase": "En evolución, septiembre 2026 facturó 1.144.000 contra 2.900.000 de agosto 2026. La diferencia es 1.756.000 abajo.", "grafico": "evolucion", "marca": "fecha", "valores": ["septiembre 2026", "agosto 2026"], "filtro": "fecha", "valor": "", "rotulo": "septiembre 2026 y agosto 2026", "hallazgo": "mes"}, {"frase": "Contra septiembre 2025, que facturó 988.000, la diferencia es 156.000 arriba.", "grafico": "evolucion", "marca": "fecha", "valores": ["septiembre 2026", "septiembre 2025"], "filtro": "fecha", "valor": "", "rotulo": "septiembre 2026 y septiembre 2025", "hallazgo": "anio"}, {"frase": "En las piezas, Cantidad se lleva 116.000 arriba.", "grafico": "piezas", "marca": "pieza", "valores": ["Cantidad"], "filtro": "", "valor": "", "rotulo": "", "hallazgo": ""}, {"frase": "Mezcla se lleva 1.872.000 abajo.", "grafico": "piezas", "marca": "pieza", "valores": ["Mezcla"], "filtro": "", "valor": "", "rotulo": "", "hallazgo": ""}, {"frase": "El Precio queda en 0.", "grafico": "piezas", "marca": "pieza", "valores": ["Precio"], "filtro": "", "valor": "", "rotulo": "", "hallazgo": ""}, {"frase": "El neto de las tres es 1.756.000 abajo.", "grafico": "piezas", "marca": "pieza", "valores": ["Cantidad", "Mezcla", "Precio"], "filtro": "", "valor": "", "rotulo": "", "hallazgo": ""}, {"frase": "En ventas por producto, Cordel queda en 624.000.", "grafico": "atributo", "marca": "producto", "valores": ["Cordel"], "filtro": "producto", "valor": "Cordel", "rotulo": "Cordel", "hallazgo": ""}, {"frase": "Soga queda en 520.000.", "grafico": "atributo", "marca": "producto", "valores": ["Soga"], "filtro": "producto", "valor": "Soga", "rotulo": "Soga", "hallazgo": ""}, {"frase": "Maroma queda en 0.", "grafico": "atributo", "marca": "producto", "valores": ["Maroma"], "filtro": "producto", "valor": "Maroma", "rotulo": "Maroma", "hallazgo": ""}]</script>
+<script>
+function cerrarPaneles(excepto) {
+  var abiertos = document.querySelectorAll(".disparador[aria-expanded='true']");
+  for (var i = 0; i < abiertos.length; i++) {
+    if (abiertos[i] === excepto) {
+      continue;
+    }
+    abiertos[i].setAttribute("aria-expanded", "false");
+    abiertos[i].parentNode.querySelector(".panel").hidden = true;
+  }
+}
+document.addEventListener("click", function (evento) {
+  var caja = evento.target.closest ? evento.target.closest(".caja") : null;
+  cerrarPaneles(caja ? caja.querySelector(".disparador") : null);
+});
+var filtros = document.querySelectorAll(".slicer");
+for (var i = 0; i < filtros.length; i++) {
+  filtros[i].querySelector(".disparador").addEventListener("click", function () {
+    var abierto = this.getAttribute("aria-expanded") === "true";
+    cerrarPaneles(this);
+    this.setAttribute("aria-expanded", abierto ? "false" : "true");
+    this.parentNode.querySelector(".panel").hidden = abierto;
+  });
+  var ramas = filtros[i].querySelectorAll(".abrir");
+  for (var r = 0; r < ramas.length; r++) {
+    ramas[r].addEventListener("click", function (evento) {
+      evento.stopPropagation();
+      var hijos = this.parentNode.querySelector(".hijos");
+      var abierto = this.getAttribute("aria-expanded") === "true";
+      this.setAttribute("aria-expanded", abierto ? "false" : "true");
+      if (hijos) {
+        hijos.hidden = abierto;
+      }
+    });
+  }
+  var opciones = filtros[i].querySelectorAll(".opcion");
+  for (var b = 0; b < opciones.length; b++) {
+    opciones[b].addEventListener("click", function () {
+      var filtro = this.closest(".slicer");
+      var clave = filtro.getAttribute("data-filtro");
+      var valor = this.getAttribute("data-valor");
+      var anio = this.getAttribute("data-anio") || "";
+      var mes = this.getAttribute("data-mes") || "";
+      var dia = this.getAttribute("data-dia") || "";
+      var hermanos = filtro.querySelectorAll(".opcion");
+      for (var k = 0; k < hermanos.length; k++) {
+        hermanos[k].setAttribute("aria-pressed", hermanos[k] === this ? "true" : "false");
+      }
+      filtro.querySelector(".elegido").textContent = this.getAttribute("data-rotulo");
+      var grupos = document.querySelectorAll("[data-marca]");
+      for (var g = 0; g < grupos.length; g++) {
+        if (grupos[g].getAttribute("data-marca") !== clave) {
+          continue;
+        }
+        var sigue = false;
+        if (valor === "*") {
+          sigue = true;
+        } else if (clave === "fecha") {
+          var ga = grupos[g].getAttribute("data-anio") || "";
+          var gm = grupos[g].getAttribute("data-mes") || "";
+          var gd = grupos[g].getAttribute("data-dia") || "";
+          sigue = ga === anio && (mes === "" || gm === mes) && (dia === "" || gd === "" || gd === dia);
+        } else {
+          sigue = grupos[g].getAttribute("data-valor") === valor;
+        }
+        grupos[g].setAttribute("opacity", sigue ? "1" : "0.28");
+      }
+      cerrarPaneles(null);
+    });
+  }
+}
+var historia = document.getElementById("historia");
+var botonHistoria = document.getElementById("reproducir");
+if (historia && botonHistoria) {
+  var pasos = JSON.parse(historia.textContent);
+  var indiceHistoria = 0;
+  var timerHistoria = null;
+  var enCurso = false;
+  function ponerFiltro(clave, valor, rotulo) {
+    var slicers = document.querySelectorAll(".slicer");
+    for (var i = 0; i < slicers.length; i++) {
+      var es = clave && slicers[i].getAttribute("data-filtro") === clave;
+      var opciones = slicers[i].querySelectorAll(".opcion");
+      var elegido = slicers[i].querySelector(".elegido");
+      if (!es) {
+        for (var k = 0; k < opciones.length; k++) {
+          opciones[k].setAttribute(
+            "aria-pressed",
+            opciones[k].getAttribute("data-valor") === "*" ? "true" : "false"
+          );
+        }
+        var todos = slicers[i].querySelector('.opcion[data-valor="*"]');
+        if (elegido && todos) {
+          elegido.textContent = todos.getAttribute("data-rotulo");
+        }
+        continue;
+      }
+      for (var j = 0; j < opciones.length; j++) {
+        var coincide = valor !== "" && opciones[j].getAttribute("data-valor") === valor;
+        opciones[j].setAttribute("aria-pressed", coincide ? "true" : "false");
+      }
+      if (elegido) {
+        elegido.textContent = rotulo;
+      }
+    }
+  }
+  function mostrarPaso(paso) {
+    var grupos = document.querySelectorAll("[data-marca]");
+    for (var g = 0; g < grupos.length; g++) {
+      if (grupos[g].getAttribute("data-marca") !== paso.marca) {
+        grupos[g].setAttribute("opacity", "1");
+        continue;
+      }
+      var sigue = paso.valores.indexOf(grupos[g].getAttribute("data-valor")) !== -1;
+      grupos[g].setAttribute("opacity", sigue ? "1" : "0.28");
+    }
+    var cartas = document.querySelectorAll(".visual");
+    for (var c = 0; c < cartas.length; c++) {
+      cartas[c].classList.toggle("contando", cartas[c].getAttribute("data-grafico") === paso.grafico);
+    }
+    var hallazgos = document.querySelectorAll(".hallazgo");
+    for (var h = 0; h < hallazgos.length; h++) {
+      hallazgos[h].classList.toggle(
+        "contando",
+        paso.hallazgo && hallazgos[h].getAttribute("data-hallazgo") === paso.hallazgo
+      );
+    }
+    ponerFiltro(paso.filtro, paso.valor, paso.rotulo);
+    document.querySelector(".frase").textContent = paso.frase;
+  }
+  function tickHistoria() {
+    if (indiceHistoria >= pasos.length) {
+      pararHistoria(true);
+      return;
+    }
+    mostrarPaso(pasos[indiceHistoria]);
+    indiceHistoria += 1;
+    botonHistoria.textContent = botonHistoria.getAttribute("data-pausa");
+    enCurso = true;
+  }
+  function pararHistoria(termino) {
+    if (timerHistoria) {
+      clearInterval(timerHistoria);
+      timerHistoria = null;
+    }
+    enCurso = false;
+    botonHistoria.textContent = botonHistoria.getAttribute(termino ? "data-reproducir" : "data-seguir");
+  }
+  botonHistoria.addEventListener("click", function () {
+    cerrarVista();
+    if (enCurso) {
+      pararHistoria(false);
+      return;
+    }
+    if (indiceHistoria >= pasos.length) {
+      indiceHistoria = 0;
+    }
+    tickHistoria();
+    timerHistoria = setInterval(tickHistoria, 4000);
+  });
+}
+var abrirGlosario = document.getElementById("abrir-glosario");
+var abrirInforme = document.getElementById("abrir-informe");
+function pausarSiCorre() {
+  var play = document.getElementById("reproducir");
+  if (play && play.textContent === play.getAttribute("data-pausa")) {
+    play.click();
+  }
+}
+function marcarPie(id) {
+  var botones = document.querySelectorAll("nav.pie button[data-vista]");
+  for (var i = 0; i < botones.length; i++) {
+    if (botones[i].id === id) {
+      botones[i].setAttribute("aria-current", "page");
+    } else {
+      botones[i].removeAttribute("aria-current");
+    }
+  }
+}
+function abrirVista(clase, id) {
+  pausarSiCorre();
+  document.body.classList.remove("en-glosario", "en-informe");
+  document.body.classList.add(clase);
+  marcarPie(id);
+}
+function cerrarVista() {
+  document.body.classList.remove("en-glosario", "en-informe");
+  marcarPie("abrir-tablero");
+}
+var abrirTablero = document.getElementById("abrir-tablero");
+if (abrirTablero) {
+  abrirTablero.addEventListener("click", cerrarVista);
+}
+if (abrirGlosario) {
+  abrirGlosario.addEventListener("click", function () { abrirVista("en-glosario", "abrir-glosario"); });
+}
+if (abrirInforme) {
+  abrirInforme.addEventListener("click", function () { abrirVista("en-informe", "abrir-informe"); });
+}
+var cierres = document.querySelectorAll(".cerrar");
+for (var i = 0; i < cierres.length; i++) {
+  cierres[i].addEventListener("click", cerrarVista);
+}
+</script>
+</body>
+</html>
