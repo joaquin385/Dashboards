@@ -1,0 +1,40 @@
+
+COMPUTED METRICS SUMMARY FOR DOCUMENTATION
+===========================================
+
+Global Metrics:
+- Visitas totales: 558.4K
+- Conversión global: 5.87%
+- Pedidos totales: 32,753
+- Facturación total: $573.2M ARS
+- Margen total: $332.4M ARS (58.0%)
+- Inversión total: $6.1M ARS
+- CAC promedio: $3,655 ARS
+- ROAS pagos: 10.00x
+
+Google Ads:
+- Conversión: 4.49%
+- CAC: $3,325 ARS
+- ROAS: 11.77x
+- Resultado neto: $17.4M ARS
+
+Instagram:
+- Conversión: 0.59%
+- CAC: $5,986 ARS
+- ROAS: 4.31x
+- Resultado neto: $2.7M ARS
+
+Facebook:
+- Conversión: 3.18%
+- CAC: $2,826 ARS
+- ROAS: 13.56x
+
+Customer Mix:
+- Nuevos: 13,802 (42.1%)
+- Recurrentes: 18,951 (57.9%)
+- Ticket nuevo: $17,500 ARS
+- Ticket recurrente: $17,500 ARS
+
+Margins:
+- Orgánico: $297.0M (89.4%)
+- Pagos: $35.4M (10.6%)
