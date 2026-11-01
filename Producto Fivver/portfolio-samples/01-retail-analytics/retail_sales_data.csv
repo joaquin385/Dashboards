@@ -1,0 +1,146 @@
+date,year,month,channel,product,category,units,unit_price,unit_cost,transaction_id,stock_days
+2023-01-15,2023,Jan,Online,Product A,Electronics,2,10000,7000,T001,45
+2023-01-18,2023,Jan,Store 1,Product B,Clothing,3,5000,3000,T002,120
+2023-01-22,2023,Jan,Store 2,Product C,Home,1,8000,5200,T003,30
+2023-01-25,2023,Jan,Online,Product D,Electronics,4,3000,1800,T004,180
+2023-01-28,2023,Jan,Store 1,Product E,Clothing,2,4500,2700,T005,90
+2023-02-02,2023,Feb,Online,Product A,Electronics,3,10000,7000,T006,40
+2023-02-05,2023,Feb,Store 2,Product F,Home,1,12000,7800,T007,300
+2023-02-10,2023,Feb,Store 1,Product B,Clothing,5,5000,3000,T008,110
+2023-02-14,2023,Feb,Online,Product C,Home,2,8000,5200,T009,25
+2023-02-18,2023,Feb,Store 2,Product D,Electronics,3,3000,1800,T010,160
+2023-02-22,2023,Feb,Store 1,Product E,Clothing,4,4500,2700,T011,80
+2023-02-26,2023,Feb,Online,Product G,Electronics,2,15000,10500,T012,200
+2023-03-03,2023,Mar,Store 2,Product A,Electronics,3,10000,7000,T013,38
+2023-03-08,2023,Mar,Online,Product H,Clothing,6,2500,1500,T014,60
+2023-03-12,2023,Mar,Store 1,Product C,Home,2,8000,5200,T015,22
+2023-03-16,2023,Mar,Store 2,Product B,Clothing,4,5000,3000,T016,100
+2023-03-20,2023,Mar,Online,Product D,Electronics,5,3000,1800,T017,150
+2023-03-25,2023,Mar,Store 1,Product F,Home,1,12000,7800,T018,280
+2023-03-29,2023,Mar,Store 2,Product E,Clothing,3,4500,2700,T019,75
+2023-04-05,2023,Apr,Online,Product A,Electronics,4,10000,7000,T020,35
+2023-04-10,2023,Apr,Store 1,Product G,Electronics,1,15000,10500,T021,190
+2023-04-14,2023,Apr,Store 2,Product B,Clothing,5,5000,3000,T022,95
+2023-04-18,2023,Apr,Online,Product C,Home,3,8000,5200,T023,20
+2023-04-22,2023,Apr,Store 1,Product D,Electronics,4,3000,1800,T024,140
+2023-04-27,2023,Apr,Store 2,Product H,Clothing,7,2500,1500,T025,55
+2023-05-03,2023,May,Online,Product E,Clothing,2,4500,2700,T026,70
+2023-05-08,2023,May,Store 1,Product A,Electronics,5,10000,7000,T027,32
+2023-05-12,2023,May,Store 2,Product F,Home,2,12000,7800,T028,270
+2023-05-17,2023,May,Online,Product B,Clothing,6,5000,3000,T029,90
+2023-05-22,2023,May,Store 1,Product C,Home,3,8000,5200,T030,18
+2023-05-27,2023,May,Store 2,Product D,Electronics,5,3000,1800,T031,130
+2023-06-02,2023,Jun,Online,Product G,Electronics,2,15000,10500,T032,180
+2023-06-07,2023,Jun,Store 1,Product H,Clothing,8,2500,1500,T033,50
+2023-06-12,2023,Jun,Store 2,Product A,Electronics,4,10000,7000,T034,30
+2023-06-17,2023,Jun,Online,Product E,Clothing,3,4500,2700,T035,65
+2023-06-22,2023,Jun,Store 1,Product B,Clothing,5,5000,3000,T036,85
+2023-06-28,2023,Jun,Store 2,Product F,Home,1,12000,7800,T037,260
+2023-07-04,2023,Jul,Online,Product C,Home,4,8000,5200,T038,16
+2023-07-09,2023,Jul,Store 1,Product D,Electronics,6,3000,1800,T039,120
+2023-07-14,2023,Jul,Store 2,Product A,Electronics,5,10000,7000,T040,28
+2023-07-19,2023,Jul,Online,Product G,Electronics,3,15000,10500,T041,170
+2023-07-24,2023,Jul,Store 1,Product H,Clothing,9,2500,1500,T042,45
+2023-07-29,2023,Jul,Store 2,Product B,Clothing,6,5000,3000,T043,80
+2023-08-03,2023,Aug,Online,Product E,Clothing,4,4500,2700,T044,60
+2023-08-08,2023,Aug,Store 1,Product C,Home,3,8000,5200,T045,14
+2023-08-13,2023,Aug,Store 2,Product F,Home,2,12000,7800,T046,250
+2023-08-18,2023,Aug,Online,Product D,Electronics,7,3000,1800,T047,110
+2023-08-23,2023,Aug,Store 1,Product A,Electronics,6,10000,7000,T048,26
+2023-08-28,2023,Aug,Store 2,Product G,Electronics,2,15000,10500,T049,160
+2023-09-02,2023,Sep,Online,Product B,Clothing,7,5000,3000,T050,75
+2023-09-07,2023,Sep,Store 1,Product H,Clothing,10,2500,1500,T051,40
+2023-09-12,2023,Sep,Store 2,Product C,Home,4,8000,5200,T052,12
+2023-09-17,2023,Sep,Online,Product E,Clothing,5,4500,2700,T053,55
+2023-09-22,2023,Sep,Store 1,Product D,Electronics,8,3000,1800,T054,100
+2023-09-27,2023,Sep,Store 2,Product A,Electronics,7,10000,7000,T055,24
+2023-10-03,2023,Oct,Online,Product F,Home,3,12000,7800,T056,240
+2023-10-08,2023,Oct,Store 1,Product G,Electronics,3,15000,10500,T057,150
+2023-10-13,2023,Oct,Store 2,Product B,Clothing,8,5000,3000,T058,70
+2023-10-18,2023,Oct,Online,Product C,Home,5,8000,5200,T059,10
+2023-10-23,2023,Oct,Store 1,Product H,Clothing,11,2500,1500,T060,35
+2023-10-28,2023,Oct,Store 2,Product D,Electronics,9,3000,1800,T061,90
+2023-11-02,2023,Nov,Online,Product A,Electronics,8,10000,7000,T062,22
+2023-11-07,2023,Nov,Store 1,Product E,Clothing,6,4500,2700,T063,50
+2023-11-12,2023,Nov,Store 2,Product F,Home,3,12000,7800,T064,230
+2023-11-17,2023,Nov,Online,Product G,Electronics,4,15000,10500,T065,140
+2023-11-22,2023,Nov,Store 1,Product B,Clothing,9,5000,3000,T066,65
+2023-11-27,2023,Nov,Store 2,Product C,Home,6,8000,5200,T067,8
+2023-12-03,2023,Dec,Online,Product D,Electronics,10,3000,1800,T068,80
+2023-12-08,2023,Dec,Store 1,Product H,Clothing,12,2500,1500,T069,30
+2023-12-13,2023,Dec,Store 2,Product A,Electronics,9,10000,7000,T070,20
+2023-12-18,2023,Dec,Online,Product E,Clothing,7,4500,2700,T071,45
+2023-12-23,2023,Dec,Store 1,Product F,Home,4,12000,7800,T072,220
+2023-12-28,2023,Dec,Store 2,Product G,Electronics,5,15000,10500,T073,130
+2024-01-05,2024,Jan,Online,Product B,Clothing,10,5000,3000,T074,60
+2024-01-10,2024,Jan,Store 1,Product C,Home,7,8000,5200,T075,6
+2024-01-15,2024,Jan,Store 2,Product D,Electronics,11,3000,1800,T076,70
+2024-01-20,2024,Jan,Online,Product A,Electronics,10,10000,7000,T077,18
+2024-01-25,2024,Jan,Store 1,Product H,Clothing,13,2500,1500,T078,25
+2024-01-30,2024,Jan,Store 2,Product E,Clothing,8,4500,2700,T079,40
+2024-02-04,2024,Feb,Online,Product F,Home,5,12000,7800,T080,210
+2024-02-09,2024,Feb,Store 1,Product G,Electronics,6,15000,10500,T081,120
+2024-02-14,2024,Feb,Store 2,Product B,Clothing,11,5000,3000,T082,55
+2024-02-19,2024,Feb,Online,Product C,Home,8,8000,5200,T083,4
+2024-02-24,2024,Feb,Store 1,Product D,Electronics,12,3000,1800,T084,60
+2024-02-29,2024,Feb,Store 2,Product A,Electronics,11,10000,7000,T085,16
+2024-03-05,2024,Mar,Online,Product H,Clothing,14,2500,1500,T086,20
+2024-03-10,2024,Mar,Store 1,Product E,Clothing,9,4500,2700,T087,35
+2024-03-15,2024,Mar,Store 2,Product F,Home,6,12000,7800,T088,200
+2024-03-20,2024,Mar,Online,Product G,Electronics,7,15000,10500,T089,110
+2024-03-25,2024,Mar,Store 1,Product B,Clothing,12,5000,3000,T090,50
+2024-03-30,2024,Mar,Store 2,Product C,Home,9,8000,5200,T091,3
+2024-04-04,2024,Apr,Online,Product D,Electronics,13,3000,1800,T092,50
+2024-04-09,2024,Apr,Store 1,Product A,Electronics,12,10000,7000,T093,14
+2024-04-14,2024,Apr,Store 2,Product H,Clothing,15,2500,1500,T094,15
+2024-04-19,2024,Apr,Online,Product E,Clothing,10,4500,2700,T095,30
+2024-04-24,2024,Apr,Store 1,Product F,Home,7,12000,7800,T096,190
+2024-04-29,2024,Apr,Store 2,Product G,Electronics,8,15000,10500,T097,100
+2024-05-04,2024,May,Online,Product B,Clothing,13,5000,3000,T098,45
+2024-05-09,2024,May,Store 1,Product C,Home,10,8000,5200,T099,2
+2024-05-14,2024,May,Store 2,Product D,Electronics,14,3000,1800,T100,40
+2024-05-19,2024,May,Online,Product A,Electronics,13,10000,7000,T101,12
+2024-05-24,2024,May,Store 1,Product H,Clothing,16,2500,1500,T102,10
+2024-05-29,2024,May,Store 2,Product E,Clothing,11,4500,2700,T103,25
+2024-06-03,2024,Jun,Online,Product F,Home,8,12000,7800,T104,180
+2024-06-08,2024,Jun,Store 1,Product G,Electronics,9,15000,10500,T105,90
+2024-06-13,2024,Jun,Store 2,Product B,Clothing,14,5000,3000,T106,40
+2024-06-18,2024,Jun,Online,Product C,Home,11,8000,5200,T107,1
+2024-06-23,2024,Jun,Store 1,Product D,Electronics,15,3000,1800,T108,30
+2024-06-28,2024,Jun,Store 2,Product A,Electronics,14,10000,7000,T109,10
+2024-07-03,2024,Jul,Online,Product H,Clothing,17,2500,1500,T110,5
+2024-07-08,2024,Jul,Store 1,Product E,Clothing,12,4500,2700,T111,20
+2024-07-13,2024,Jul,Store 2,Product F,Home,9,12000,7800,T112,170
+2024-07-18,2024,Jul,Online,Product G,Electronics,10,15000,10500,T113,80
+2024-07-23,2024,Jul,Store 1,Product B,Clothing,15,5000,3000,T114,35
+2024-07-28,2024,Jul,Store 2,Product C,Home,12,8000,5200,T115,1
+2024-08-02,2024,Aug,Online,Product D,Electronics,16,3000,1800,T116,20
+2024-08-07,2024,Aug,Store 1,Product A,Electronics,15,10000,7000,T117,8
+2024-08-12,2024,Aug,Store 2,Product H,Clothing,18,2500,1500,T118,3
+2024-08-17,2024,Aug,Online,Product E,Clothing,13,4500,2700,T119,15
+2024-08-22,2024,Aug,Store 1,Product F,Home,10,12000,7800,T120,160
+2024-08-27,2024,Aug,Store 2,Product G,Electronics,11,15000,10500,T121,70
+2024-09-01,2024,Sep,Online,Product B,Clothing,16,5000,3000,T122,30
+2024-09-06,2024,Sep,Store 1,Product C,Home,13,8000,5200,T123,1
+2024-09-11,2024,Sep,Store 2,Product D,Electronics,17,3000,1800,T124,15
+2024-09-16,2024,Sep,Online,Product A,Electronics,16,10000,7000,T125,6
+2024-09-21,2024,Sep,Store 1,Product H,Clothing,19,2500,1500,T126,2
+2024-09-26,2024,Sep,Store 2,Product E,Clothing,14,4500,2700,T127,10
+2024-10-01,2024,Oct,Online,Product F,Home,11,12000,7800,T128,150
+2024-10-06,2024,Oct,Store 1,Product G,Electronics,12,15000,10500,T129,60
+2024-10-11,2024,Oct,Store 2,Product B,Clothing,17,5000,3000,T130,25
+2024-10-16,2024,Oct,Online,Product C,Home,14,8000,5200,T131,1
+2024-10-21,2024,Oct,Store 1,Product D,Electronics,18,3000,1800,T132,10
+2024-10-26,2024,Oct,Store 2,Product A,Electronics,17,10000,7000,T133,4
+2024-11-01,2024,Nov,Online,Product H,Clothing,20,2500,1500,T134,1
+2024-11-06,2024,Nov,Store 1,Product E,Clothing,15,4500,2700,T135,5
+2024-11-11,2024,Nov,Store 2,Product F,Home,12,12000,7800,T136,140
+2024-11-16,2024,Nov,Online,Product G,Electronics,13,15000,10500,T137,50
+2024-11-21,2024,Nov,Store 1,Product B,Clothing,18,5000,3000,T138,20
+2024-11-26,2024,Nov,Store 2,Product C,Home,15,8000,5200,T139,1
+2024-12-01,2024,Dec,Online,Product D,Electronics,19,3000,1800,T140,5
+2024-12-06,2024,Dec,Store 1,Product A,Electronics,18,10000,7000,T141,2
+2024-12-11,2024,Dec,Store 2,Product H,Clothing,21,2500,1500,T142,1
+2024-12-16,2024,Dec,Online,Product E,Clothing,16,4500,2700,T143,3
+2024-12-21,2024,Dec,Store 1,Product F,Home,13,12000,7800,T144,130
+2024-12-26,2024,Dec,Store 2,Product G,Electronics,14,15000,10500,T145,40

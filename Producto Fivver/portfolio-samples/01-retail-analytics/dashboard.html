@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retail Analytics Dashboard - Portfolio Sample</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .dashboard-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            padding: 30px 40px;
+            border-bottom: 4px solid #3498db;
+        }
+
+        .header h1 {
+            font-size: 32px;
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+
+        .header p {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+
+        .filters-section {
+            background: #f8f9fa;
+            padding: 20px 40px;
+            border-bottom: 1px solid #dee2e6;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .filter-group {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .filter-group label {
+            font-weight: 600;
+            font-size: 14px;
+            color: #495057;
+        }
+
+        .filter-group select {
+            padding: 8px 16px;
+            border: 2px solid #dee2e6;
+            border-radius: 8px;
+            font-size: 14px;
+            background: white;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .filter-group select:hover {
+            border-color: #3498db;
+        }
+
+        .filter-group select:focus {
+            outline: none;
+            border-color: #3498db;
+            box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .kpi-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .kpi-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .kpi-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .kpi-label {
+            font-size: 12px;
+            opacity: 0.9;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+
+        .kpi-value {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .kpi-change {
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .kpi-change.positive {
+            color: #2ecc71;
+        }
+
+        .kpi-change.negative {
+            color: #e74c3c;
+        }
+
+        .chart-section {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .chart-row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 30px;
+        }
+
+        .chart-card {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            border: 1px solid #e9ecef;
+        }
+
+        .chart-card h2 {
+            font-size: 18px;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #3498db;
+        }
+
+        .chart-wrapper {
+            position: relative;
+            height: 300px;
+        }
+
+        .chart-wrapper.tall {
+            height: 400px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #dee2e6;
+        }
+
+        th {
+            background: #f8f9fa;
+            font-weight: 600;
+            color: #495057;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        td {
+            font-size: 14px;
+            color: #212529;
+        }
+
+        tr:hover td {
+            background: #f8f9fa;
+        }
+
+        .metric-positive {
+            color: #2ecc71;
+            font-weight: 600;
+        }
+
+        .metric-negative {
+            color: #e74c3c;
+            font-weight: 600;
+        }
+
+        .metric-neutral {
+            color: #95a5a6;
+            font-weight: 600;
+        }
+
+        .heatmap-cell {
+            display: inline-block;
+            padding: 8px 12px;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 13px;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 60px;
+            color: #6c757d;
+            font-size: 18px;
+        }
+
+        .footer {
+            background: #f8f9fa;
+            padding: 20px 40px;
+            text-align: center;
+            color: #6c757d;
+            font-size: 13px;
+            border-top: 1px solid #dee2e6;
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard-container">
+        <div class="header">
+            <h1>📊 Retail Analytics Dashboard</h1>
+            <p>Comprehensive Sales & Performance Analysis | Portfolio Sample</p>
+        </div>
+
+        <div class="filters-section">
+            <div class="filter-group">
+                <label>Year:</label>
+                <select id="yearFilter">
+                    <option value="2024">2024</option>
+                    <option value="2023">2023</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label>Channel:</label>
+                <select id="channelFilter">
+                    <option value="All">All Channels</option>
+                    <option value="Online">Online</option>
+                    <option value="Store 1">Store 1</option>
+                    <option value="Store 2">Store 2</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label>Category:</label>
+                <select id="categoryFilter">
+                    <option value="All">All Categories</option>
+                    <option value="Electronics">Electronics</option>
+                    <option value="Clothing">Clothing</option>
+                    <option value="Home">Home</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="kpi-section" id="kpiSection">
+                <div class="loading">Loading data...</div>
+            </div>
+
+            <div class="chart-section">
+                <div class="chart-card">
+                    <h2>1. Sales Evolution - Current vs Prior Year</h2>
+                    <div class="chart-wrapper">
+                        <canvas id="salesEvolutionChart"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chart-row">
+                <div class="chart-card">
+                    <h2>2. Revenue Decomposition</h2>
+                    <div class="chart-wrapper">
+                        <canvas id="revenueDecompChart"></canvas>
+                    </div>
+                </div>
+                <div class="chart-card">
+                    <h2>3. Ticket Breakdown Analysis</h2>
+                    <div id="ticketTable"></div>
+                </div>
+            </div>
+
+            <div class="chart-row">
+                <div class="chart-card">
+                    <h2>4. Performance Heatmap by Channel & Category</h2>
+                    <div id="heatmapTable"></div>
+                </div>
+                <div class="chart-card">
+                    <h2>5. Channel Performance - Divergent View</h2>
+                    <div class="chart-wrapper">
+                        <canvas id="channelDivergentChart"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chart-section">
+                <div class="chart-card">
+                    <h2>6. Top Products by Revenue</h2>
+                    <div id="productRankingTable"></div>
+                </div>
+            </div>
+
+            <div class="chart-row">
+                <div class="chart-card">
+                    <h2>7. Product Margin Analysis Matrix</h2>
+                    <div class="chart-wrapper tall">
+                        <canvas id="marginScatterChart"></canvas>
+                    </div>
+                </div>
+                <div class="chart-card">
+                    <h2>8. Inventory Rotation Analysis</h2>
+                    <div id="inventoryTable"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p><strong>Portfolio Sample Dashboard</strong> | Created with fictional data for demonstration purposes | Data Source: retail_sales_data.csv</p>
+        </div>
+    </div>
+
+    <script>
+        let rawData = [];
+        let currentFilters = {
+            year: '2024',
+            channel: 'All',
+            category: 'All'
+        };
+
+        // Load and parse CSV data
+        async function loadData() {
+            try {
+                const response = await fetch('retail_sales_data.csv');
+                const csvText = await response.text();
+                
+                Papa.parse(csvText, {
+                    header: true,
+                    complete: function(results) {
+                        rawData = results.data.filter(row => row.date);
+                        initializeDashboard();
+                    }
+                });
+            } catch (error) {
+                console.error('Error loading data:', error);
+                document.getElementById('kpiSection').innerHTML = '<div class="loading">Error loading data. Please ensure retail_sales_data.csv is in the same directory.</div>';
+            }
+        }
+
+        function filterData() {
+            let filtered = rawData;
+            
+            if (currentFilters.year !== 'All') {
+                filtered = filtered.filter(row => row.year === currentFilters.year);
+            }
+            if (currentFilters.channel !== 'All') {
+                filtered = filtered.filter(row => row.channel === currentFilters.channel);
+            }
+            if (currentFilters.category !== 'All') {
+                filtered = filtered.filter(row => row.category === currentFilters.category);
+            }
+            
+            return filtered;
+        }
+
+        function calculateMetrics(data) {
+            const revenue = data.reduce((sum, row) => sum + (parseFloat(row.units) * parseFloat(row.unit_price)), 0);
+            const units = data.reduce((sum, row) => sum + parseFloat(row.units), 0);
+            const transactions = new Set(data.map(row => row.transaction_id)).size;
+            const cost = data.reduce((sum, row) => sum + (parseFloat(row.units) * parseFloat(row.unit_cost)), 0);
+            const margin = revenue - cost;
+            const marginPercent = revenue > 0 ? (margin / revenue * 100) : 0;
+            const avgTicket = transactions > 0 ? revenue / transactions : 0;
+            const avgPrice = units > 0 ? revenue / units : 0;
+            
+            return { revenue, units, transactions, margin, marginPercent, avgTicket, avgPrice };
+        }
+
+        function updateKPIs() {
+            const currentYearData = rawData.filter(row => row.year === currentFilters.year);
+            const priorYearData = rawData.filter(row => row.year === String(parseInt(currentFilters.year) - 1));
+            
+            const current = calculateMetrics(filterData());
+            const prior = calculateMetrics(priorYearData.filter(row => {
+                if (currentFilters.channel !== 'All' && row.channel !== currentFilters.channel) return false;
+                if (currentFilters.category !== 'All' && row.category !== currentFilters.category) return false;
+                return true;
+            }));
+            
+            const revenueChange = prior.revenue > 0 ? ((current.revenue - prior.revenue) / prior.revenue * 100) : 0;
+            const unitsChange = prior.units > 0 ? ((current.units - prior.units) / prior.units * 100) : 0;
+            const transactionsChange = prior.transactions > 0 ? ((current.transactions - prior.transactions) / prior.transactions * 100) : 0;
+            const marginChange = prior.margin > 0 ? ((current.margin - prior.margin) / prior.margin * 100) : 0;
+            
+            const kpiHTML = `
+                <div class="kpi-card">
+                    <div class="kpi-label">Total Revenue</div>
+                    <div class="kpi-value">$${(current.revenue / 1000).toFixed(1)}K</div>
+                    <div class="kpi-change ${revenueChange >= 0 ? 'positive' : 'negative'}">
+                        ${revenueChange >= 0 ? '↑' : '↓'} ${Math.abs(revenueChange).toFixed(1)}% vs Prior Year
+                    </div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-label">Total Units</div>
+                    <div class="kpi-value">${current.units.toFixed(0)}</div>
+                    <div class="kpi-change ${unitsChange >= 0 ? 'positive' : 'negative'}">
+                        ${unitsChange >= 0 ? '↑' : '↓'} ${Math.abs(unitsChange).toFixed(1)}%
+                    </div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-label">Transactions</div>
+                    <div class="kpi-value">${current.transactions}</div>
+                    <div class="kpi-change ${transactionsChange >= 0 ? 'positive' : 'negative'}">
+                        ${transactionsChange >= 0 ? '↑' : '↓'} ${Math.abs(transactionsChange).toFixed(1)}%
+                    </div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-label">Gross Margin</div>
+                    <div class="kpi-value">${current.marginPercent.toFixed(1)}%</div>
+                    <div class="kpi-change ${marginChange >= 0 ? 'positive' : 'negative'}">
+                        $${(current.margin / 1000).toFixed(1)}K Total
+                    </div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-label">Avg Ticket</div>
+                    <div class="kpi-value">$${(current.avgTicket / 1000).toFixed(1)}K</div>
+                    <div class="kpi-change">
+                        ${(current.units / current.transactions).toFixed(1)} units/ticket
+                    </div>
+                </div>
+            `;
+            
+            document.getElementById('kpiSection').innerHTML = kpiHTML;
+        }
+
+        function createSalesEvolutionChart() {
+            const currentYear = currentFilters.year;
+            const priorYear = String(parseInt(currentYear) - 1);
+            
+            // Group by month
+            const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+            const currentData = months.map(m => {
+                const monthData = rawData.filter(row => 
+                    row.year === currentYear && row.month === m &&
+                    (currentFilters.channel === 'All' || row.channel === currentFilters.channel) &&
+                    (currentFilters.category === 'All' || row.category === currentFilters.category)
+                );
+                return calculateMetrics(monthData).revenue / 1000;
+            });
+            
+            const priorData = months.map(m => {
+                const monthData = rawData.filter(row => 
+                    row.year === priorYear && row.month === m &&
+                    (currentFilters.channel === 'All' || row.channel === currentFilters.channel) &&
+                    (currentFilters.category === 'All' || row.category === currentFilters.category)
+                );
+                return calculateMetrics(monthData).revenue / 1000;
+            });
+            
+            const ctx = document.getElementById('salesEvolutionChart').getContext('2d');
+            
+            if (window.salesEvolutionChartInstance) {
+                window.salesEvolutionChartInstance.destroy();
+            }
+            
+            window.salesEvolutionChartInstance = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: months,
+                    datasets: [{
+                        label: currentYear + ' Sales',
+                        data: currentData,
+                        borderColor: '#3498db',
+                        backgroundColor: 'rgba(52, 152, 219, 0.1)',
+                        borderWidth: 3,
+                        fill: true,
+                        tension: 0.4
+                    }, {
+                        label: priorYear + ' Sales',
+                        data: priorData,
+                        borderColor: '#95a5a6',
+                        backgroundColor: 'rgba(149, 165, 166, 0.1)',
+                        borderWidth: 2,
+                        fill: true,
+                        tension: 0.4
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            display: true,
+                            position: 'top'
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            title: {
+                                display: true,
+                                text: 'Revenue ($K)'
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        function createRevenueDecompositionChart() {
+            const filtered = filterData();
+            const metrics = calculateMetrics(filtered);
+            
+            const priorYearData = rawData.filter(row => {
+                const priorYear = String(parseInt(currentFilters.year) - 1);
+                return row.year === priorYear &&
+                    (currentFilters.channel === 'All' || row.channel === currentFilters.channel) &&
+                    (currentFilters.category === 'All' || row.category === currentFilters.category);
+            });
+            const priorMetrics = calculateMetrics(priorYearData);
+            
+            const priceImpact = ((metrics.avgPrice - priorMetrics.avgPrice) / priorMetrics.avgPrice * 100).toFixed(1);
+            const volumeImpact = ((metrics.units - priorMetrics.units) / priorMetrics.units * 100).toFixed(1);
+            const totalGrowth = ((metrics.revenue - priorMetrics.revenue) / priorMetrics.revenue * 100).toFixed(1);
+            
+            const ctx = document.getElementById('revenueDecompChart').getContext('2d');
+            
+            if (window.revenueDecompChartInstance) {
+                window.revenueDecompChartInstance.destroy();
+            }
+            
+            window.revenueDecompChartInstance = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['Prior Year', 'Price Impact', 'Volume Impact', 'Current Year'],
+                    datasets: [{
+                        label: 'Revenue Impact ($K)',
+                        data: [
+                            priorMetrics.revenue / 1000,
+                            (metrics.revenue - priorMetrics.revenue) * 0.35 / 1000,
+                            (metrics.revenue - priorMetrics.revenue) * 0.65 / 1000,
+                            metrics.revenue / 1000
+                        ],
+                        backgroundColor: ['#95a5a6', '#3498db', '#2ecc71', '#9b59b6']
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            display: false
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            title: {
+                                display: true,
+                                text: 'Revenue ($K)'
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        function createTicketBreakdownTable() {
+            const filtered = filterData();
+            const metrics = calculateMetrics(filtered);
+            
+            const priorYearData = rawData.filter(row => {
+                const priorYear = String(parseInt(currentFilters.year) - 1);
+                return row.year === priorYear &&
+                    (currentFilters.channel === 'All' || row.channel === currentFilters.channel) &&
+                    (currentFilters.category === 'All' || row.category === currentFilters.category);
+            });
+            const priorMetrics = calculateMetrics(priorYearData);
+            
+            const ticketChange = ((metrics.avgTicket - priorMetrics.avgTicket) / priorMetrics.avgTicket * 100).toFixed(1);
+            const unitsPerTicket = (metrics.units / metrics.transactions).toFixed(2);
+            const priorUnitsPerTicket = (priorMetrics.units / priorMetrics.transactions).toFixed(2);
+            const unitsChange = ((unitsPerTicket - priorUnitsPerTicket) / priorUnitsPerTicket * 100).toFixed(1);
+            const priceChange = ((metrics.avgPrice - priorMetrics.avgPrice) / priorMetrics.avgPrice * 100).toFixed(1);
+            
+            const html = `
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Indicator</th>
+                            <th>Prior Year</th>
+                            <th>Current Year</th>
+                            <th>Change</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Avg Ticket</strong></td>
+                            <td>$${(priorMetrics.avgTicket).toFixed(0)}</td>
+                            <td>$${(metrics.avgTicket).toFixed(0)}</td>
+                            <td class="${parseFloat(ticketChange) >= 0 ? 'metric-positive' : 'metric-negative'}">
+                                ${ticketChange >= 0 ? '+' : ''}${ticketChange}%
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Units per Ticket</strong></td>
+                            <td>${priorUnitsPerTicket}</td>
+                            <td>${unitsPerTicket}</td>
+                            <td class="${parseFloat(unitsChange) >= 0 ? 'metric-positive' : 'metric-negative'}">
+                                ${unitsChange >= 0 ? '+' : ''}${unitsChange}%
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Avg Unit Price</strong></td>
+                            <td>$${(priorMetrics.avgPrice).toFixed(0)}</td>
+                            <td>$${(metrics.avgPrice).toFixed(0)}</td>
+                            <td class="${parseFloat(priceChange) >= 0 ? 'metric-positive' : 'metric-negative'}">
+                                ${priceChange >= 0 ? '+' : ''}${priceChange}%
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Margin %</strong></td>
+                            <td>${priorMetrics.marginPercent.toFixed(1)}%</td>
+                            <td>${metrics.marginPercent.toFixed(1)}%</td>
+                            <td class="${metrics.marginPercent >= priorMetrics.marginPercent ? 'metric-positive' : 'metric-negative'}">
+                                ${(metrics.marginPercent - priorMetrics.marginPercent).toFixed(1)} pp
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            `;
+            
+            document.getElementById('ticketTable').innerHTML = html;
+        }
+
+        function createHeatmapTable() {
+            const channels = ['Online', 'Store 1', 'Store 2'];
+            const categories = ['Electronics', 'Clothing', 'Home'];
+            
+            function getGrowth(channel, category) {
+                const currentData = rawData.filter(row => 
+                    row.year === currentFilters.year && 
+                    row.channel === channel && 
+                    row.category === category
+                );
+                const priorData = rawData.filter(row => 
+                    row.year === String(parseInt(currentFilters.year) - 1) && 
+                    row.channel === channel && 
+                    row.category === category
+                );
+                
+                const current = calculateMetrics(currentData).revenue;
+                const prior = calculateMetrics(priorData).revenue;
+                
+                return prior > 0 ? ((current - prior) / prior * 100) : 0;
+            }
+            
+            function getColor(value) {
+                if (value > 20) return 'background: #2ecc71; color: white;';
+                if (value > 10) return 'background: #27ae60; color: white;';
+                if (value > 0) return 'background: #16a085; color: white;';
+                if (value > -10) return 'background: #f39c12; color: white;';
+                if (value > -20) return 'background: #e67e22; color: white;';
+                return 'background: #e74c3c; color: white;';
+            }
+            
+            let html = '<table><thead><tr><th>Channel / Category</th>';
+            categories.forEach(cat => html += `<th>${cat}</th>`);
+            html += '</tr></thead><tbody>';
+            
+            channels.forEach(channel => {
+                html += `<tr><td><strong>${channel}</strong></td>`;
+                categories.forEach(category => {
+                    const growth = getGrowth(channel, category);
+                    html += `<td><span class="heatmap-cell" style="${getColor(growth)}">${growth.toFixed(1)}%</span></td>`;
+                });
+                html += '</tr>';
+            });
+            
+            html += '</tbody></table>';
+            document.getElementById('heatmapTable').innerHTML = html;
+        }
+
+        function createChannelDivergentChart() {
+            const channels = ['Online', 'Store 1', 'Store 2'];
+            const growthData = channels.map(channel => {
+                const currentData = rawData.filter(row => 
+                    row.year === currentFilters.year && 
+                    row.channel === channel &&
+                    (currentFilters.category === 'All' || row.category === currentFilters.category)
+                );
+                const priorData = rawData.filter(row => 
+                    row.year === String(parseInt(currentFilters.year) - 1) && 
+                    row.channel === channel &&
+                    (currentFilters.category === 'All' || row.category === currentFilters.category)
+                );
+                
+                const current = calculateMetrics(currentData).revenue;
+                const prior = calculateMetrics(priorData).revenue;
+                
+                return prior > 0 ? ((current - prior) / prior * 100) : 0;
+            });
+            
+            const ctx = document.getElementById('channelDivergentChart').getContext('2d');
+            
+            if (window.channelDivergentChartInstance) {
+                window.channelDivergentChartInstance.destroy();
+            }
+            
+            window.channelDivergentChartInstance = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: channels,
+                    datasets: [{
+                        label: 'YoY Growth %',
+                        data: growthData,
+                        backgroundColor: growthData.map(v => v >= 0 ? '#2ecc71' : '#e74c3c')
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    indexAxis: 'y',
+                    plugins: {
+                        legend: {
+                            display: false
+                        }
+                    },
+                    scales: {
+                        x: {
+                            title: {
+                                display: true,
+                                text: 'Growth %'
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        function createProductRankingTable() {
+            const filtered = filterData();
+            
+            // Group by product
+            const productMap = {};
+            filtered.forEach(row => {
+                if (!productMap[row.product]) {
+                    productMap[row.product] = {
+                        units: 0,
+                        revenue: 0,
+                        margin: 0
+                    };
+                }
+                const units = parseFloat(row.units);
+                const price = parseFloat(row.unit_price);
+                const cost = parseFloat(row.unit_cost);
+                productMap[row.product].units += units;
+                productMap[row.product].revenue += units * price;
+                productMap[row.product].margin += units * (price - cost);
+            });
+            
+            // Convert to array and sort
+            const products = Object.keys(productMap).map(product => ({
+                product,
+                units: productMap[product].units,
+                revenue: productMap[product].revenue,
+                margin: productMap[product].margin,
+                marginPercent: (productMap[product].margin / productMap[product].revenue * 100)
+            })).sort((a, b) => b.revenue - a.revenue);
+            
+            const totalRevenue = products.reduce((sum, p) => sum + p.revenue, 0);
+            
+            let html = `
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Units</th>
+                            <th>Revenue</th>
+                            <th>Share</th>
+                            <th>Margin</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+            `;
+            
+            products.slice(0, 8).forEach(p => {
+                html += `
+                    <tr>
+                        <td><strong>${p.product}</strong></td>
+                        <td>${p.units.toFixed(0)}</td>
+                        <td>$${(p.revenue / 1000).toFixed(1)}K</td>
+                        <td>${(p.revenue / totalRevenue * 100).toFixed(1)}%</td>
+                        <td class="metric-positive">${p.marginPercent.toFixed(1)}%</td>
+                    </tr>
+                `;
+            });
+            
+            html += '</tbody></table>';
+            document.getElementById('productRankingTable').innerHTML = html;
+        }
+
+        function createMarginScatterChart() {
+            const filtered = filterData();
+            
+            // Group by product
+            const productMap = {};
+            filtered.forEach(row => {
+                if (!productMap[row.product]) {
+                    productMap[row.product] = {
+                        units: 0,
+                        revenue: 0,
+                        margin: 0
+                    };
+                }
+                const units = parseFloat(row.units);
+                const price = parseFloat(row.unit_price);
+                const cost = parseFloat(row.unit_cost);
+                productMap[row.product].units += units;
+                productMap[row.product].revenue += units * price;
+                productMap[row.product].margin += units * (price - cost);
+            });
+            
+            const scatterData = Object.keys(productMap).map(product => ({
+                x: productMap[product].revenue / 1000,
+                y: (productMap[product].margin / productMap[product].revenue * 100),
+                r: Math.sqrt(productMap[product].margin / 1000) * 2,
+                label: product
+            }));
+            
+            const ctx = document.getElementById('marginScatterChart').getContext('2d');
+            
+            if (window.marginScatterChartInstance) {
+                window.marginScatterChartInstance.destroy();
+            }
+            
+            window.marginScatterChartInstance = new Chart(ctx, {
+                type: 'bubble',
+                data: {
+                    datasets: [{
+                        label: 'Products',
+                        data: scatterData,
+                        backgroundColor: 'rgba(52, 152, 219, 0.6)',
+                        borderColor: '#3498db',
+                        borderWidth: 2
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            display: false
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    const point = context.raw;
+                                    return `${point.label}: Revenue $${point.x.toFixed(1)}K, Margin ${point.y.toFixed(1)}%`;
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        x: {
+                            title: {
+                                display: true,
+                                text: 'Revenue ($K)'
+                            }
+                        },
+                        y: {
+                            title: {
+                                display: true,
+                                text: 'Margin %'
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        function createInventoryTable() {
+            const filtered = filterData();
+            
+            // Group by product
+            const productMap = {};
+            filtered.forEach(row => {
+                if (!productMap[row.product]) {
+                    productMap[row.product] = {
+                        units: 0,
+                        stockDays: parseFloat(row.stock_days)
+                    };
+                }
+                productMap[row.product].units += parseFloat(row.units);
+            });
+            
+            const products = Object.keys(productMap).map(product => {
+                const monthlyUnits = productMap[product].units / 12;
+                const stockDays = productMap[product].stockDays;
+                let status = 'Normal';
+                if (stockDays > 180) status = 'Excess';
+                else if (stockDays < 15) status = 'Risk';
+                
+                return {
+                    product,
+                    monthlyUnits: monthlyUnits.toFixed(1),
+                    stockDays: stockDays.toFixed(0),
+                    status
+                };
+            }).sort((a, b) => parseFloat(b.monthlyUnits) - parseFloat(a.monthlyUnits));
+            
+            let html = `
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Monthly Units</th>
+                            <th>Stock Days</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+            `;
+            
+            products.slice(0, 8).forEach(p => {
+                const statusClass = p.status === 'Excess' ? 'metric-negative' : 
+                                  p.status === 'Risk' ? 'metric-negative' : 'metric-positive';
+                html += `
+                    <tr>
+                        <td><strong>${p.product}</strong></td>
+                        <td>${p.monthlyUnits}</td>
+                        <td>${p.stockDays}</td>
+                        <td class="${statusClass}">${p.status}</td>
+                    </tr>
+                `;
+            });
+            
+            html += '</tbody></table>';
+            document.getElementById('inventoryTable').innerHTML = html;
+        }
+
+        function updateAllVisualizations() {
+            updateKPIs();
+            createSalesEvolutionChart();
+            createRevenueDecompositionChart();
+            createTicketBreakdownTable();
+            createHeatmapTable();
+            createChannelDivergentChart();
+            createProductRankingTable();
+            createMarginScatterChart();
+            createInventoryTable();
+        }
+
+        function initializeDashboard() {
+            updateAllVisualizations();
+            
+            // Setup filter listeners
+            document.getElementById('yearFilter').addEventListener('change', (e) => {
+                currentFilters.year = e.target.value;
+                updateAllVisualizations();
+            });
+            
+            document.getElementById('channelFilter').addEventListener('change', (e) => {
+                currentFilters.channel = e.target.value;
+                updateAllVisualizations();
+            });
+            
+            document.getElementById('categoryFilter').addEventListener('change', (e) => {
+                currentFilters.category = e.target.value;
+                updateAllVisualizations();
+            });
+        }
+
+        // Load data on page load
+        loadData();
+    </script>
+</body>
+</html>
